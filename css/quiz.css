@@ -963,8 +963,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 2.25rem 0 1rem; /* extra top padding to make room for the selector */
     border-top: 1px solid var(--border-color);
+    position: relative; /* enable absolute positioning for the selector inside */
 }
 
 .question-status {
@@ -1242,4 +1243,184 @@
     margin-top: 0.5rem;
     font-size: 0.875rem;
     color: var(--text-secondary);
+}
+
+/* Question selector (jump-to) */
+.question-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0 0.75rem 0;
+    padding: 0.5rem 0;
+    align-items: center;
+}
+
+.qsel-btn {
+    min-width: 40px;
+    height: 40px;
+    padding: 0 0.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--background-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.18s ease;
+}
+
+.qsel-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.06); }
+.qsel-btn.current { background: linear-gradient(90deg,#667eea,#764ba2); color: white; border-color: transparent; }
+.qsel-btn.answered { border-color: #10b981; box-shadow: inset 0 0 0 2px rgba(16,185,129,0.06); }
+.qsel-btn.bookmarked { outline: 2px solid rgba(102,126,234,0.12); }
+
+@media (max-width: 480px) {
+    .qsel-btn { min-width: 34px; height: 34px; font-size: 0.9rem; }
+}
+
+/* Compact floating selector styling (centered fixed at bottom) */
+.question-selector-wrapper {
+    /* Absolutely center the selector inside the controls so the pill sits over the divider */
+    position: absolute;
+    top: -18px; /* raise above controls so it overlaps the dividing line */
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    z-index: 60;
+    pointer-events: auto;
+}
+
+.qsel-compact {
+    position: relative;
+    margin: 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* Use theme-aware variables with sensible fallbacks so the pill adapts to dark/light themes */
+    background: linear-gradient(90deg, var(--accent-start, #667eea), var(--accent-end, #764ba2));
+    color: var(--on-accent, #fff);
+    border: none;
+    padding: 0.46rem 0.9rem;
+    border-radius: 22px;
+    font-weight: 700;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.18);
+    cursor: pointer;
+    z-index: 60;
+    width: fit-content;
+    transition: transform 180ms ease, box-shadow 180ms ease, opacity 160ms ease;
+    pointer-events: auto;
+}
+
+.qsel-compact .qsel-compact-text {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--on-accent, #fff);
+    letter-spacing: 0.1px;
+    padding-right: 6px;
+}
+.qsel-compact .qsel-compact-caret {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    opacity: 0.95;
+    color: var(--on-accent, #fff);
+}
+
+/* Slightly tighter pill to resemble mock */
+.qsel-compact {
+    padding: 0.5rem 0.9rem;
+}
+
+.question-selector-wrapper:not(.open) .question-selector { display: none; }
+.question-selector-wrapper.open .question-selector { display: flex; }
+
+/* When open, position selector above the compact control */
+.question-selector-wrapper .question-selector {
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    background: var(--card-background);
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 16px 48px rgba(15,23,42,0.12);
+    gap: 0.5rem;
+    pointer-events: auto;
+}
+
+/* Floating popup that hosts the selector grid when the compact button is clicked */
+.question-selector-popup {
+    position: absolute;
+    z-index: 1100;
+    display: none;
+    pointer-events: auto;
+}
+.question-selector-popup.open { display: block; }
+.question-selector-popup .question-selector {
+    min-width: 320px;
+    max-width: 520px;
+}
+
+/* header showing current question preview */
+.qsel-header {
+    background: linear-gradient(90deg, rgba(255,255,255,0.98), rgba(255,255,255,0.95));
+    color: var(--text-color);
+    padding: 0.5rem 0.85rem;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    max-width: min(760px, 90vw);
+    text-align: center;
+    font-size: 0.95rem;
+    pointer-events: auto;
+}
+
+/* Hide the floating white header card; the compact label is shown inline beside the question number */
+.qsel-header { display: none !important; }
+
+/* Inline compact label placed beside the question number */
+.qsel-inline {
+    margin-left: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--muted-text, #6b7280);
+    vertical-align: middle;
+}
+
+/* Unanswered button indicator */
+.qsel-btn.unanswered {
+    position: relative;
+}
+.qsel-btn.unanswered::after {
+    content: '';
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 8px;
+    height: 8px;
+    background: #ef4444;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(239,68,68,0.08);
+}
+
+/* Hover/active effects for compact control */
+.qsel-compact:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(102,126,234,0.22); }
+.qsel-compact:active { transform: translateY(-1px); }
+
+/* When selector opens, make full selector slightly elevated */
+.question-selector-wrapper.open .question-selector { transform-origin: bottom center; animation: qselOpen 180ms ease forwards; }
+@keyframes qselOpen { from { transform: scale(0.97); opacity: 0 } to { transform: scale(1); opacity: 1 } }
+
+@media (max-width: 640px) {
+    .qsel-compact { bottom: 12px; padding: 0.45rem 0.75rem; }
 }

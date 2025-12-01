@@ -138,6 +138,12 @@ class QuizSystem {
             if (optionsContainer) optionsContainer.innerHTML = '';
             return;
         }
+        // Render the question selector (jump-to) UI
+        try {
+            this.renderQuestionSelector();
+        } catch (err) {
+            console.warn('Failed to render question selector:', err);
+        }
         this.renderCurrentQuestion();
         this.updateProgress();
         this.updateSubmitButton();
@@ -913,6 +919,232 @@ class QuizSystem {
         if (prevBtn) {
             prevBtn.disabled = this.currentQuestionIndex === 0;
         }
+
+        // Update question selector UI state if present
+        try {
+            this.updateQuestionSelectorState();
+        } catch (err) {
+            // ignore if selector not initialized yet
+        }
+    }
+
+    /**
+     * Render a question selector (grid of numbered buttons) to jump to any question
+     */
+    renderQuestionSelector() {
+        const container = document.querySelector('.quiz-content');
+        if (!container) return;
+
+        const existingWrapper = document.getElementById('question-selector-wrapper');
+        if (existingWrapper && existingWrapper.parentNode) existingWrapper.parentNode.removeChild(existingWrapper);
+
+        // Wrapper contains the full selector and the compact toggle control
+        const wrapper = document.createElement('div');
+        wrapper.id = 'question-selector-wrapper';
+        wrapper.className = 'question-selector-wrapper';
+
+        // Full selector grid
+        const selector = document.createElement('div');
+        selector.id = 'question-selector';
+        selector.className = 'question-selector';
+
+        // Create buttons for each question
+        this.shuffledQuestions.forEach((q, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'qsel-btn';
+            btn.type = 'button';
+            btn.setAttribute('data-index', idx);
+            btn.setAttribute('aria-label', `Go to question ${idx + 1}`);
+            btn.textContent = idx + 1;
+            // Mark unanswered state initially
+            if (this.userAnswers && this.userAnswers[idx] === null) {
+                btn.classList.add('unanswered');
+            }
+
+            btn.addEventListener('click', (e) => {
+                const i = parseInt(e.currentTarget.getAttribute('data-index'));
+                if (!isNaN(i)) {
+                    this.currentQuestionIndex = i;
+                    this.selectedOption = this.userAnswers[i] !== null ? this.userAnswers[i] : null;
+                    this.clearExplanation();
+                    this.renderCurrentQuestion();
+                    this.updateProgress();
+                    this.updateSubmitButton();
+                    // close popup after selection
+                    if (this._qsel && this._qsel.popup) {
+                        this._qsel.popup.classList.remove('open');
+                        this._qsel.popup.style.display = 'none';
+                    }
+                }
+            });
+
+            selector.appendChild(btn);
+        });
+
+        // Compact floating toggle control
+        const compact = document.createElement('button');
+        compact.id = 'qsel-compact';
+        compact.className = 'qsel-compact';
+        compact.type = 'button';
+        compact.setAttribute('aria-expanded', 'false');
+        compact.addEventListener('click', () => {
+            const isOpen = wrapper.classList.toggle('open');
+            compact.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            // when opening, focus the first button for keyboard users
+            if (isOpen) {
+                const first = selector.querySelector('.qsel-btn');
+                if (first) first.focus();
+            }
+        });
+
+        // Text and caret inside compact control
+        const compactText = document.createElement('span');
+        compactText.className = 'qsel-compact-text';
+        // Initialize with current question number to avoid a flash/missing text
+        compactText.textContent = `Question ${this.currentQuestionIndex + 1}`;
+        compact.appendChild(compactText);
+
+        const compactCaret = document.createElement('span');
+        compactCaret.className = 'qsel-compact-caret';
+        compact.appendChild(compactCaret);
+
+        // Accessibility / tooltip
+        compact.title = `Jump to questions (current: ${this.currentQuestionIndex + 1})`;
+
+        // Add header that displays the current question preview when opened (kept hidden)
+        const header = document.createElement('div');
+        header.className = 'qsel-header';
+        header.setAttribute('aria-hidden', 'true');
+        header.textContent = '';
+
+        // Assemble wrapper: header and compact control only (the selector grid will be a floating popup)
+        wrapper.appendChild(header);
+        wrapper.appendChild(compact);
+
+        // Create floating popup (appended to body) to host the selector grid
+        const popup = document.createElement('div');
+        popup.id = 'question-selector-popup';
+        popup.className = 'question-selector-popup';
+        popup.appendChild(selector);
+        document.body.appendChild(popup);
+
+        // Insert compact wrapper into the controls area so it visually sits on the divider
+        try {
+            const controlsEl = document.querySelector('.quiz-controls');
+            if (controlsEl) {
+                controlsEl.insertBefore(wrapper, controlsEl.firstChild);
+            } else {
+                const questionCardEl = document.querySelector('.question-card') || container;
+                if (questionCardEl && questionCardEl.parentNode) {
+                    questionCardEl.parentNode.insertBefore(wrapper, questionCardEl.nextSibling);
+                } else {
+                    document.body.appendChild(wrapper);
+                }
+            }
+        } catch (err) {
+            document.body.appendChild(wrapper);
+        }
+
+        // Save references for updates (include header and popup)
+        this._qsel = { wrapper, selector, compact, compactText, compactCaret, header, popup };
+
+        // Helper to position the popup centered above the compact button
+        const positionPopup = () => {
+            try {
+                const popupEl = this._qsel && this._qsel.popup;
+                if (!popupEl) return;
+                const btnRect = this._qsel.compact.getBoundingClientRect();
+                // Make popup temporarily visible to measure
+                popupEl.style.display = 'block';
+                popupEl.style.visibility = 'hidden';
+                const popupRect = popupEl.getBoundingClientRect();
+                const top = window.scrollY + btnRect.top - popupRect.height - 12;
+                const left = btnRect.left + (btnRect.width / 2);
+                popupEl.style.position = 'absolute';
+                popupEl.style.top = `${Math.max(8, top)}px`;
+                popupEl.style.left = `${left}px`;
+                popupEl.style.transform = 'translateX(-50%)';
+                popupEl.style.visibility = 'visible';
+                if (!popupEl.classList.contains('open')) popupEl.style.display = 'none';
+            } catch (err) { /* ignore */ }
+        };
+
+        // Compact click opens the floating popup and positions it
+        compact.addEventListener('click', () => {
+            const popupEl = this._qsel && this._qsel.popup;
+            if (!popupEl) return;
+            const isOpen = popupEl.classList.toggle('open');
+            compact.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            if (isOpen) {
+                popupEl.style.display = 'block';
+                setTimeout(positionPopup, 10);
+                setTimeout(() => {
+                    const first = popupEl.querySelector('.qsel-btn');
+                    if (first) first.focus();
+                }, 60);
+            } else {
+                popupEl.classList.remove('open');
+                popupEl.style.display = 'none';
+            }
+        });
+
+        // Reposition popup on resize/scroll if open
+        window.addEventListener('resize', () => { if (this._qsel && this._qsel.popup && this._qsel.popup.classList.contains('open')) positionPopup(); });
+        window.addEventListener('scroll', () => { if (this._qsel && this._qsel.popup && this._qsel.popup.classList.contains('open')) positionPopup(); });
+
+        // Initial state update
+        this.updateQuestionSelectorState();
+    }
+
+    /**
+     * Update visual state for question selector buttons
+     */
+    updateQuestionSelectorState() {
+        const selector = document.getElementById('question-selector');
+        if (!selector) return;
+
+        const buttons = selector.querySelectorAll('.qsel-btn');
+        buttons.forEach(btn => {
+            const idx = parseInt(btn.getAttribute('data-index'));
+            btn.classList.remove('current', 'answered', 'bookmarked');
+
+            if (idx === this.currentQuestionIndex) btn.classList.add('current');
+            if (this.userAnswers && this.userAnswers[idx] !== null) btn.classList.add('answered');
+            if (this.bookmarkedQuestions && this.bookmarkedQuestions[idx]) btn.classList.add('bookmarked');
+            // add unanswered class when there's no answer
+            if (this.userAnswers && this.userAnswers[idx] === null) {
+                btn.classList.add('unanswered');
+            } else {
+                btn.classList.remove('unanswered');
+            }
+        });
+
+        // Update compact text and caret if compact control exists
+        if (this._qsel && this._qsel.compactText) {
+            // Display simplified compact label: "Question (n)"
+            this._qsel.compactText.textContent = `Question (${this.currentQuestionIndex + 1})`;
+        }
+        if (this._qsel && this._qsel.compactCaret) {
+            const isOpen = this._qsel.popup && this._qsel.popup.classList.contains('open');
+            this._qsel.compactCaret.innerHTML = isOpen ? '\u25B2' : '\u25BC';
+            if (this._qsel.compact) this._qsel.compact.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+
+        // Hide the floating header card
+        if (this._qsel && this._qsel.header) {
+            try { this._qsel.header.style.display = 'none'; } catch (e) { /* ignore */ }
+        }
+
+        // Remove any leftover inline label if present (we now show the number on the compact dropdown)
+        const existingInline = document.getElementById('qsel-inline');
+        if (existingInline && existingInline.parentNode) {
+            existingInline.parentNode.removeChild(existingInline);
+        }
+
+        // Ensure compact button text shows "Question N" (matches mock)
+        if (this._qsel && this._qsel.compactText) {
+            this._qsel.compactText.textContent = `Question ${this.currentQuestionIndex + 1}`;
+        }
     }
 
     /**
@@ -1204,6 +1436,26 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Enable page protection
         quizSystem.enablePageProtection();
+
+        // Close question selector popup when clicking outside it
+        document.addEventListener('click', (ev) => {
+            try {
+                const qsel = quizSystem && quizSystem._qsel;
+                if (!qsel) return;
+                const popup = qsel.popup;
+                const compactBtn = qsel.compact;
+                if (!popup) return;
+                if (!popup.classList.contains('open')) return;
+                const clickedInside = popup.contains(ev.target) || (ev.target.closest && ev.target.closest('#qsel-compact')) || (compactBtn && compactBtn.contains && compactBtn.contains(ev.target));
+                if (!clickedInside) {
+                    popup.classList.remove('open');
+                    popup.style.display = 'none';
+                    if (quizSystem.updateQuestionSelectorState) quizSystem.updateQuestionSelectorState();
+                }
+            } catch (err) {
+                // ignore
+            }
+        });
         
         // Auto-save progress every 30 seconds
         setInterval(() => {
