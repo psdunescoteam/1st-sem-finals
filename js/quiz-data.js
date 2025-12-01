@@ -4008,975 +4008,544 @@ const physicalEducationQuestions = [
 const generalPhysicsQuestions = [
   {
     "id": 1,
-    "question": "Which of the following is a fundamental quantity?",
+    "question": "What is the general formula for scientific notation?",
     "options": [
-      "Force",
-      "Velocity",
-      "Mass",
-      "Pressure"
+      "$N \\cdot 10$",
+      "$N \\times 10^E$",
+      "$E \\times 10^N$",
+      "$10^E$"
     ],
-    "correct": 2,
-    "explanation": "Mass is one of the seven fundamental quantities, while the others are derived quantities."
+    "correct": 1,
+    "explanation": "The general formula is $N \\times 10^E$, where $N$ is the mantissa and $E$ is the exponent."
   },
   {
     "id": 2,
-    "question": "What is the symbol for the fundamental quantity 'Time'?",
+    "question": "What is the requirement for the mantissa ($N$) in scientific notation?",
     "options": [
-      "$T$",
-      "$t$",
-      "$T_s$",
-      "$Tm$"
+      "It must be a whole number.",
+      "It must be greater than 10.",
+      "It must be between 1 and 10 (inclusive of 1, exclusive of 10).",
+      "It must be a whole number or decimal less than 1."
     ],
-    "correct": 1,
-    "explanation": "The symbol for Time is '$t$'."
+    "correct": 2,
+    "explanation": "The mantissa ($N$) must be a whole number or a decimal greater than or equal to 1 but less than 10."
   },
   {
     "id": 3,
-    "question": "The symbol for Luminous Intensity is:",
+    "question": "Convert the normal number 1,230 to scientific notation.",
     "options": [
-      "$I$",
-      "$L$",
-      "$I_v$",
-      "$L_i$"
+      "$1.23 \\times 10^{-3}$",
+      "$12.3 \\times 10^2$",
+      "$1.23 \\times 10^3$",
+      "$1.230 \\times 10^3$"
     ],
-    "correct": 2,
-    "explanation": "The symbol for Luminous Intensity is '$I_v$'."
+    "correct": 3,
+    "explanation": "Move the decimal point 3 places to the left to get a mantissa of 1.230, resulting in $1.230 \\times 10^3$. Moving left gives a positive exponent."
   },
   {
     "id": 4,
-    "question": "A quantity that is a combination of fundamental quantities is called a:",
+    "question": "Convert the normal number 0.000605 to scientific notation.",
     "options": [
-      "Scalar quantity",
-      "Vector quantity",
-      "Base quantity",
-      "Derived quantity"
+      "$6.05 \\times 10^{-4}$",
+      "$6.05 \\times 10^4$",
+      "$6.05 \\times 10^{-5}$",
+      "$60.5 \\times 10^{-5}$"
     ],
-    "correct": 3,
-    "explanation": "A derived quantity is any quantity that is a combination of fundamental quantities."
+    "correct": 0,
+    "explanation": "Move the decimal point 4 places to the right to get a mantissa of 6.05, resulting in $6.05 \\times 10^{-4}$. Moving right gives a negative exponent."
   },
   {
     "id": 5,
-    "question": "Which of the following is a derived quantity?",
+    "question": "Convert $6.532 \\times 10^2$ from scientific notation to normal notation.",
     "options": [
-      "Length",
-      "Amount of Substance",
-      "Current",
-      "Volume"
+      "6532",
+      "0.06532",
+      "653.2",
+      "65.32"
     ],
-    "correct": 3,
-    "explanation": "Volume is a derived quantity, calculated from length, which is a fundamental quantity."
+    "correct": 2,
+    "explanation": "The positive exponent ($+2$) means moving the decimal 2 places to the right, resulting in 653.2."
   },
   {
     "id": 6,
-    "question": "What is the unit for the derived quantity 'Density'?",
+    "question": "Convert $3.21 \\times 10^7$ from scientific notation to normal notation.",
     "options": [
-      "$kg/m^2$",
-      "$N/m^3$",
-      "$g/ml$ or $g/cm^3$",
-      "$kg/s$"
+      "32,100,000",
+      "3,210,000",
+      "0.000000321",
+      "321,000,000"
     ],
-    "correct": 2,
-    "explanation": "The unit for Density is $g/ml$ or $g/cm^3$."
+    "correct": 0,
+    "explanation": "The positive exponent ($+7$) means moving the decimal 7 places to the right, filling the empty places with zeros, resulting in 32,100,000."
   },
   {
     "id": 7,
-    "question": "If $P=\\frac{w}{t}$, what is the formula to solve for time $(t)$?",
+    "question": "When converting from normal to scientific notation, moving the decimal to the **left** results in a(n) ________ exponent.",
     "options": [
-      "$t = P \\cdot w$",
-      "$t = w - P$",
-      "$t = \\frac{P}{w}$",
-      "$t = \\frac{w}{P}$"
+      "Negative",
+      "Positive",
+      "Zero",
+      "Fractional"
     ],
-    "correct": 3,
-    "explanation": "To derive for time, you must multiply both sides by $t$ and then divide by $P$, which gives $t = \\frac{w}{P}$."
+    "correct": 1,
+    "explanation": "Moving the decimal to the left corresponds to a positive exponent."
   },
   {
     "id": 8,
-    "question": "The formula for the volume of a cylinder is $V = \\pi r^2h$. Which of the following is the correct formula to solve for the radius $(r)$?",
+    "question": "When converting from normal to scientific notation, the decimal point should end after the _________.",
     "options": [
-      "$r = \\sqrt{\\frac{V}{\\pi h}}$",
-      "$r = \\frac{V}{\\pi h}$",
-      "$r = \\frac{\\sqrt{V}}{\\pi h}$",
-      "$r = \\sqrt{V \\cdot \\pi h}$"
+      "Last digit",
+      "First nonzero digit",
+      "Middle digit",
+      "Decimal point location"
     ],
-    "correct": 0,
-    "explanation": "To isolate $r$, you first divide by $\\pi h$ to get $\\frac{V}{\\pi h} = r^2$, then take the square root of both sides, resulting in $r = \\sqrt{\\frac{V}{\\pi h}}$."
+    "correct": 1,
+    "explanation": "You must end the decimal point after the first nonzero digit to ensure the mantissa is between 1 and 10."
   },
   {
     "id": 9,
-    "question": "From the formula for Power, $P = \\frac{w}{t}$, what is the formula to solve for work $(w)$?",
+    "question": "To convert from scientific notation to normal notation, the exponent indicates the number of places the decimal point is ________.",
     "options": [
-      "$w = P + t$",
-      "$w = \\frac{t}{P}$",
-      "$w = P \\cdot t$",
-      "$w = P - t$"
+      "Moved to the right only",
+      "Moved to the left only",
+      "Moved",
+      "Rounded off"
     ],
     "correct": 2,
-    "explanation": "To solve for $w$, you must multiply both sides by $t$, which gives $w = P \\cdot t$."
+    "explanation": "The exponent indicates the number of places the decimal point is moved, with the sign determining the direction."
   },
   {
     "id": 10,
-    "question": "Derive the formula for mass $(m)$ from the Potential Energy formula, $PE = mgh$.",
+    "question": "Calculate: $(2.1 \\times 10^3) + (5.2 \\times 10^3)$.",
     "options": [
-      "$m = PE - gh$",
-      "$m = \\frac{PE}{gh}$",
-      "$m = \\frac{gh}{PE}$",
-      "$m = PE + gh$"
+      "$7.3 \\times 10^6$",
+      "$7.3 \\times 10^3$",
+      "$3.1 \\times 10^3$",
+      "$7.3$"
     ],
     "correct": 1,
-    "explanation": "To derive for mass, you must divide both sides of the equation by $gh$, resulting in $m = \\frac{PE}{gh}$."
+    "explanation": "Since the exponents match, add the coefficients: $2.1 + 5.2 = 7.3$, keeping the exponent $10^3$.",
+    "source": ""
   },
   {
     "id": 11,
-    "question": "From Ohm's Law, $I = \\frac{V}{R}$, derive the formula for Resistance $(R)$.",
+    "question": "Calculate: $(9.2 \\times 10^5) - (7.21 \\times 10^5)$.",
     "options": [
-      "$R = I \\cdot V$",
-      "$R = \\frac{I}{V}$",
-      "$R = \\frac{V}{I}$",
-      "$R = V - I$"
+      "$1.99 \\times 10^5$",
+      "$1.99 \\times 10^{10}$",
+      "$2.01 \\times 10^5$",
+      "$9.9 \\times 10^5$"
     ],
-    "correct": 2,
-    "explanation": "To solve for $R$, you can rearrange the formula to $R = \\frac{V}{I}$."
+    "correct": 0,
+    "explanation": "Subtract the coefficients: $9.2 - 7.21 = 1.99$, keeping the exponent $10^5$."
   },
   {
     "id": 12,
-    "question": "From the formula for Centripetal Force, $F_r = \\frac{mv^2}{r}$, what is the formula to solve for velocity $(v)$?",
+    "question": "To increase the exponent in scientific notation by 1, you must move the decimal point ________.",
     "options": [
-      "$v = \\sqrt{\\frac{F_r \\cdot r}{m}}$",
-      "$v = \\frac{F_r \\cdot r}{m}$",
-      "$v = \\frac{m}{F_r \\cdot r}$",
-      "$v = \\sqrt{F_r \\cdot r \\cdot m}$"
+      "To the right by 1 place",
+      "To the left by 1 place",
+      "To the right by 2 places",
+      "To the left by 2 places"
     ],
-    "correct": 0,
-    "explanation": "To solve for $v$, you first rearrange to $v^2 = \\frac{F_r \\cdot r}{m}$, then take the square root to get $v = \\sqrt{\\frac{F_r \\cdot r}{m}}$."
+    "correct": 1,
+    "explanation": "To increase the exponent, move the decimal point to the left and add to the exponent."
   },
   {
     "id": 13,
-    "question": "What is the formula to solve for the final velocity $(v)$ from the acceleration formula $\\overline{a} = \\frac{v - v_0}{\\Delta t}$?",
+    "question": "Calculate: $(7.4 \\times 10^3) + (3.5 \\times 10^2)$.",
     "options": [
-      "$v = \\overline{a} \\cdot \\Delta t - v_0$",
-      "$v = \\overline{a} \\cdot \\Delta t + v_0$",
-      "$v = \\frac{\\overline{a}}{\\Delta t} + v_0$",
-      "$v = v_0 - \\overline{a} \\cdot \\Delta t$"
+      "$7.75 \\times 10^5$",
+      "$10.9 \\times 10^3$",
+      "$7.75 \\times 10^3$",
+      "$7.435 \\times 10^3$"
     ],
-    "correct": 1,
-    "explanation": "To isolate $v$, you first multiply by $\\Delta t$ and then add $v_0$ to both sides, which gives $v = \\overline{a} \\cdot \\Delta t + v_0$."
+    "correct": 2,
+    "explanation": "Change $3.5 \\times 10^2$ to $0.35 \\times 10^3$ (move left by 1, add 1 to exponent: $-3+1=-2$). Then, $7.4 + 0.35 = 7.75$, so $7.75 \\times 10^3$."
   },
   {
     "id": 14,
-    "question": "If you have the formula for the Volume of a Cylinder, $V = \\pi r^2h$, how would you derive the formula for height $(h)$?",
+    "question": "To add or subtract scientific notations, the first crucial step is to ________.",
     "options": [
-      "$h = V - \\pi r^2$",
-      "$h = \\frac{V}{\\pi r^2}$",
-      "$h = V \\cdot \\pi r^2$",
-      "$h = \\frac{\\pi r^2}{V}$"
+      "Convert to normal notation",
+      "Match the exponents",
+      "Add the coefficients",
+      "Subtract the coefficients"
     ],
     "correct": 1,
-    "explanation": "To solve for height, you simply divide both sides of the equation by $\\pi r^2$."
+    "explanation": "The first step for addition/subtraction is to identify and match the exponents."
   },
   {
     "id": 15,
-    "question": "Which of the following is the correct formula to solve for the gravitational constant $(G)$ from the Law of Universal Gravitation, $F=G\\frac{m_{1}m_{2}}{d^{2}}$?",
+    "question": "Calculate: $(5.3 \\times 10^{-2}) + (3.2 \\times 10^{-3})$.",
     "options": [
-      "$G = F \\cdot m_1m_2d^2$",
-      "$G = \\frac{F \\cdot d^2}{m_1m_2}$",
-      "$G = \\frac{m_1m_2}{F \\cdot d^2}$",
-      "$G = \\frac{F}{m_1m_2d^2}$"
+      "$8.5 \\times 10^{-2}$",
+      "$5.62 \\times 10^{-2}$",
+      "$5.62 \\times 10^{-3}$",
+      "$8.5 \\times 10^{-5}$"
     ],
     "correct": 1,
-    "explanation": "To isolate $G$, you must multiply both sides by $d^2$ and then divide by $m_1m_2$."
+    "explanation": "Change $3.2 \\times 10^{-3}$ to $0.32 \\times 10^{-2}$ (move left by 1, add 1 to exponent: $-3+1=-2$). Then, $5.3 + 0.32 = 5.62$, so $5.62 \\times 10^{-2}$."
   },
   {
     "id": 16,
-    "question": "Convert $5$ kilometers to meters.",
+    "question": "Calculate: $(3 \\times 10^5) (2 \\times 10^4)$.",
     "options": [
-      "$50$ m",
-      "$500$ m",
-      "$5,000$ m",
-      "$0.005$ m"
+      "$6 \\times 10^9$",
+      "$6 \\times 10^{20}$",
+      "$5 \\times 10^9$",
+      "$6 \\times 10^1$"
     ],
-    "correct": 2,
-    "explanation": "There are 1000 meters in 1 kilometer. So, $5$ km * 1000 m/km = $5000$ m."
+    "correct": 0,
+    "explanation": "Multiply the coefficients ($3 \\times 2 = 6$) and add the exponents ($5+4=9$). Result is $6 \\times 10^9$."
   },
   {
     "id": 17,
-    "question": "How many centimeters are in $2.5$ meters?",
+    "question": "Calculate: $(2.31 \\times 10^4) (1.1 \\times 10^6)$.",
     "options": [
-      "$25$ cm",
-      "$250$ cm",
-      "$0.025$ cm",
-      "$2,500$ cm"
+      "$2.541 \\times 10^{10}$",
+      "$2.541 \\times 10^{24}$",
+      "$25.41 \\times 10^{10}$",
+      "$3.41 \\times 10^{10}$"
     ],
-    "correct": 1,
-    "explanation": "There are 100 centimeters in 1 meter. So, $2.5$ m * 100 cm/m = $250$ cm."
+    "correct": 0,
+    "explanation": "Multiply the coefficients ($2.31 \\times 1.1 = 2.541$) and add the exponents ($4+6=10$). Result is $2.541 \\times 10^{10}$."
   },
   {
     "id": 18,
-    "question": "The base unit for mass in the metric system is the gram. How many grams are in $1$ kilogram?",
+    "question": "Calculate: $(9 \\times 10^7) (5 \\times 10^4)$.",
     "options": [
-      "$10$ g",
-      "$100$ g",
-      "$1,000$ g",
-      "$10,000$ g"
+      "$45 \\times 10^{11}$",
+      "$4.5 \\times 10^{11}$",
+      "$4.5 \\times 10^{12}$",
+      "$45 \\times 10^{28}$"
     ],
     "correct": 2,
-    "explanation": "The prefix 'kilo' means 1000, so there are 1000 grams in a kilogram."
+    "explanation": "Multiply the coefficients ($9 \\times 5 = 45$) and add the exponents ($7+4=11$). $45 \\times 10^{11}$ must be adjusted: move decimal left by 1 and add 1 to exponent: $4.5 \\times 10^{12}$."
   },
   {
     "id": 19,
-    "question": "Convert $750$ milliliters to liters.",
+    "question": "Calculate: $(4 \\times 10^6) \\div (2 \\times 10^2)$.",
     "options": [
-      "$7.5$ L",
-      "$75$ L",
-      "$0.75$ L",
-      "$0.075$ L"
+      "$2 \\times 10^3$",
+      "$2 \\times 10^8$",
+      "$2 \\times 10^4$",
+      "$8 \\times 10^4$"
     ],
     "correct": 2,
-    "explanation": "There are 1000 milliliters in 1 liter. So, $750$ mL / 1000 mL/L = $0.75$ L."
+    "explanation": "Divide the coefficients ($4 \\div 2 = 2$) and subtract the exponents ($6-2=4$). Result is $2 \\times 10^4$."
   },
   {
     "id": 20,
-    "question": "What is $15$ millimeters converted to centimeters?",
+    "question": "What operation is performed on the exponents when dividing scientific notations?",
     "options": [
-      "$1.5$ cm",
-      "$150$ cm",
-      "$0.15$ cm",
-      "$1500$ cm"
+      "Add",
+      "Subtract",
+      "Multiply",
+      "Divide"
     ],
-    "correct": 0,
-    "explanation": "There are 10 millimeters in 1 centimeter. So, $15$ mm / 10 mm/cm = $1.5$ cm."
+    "correct": 1,
+    "explanation": "For division, you subtract the exponents."
   },
   {
     "id": 21,
-    "question": "From the formula for Ohm's Law, $I = \\frac{V}{R}$, derive the formula for Voltage $(V)$.",
+    "question": "If the coefficient of a multiplication result is **45** (greater than 10), what adjustment is needed to the exponent?",
     "options": [
-      "$V = I \\cdot R$",
-      "$V = \\frac{R}{I}$",
-      "$V = I - R$",
-      "$V = \\frac{I}{R}$"
+      "Subtract from the exponent and move the decimal left.",
+      "Add to the exponent and move the decimal left.",
+      "Add to the exponent and move the decimal right.",
+      "Subtract from the exponent and move the decimal right."
     ],
-    "correct": 0,
-    "explanation": "To solve for $V$, you must multiply both sides by $R$, which gives $V = I \\cdot R$."
+    "correct": 1,
+    "explanation": "If the coefficient is greater than or equal to 10, move the decimal to the left and add to the exponent."
   },
   {
     "id": 22,
-    "question": "In the Combined Gas Law, $\\frac{P_{1}V_{1}}{T_{1}}=\\frac{P_{2}V_{2}}{T_{2}}$, what is the formula to solve for $V_1$?",
+    "question": "Calculate: $(9.3 \\times 10^{12}) \\div (3 \\times 10^5)$.",
     "options": [
-      "$V_1 = \\frac{P_2V_2T_1}{P_1T_2}$",
-      "$V_1 = \\frac{P_1T_1}{P_2V_2T_2}$",
-      "$V_1 = \\frac{P_2T_2}{P_1V_2T_1}$",
-      "$V_1 = P_1T_1 - P_2V_2T_2$"
+      "$3.1 \\times 10^{17}$",
+      "$3.1 \\times 10^{7}$",
+      "$6.3 \\times 10^{7}$",
+      "$3.1 \\times 10^{1.7}$"
     ],
-    "correct": 0,
-    "explanation": "To isolate $V_1$, you multiply both sides by $T_1$ and divide by $P_1$."
+    "correct": 1,
+    "explanation": "Divide coefficients ($9.3 \\div 3 = 3.1$) and subtract exponents ($12-5=7$). Result is $3.1 \\times 10^7$."
   },
   {
     "id": 23,
-    "question": "From the formula for Centripetal Force, $F_r = \\frac{mv^2}{r}$, derive the formula for mass $(m)$.",
+    "question": "In the general formula $N \\times 10^E$, what is $N$ called?",
     "options": [
-      "$m = \\frac{F_r \\cdot r}{v^2}$",
-      "$m = F_r \\cdot r \\cdot v^2$",
-      "$m = \\frac{v^2}{F_r \\cdot r}$",
-      "$m = F_r \\cdot r - v^2$"
+      "Exponent",
+      "Coefficient or Mantissa",
+      "Constant",
+      "Power"
     ],
-    "correct": 0,
-    "explanation": "To isolate $m$, you multiply both sides by $r$ and then divide by $v^2$."
+    "correct": 1,
+    "explanation": "$N$ is the mantissa digit and the coefficient of the notation."
   },
   {
     "id": 24,
-    "question": "What is the formula to solve for displacement $(d)$ from the Law of Universal Gravitation, $F=G\\frac{m_{1}m_{2}}{d^{2}}$?",
+    "question": "Which of the following describes **Significant Figures**?",
     "options": [
-      "$d = \\sqrt{\\frac{G m_1m_2}{F}}$",
-      "$d = \\frac{G m_1m_2}{F}$",
-      "$d = F \\frac{m_1m_2}{G}$",
-      "$d = \\frac{F}{G m_1m_2}$"
+      "The total number of digits in a number.",
+      "Digits that are known with some degree of reliability.",
+      "Only the non-zero digits in a measurement.",
+      "Only the digits after the decimal point."
     ],
-    "correct": 0,
-    "explanation": "To solve for $d$, you must first rearrange to $d^2 = \\frac{G m_1m_2}{F}$, then take the square root of both sides."
+    "correct": 1,
+    "explanation": "Significant figures are the figures/digits that are known with some degree of reliability and contribute to the accuracy and precision of measurements."
   },
   {
     "id": 25,
-    "question": "What are the two components of a triangle that meet at a vertex, forming an angle?",
+    "question": "How many significant figures are in the number 123?",
     "options": [
-      "Sides",
-      "Vertices",
-      "Diagonals",
-      "Altitude"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
-    "correct": 0,
-    "explanation": "The sides of a triangle meet at a vertex."
+    "correct": 2,
+    "explanation": "All non-zero digits are significant. Thus, 123 has 3 significant figures."
   },
   {
     "id": 26,
-    "question": "In a right triangle, the longest side opposite the right angle is called the:",
+    "question": "How many significant figures are in the number 1001?",
     "options": [
-      "Hypotenuse",
-      "Opposite",
-      "Adjacent",
-      "Leg"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
-    "correct": 0,
-    "explanation": "The hypotenuse is the side opposite the right angle in a right triangle."
+    "correct": 3,
+    "explanation": "Zeros between non-zero digits are significant. Thus, 1001 has 4 significant figures."
   },
   {
     "id": 27,
-    "question": "How many degrees do the angles in a triangle sum to?",
+    "question": "How many significant figures are in the number 0.001?",
     "options": [
-      "$90^\\circ$",
-      "$180^\\circ$",
-      "$270^\\circ$",
-      "$360^\\circ$"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
-    "correct": 1,
-    "explanation": "The sum of the angles in any triangle is always 180 degrees."
+    "correct": 0,
+    "explanation": "Leading zeros (zeros before non-zero digits) are not significant; they merely indicate the decimal point location. Thus, 0.001 has 1 significant figure."
   },
   {
     "id": 28,
-    "question": "What is the formula to solve for the final temperature $(T_2)$ from the Combined Gas Law, $\\frac{P_{1}V_{1}}{T_{1}}=\\frac{P_{2}V_{2}}{T_{2}}$?",
+    "question": "How many significant figures are in the number 3,500?",
     "options": [
-      "$T_2 = \\frac{P_2V_2T_1}{P_1V_1}$",
-      "$T_2 = \\frac{P_1V_1}{P_2V_2T_1}$",
-      "$T_2 = \\frac{T_1}{P_1V_1P_2V_2}$",
-      "$T_2 = P_1V_1T_1P_2V_2$"
+      "2",
+      "3",
+      "4",
+      "5"
     ],
     "correct": 0,
-    "explanation": "To isolate $T_2$, you can cross-multiply and then rearrange the terms."
+    "explanation": "Trailing zeros (zeros after non-zero digits) are not significant unless a decimal point is present. Thus, 3,500 has 2 significant figures (3 and 5)."
   },
   {
     "id": 29,
-    "question": "What operation is the opposite of multiplication in the context of formula derivation?",
+    "question": "How many significant figures are in the number 0.00530?",
     "options": [
-      "Addition",
-      "Subtraction",
-      "Division",
-      "Square Root"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct": 2,
-    "explanation": "The opposite of multiplication is division."
+    "explanation": "The leading zeros (0.00) are not significant. The trailing zero (0) is significant because a decimal point is present. Thus, 0.00530 has 3 significant figures (5, 3, and 0)."
   },
   {
     "id": 30,
-    "question": "From the formula for Coulomb's Law, $F=\\frac{kq_{1}q_{2}}{r^{2}}$, what is the formula to solve for the radius $(r)$?",
+    "question": "What is the result of $10.1 + 7.43$ rounded according to the rules for significant figures in addition/subtraction?",
     "options": [
-      "$r = \\sqrt{\\frac{kq_1q_2}{F}}$",
-      "$r = \\frac{kq_1q_2}{F}$",
-      "$r = F \\cdot kq_1q_2$",
-      "$r = \\frac{F}{kq_1q_2}$"
+      "17.53",
+      "17.5",
+      "18",
+      "17.530"
     ],
-    "correct": 0,
-    "explanation": "To solve for $r$, you rearrange the formula to $r^2 = \\frac{kq_1q_2}{F}$ and then take the square root."
+    "correct": 1,
+    "explanation": "In addition/subtraction, the answer must be rounded to the fewest number of decimal places. $10.1$ has 1 decimal place, and $7.43$ has 2. The sum $17.53$ is rounded to 1 decimal place, giving 17.5."
   },
   {
     "id": 31,
-    "question": "What is the unit of Force in the SI system, which is a derived quantity?",
+    "question": "What is the result of $4.93 \\times 6.027$ rounded according to the rules for significant figures in multiplication/division?",
     "options": [
-      "Joule",
-      "Pascal",
-      "Newton",
-      "Watt"
+      "29.71311",
+      "29.71",
+      "29.7",
+      "30"
     ],
     "correct": 2,
-    "explanation": "The unit for Force is the Newton."
+    "explanation": "In multiplication/division, the answer must be rounded to the fewest number of significant figures. $4.93$ has 3 sig figs, and $6.027$ has 4. The product $29.71311$ is rounded to 3 significant figures, giving 29.7."
   },
   {
     "id": 32,
-    "question": "Convert $800$ grams to kilograms.",
+    "question": "What is **Accuracy** in the context of measurement?",
     "options": [
-      "$80$ kg",
-      "$8$ kg",
-      "$0.8$ kg",
-      "$0.08$ kg"
+      "The number of decimal places in a measurement.",
+      "The proximity of multiple measurements to one another.",
+      "The proximity of a measurement to a known value.",
+      "The number of significant figures."
     ],
     "correct": 2,
-    "explanation": "To convert grams to kilograms, you divide by 1000. So, $800$ g $\\div$ $1000$ = $0.8$ kg."
+    "explanation": "Accuracy is the proximity of a measurement to a known (accepted) value."
   },
   {
     "id": 33,
-    "question": "A Tangram is a Chinese geometrical puzzle that consists of a square cut into how many pieces?",
+    "question": "What is **Precision** in the context of measurement?",
     "options": [
-      "5",
-      "6",
-      "7",
-      "8"
+      "The proximity of a measurement to a known value.",
+      "The proximity of multiple measurements to one another.",
+      "The total number of digits in a measurement.",
+      "The range of measurements."
     ],
-    "correct": 2,
-    "explanation": "A Tangram is a puzzle with 7 pieces."
+    "correct": 1,
+    "explanation": "Precision is the proximity of multiple measurements to one another."
   },
   {
     "id": 34,
-    "question": "The formula for Acceleration is $\\overline{a}=\\frac{v-v_{0}}{\\Delta t}$. Derive the formula for the initial velocity $(v_0)$.",
+    "question": "The formula for **Absolute Error** ($A_E$) is:",
     "options": [
-      "$v_0 = v - \\overline{a} \\cdot \\Delta t$",
-      "$v_0 = v + \\overline{a} \\cdot \\Delta t$",
-      "$v_0 = \\overline{a} \\cdot \\Delta t - v$",
-      "$v_0 = \\frac{v}{\\overline{a} \\cdot \\Delta t}$"
+      "$A_{E} = O - A$",
+      "$A_{E} = |O| - |A|$",
+      "$A_{E} = |O - A|$",
+      "$A_{E} = (O - A) \\times 100$"
     ],
-    "correct": 0,
-    "explanation": "Rearrange the equation to isolate $v_0$. First, multiply both sides by $\\Delta t$, then subtract $v$ from both sides."
+    "correct": 2,
+    "explanation": "Absolute Error is calculated as the absolute difference between the Observed Value ($O$) and the Accepted Value ($A$)."
   },
   {
     "id": 35,
-    "question": "In the formula for Centripetal Force, $F_r = \\frac{mv^2}{r}$, what does the variable 'r' represent?",
+    "question": "The formula to find the **Percentage of Error** uses the ratio of Absolute Error ($A_E$) to the Accepted Value ($A$) and is multiplied by what?",
     "options": [
-      "Radius of curvature",
-      "Mass of the object",
-      "Velocity of the object",
-      "Force"
+      "10",
+      "100",
+      "1000",
+      "1"
     ],
-    "correct": 0,
-    "explanation": "In this formula, 'r' represents the radius of the circular path."
+    "correct": 1,
+    "explanation": "Percentage of Error is calculated as $(\\frac{A_E}{A}) \\times 100$."
   },
   {
     "id": 36,
-    "question": "What is the formula to solve for the second charge $(q_2)$ from Coulomb's Law, $F=\\frac{kq_{1}q_{2}}{r^{2}}$?",
+    "question": "How is the **Percentage of Accuracy** calculated once the Percentage of Error is known?",
     "options": [
-      "$q_2 = \\frac{F \\cdot r^2}{k q_1}$",
-      "$q_2 = \\frac{F}{k q_1 r^2}$",
-      "$q_2 = F k q_1 r^2$",
-      "$q_2 = \\frac{k q_1}{F r^2}$"
+      "$100\\% \\times \\text{Percentage of Error\\%}$",
+      "$100\\% - \\text{Percentage of Error\\%}$",
+      "$\\text{Percentage of Error\\%} \\div 100\\%$",
+      "$\\text{Percentage of Error\\%} + 100\\%$"
     ],
-    "correct": 0,
-    "explanation": "To isolate $q_2$, multiply by $r^2$ and then divide by $k q_1$."
+    "correct": 1,
+    "explanation": "Percentage of Accuracy is calculated as $100\\% - \\text{Percentage of Error\\%}$."
   },
   {
     "id": 37,
-    "question": "In the Law of Universal Gravitation, $F=G\\frac{m_{1}m_{2}}{d^{2}}$, what does the variable 'd' represent?",
+    "question": "The formula for **Absolute Deviation** ($A_D$) involves the absolute difference between the Observed Value ($O$) and what other variable?",
     "options": [
-      "Density",
-      "Displacement",
-      "Distance",
-      "Diameter"
+      "Accepted Value ($A$)",
+      "Mean of several measures ($M$)",
+      "Absolute Error ($A_E$)",
+      "Precision ($P$)"
     ],
-    "correct": 2,
-    "explanation": "The variable 'd' in the Law of Universal Gravitation stands for the distance between the two masses."
+    "correct": 1,
+    "explanation": "Absolute Deviation is $A_{D}=|O-M|$, where $M$ is the Mean of several measures."
   },
   {
     "id": 38,
-    "question": "A formula is defined as a set of algebraic symbols representing what?",
+    "question": "If an observed value ($O$) is 5.0 g and the accepted value ($A$) is 5.2 g, what is the Absolute Error ($A_E$)?",
     "options": [
-      "A rule or principle",
-      "A variable",
-      "An experiment",
-      "A prediction"
+      "$0.2$ g",
+      "$-0.2$ g",
+      "$10.2$ g",
+      "$5.0$ g"
     ],
     "correct": 0,
-    "explanation": "A formula is a set of algebraic symbols that represents a mathematical fact, rule, or principle."
+    "explanation": "$A_{E}=|O-A| = |5.0 - 5.2| = |-0.2| = 0.2$ g."
   },
   {
     "id": 39,
-    "question": "The opposite of 'Square Root' in the context of formula derivation is 'Squared'. What is the opposite of 'Addition'?",
+    "question": "If the Absolute Error ($A_E$) is 0.2 and the Accepted Value ($A$) is 5.2, what is the Percentage of Error (rounded to one decimal place)?",
     "options": [
-      "Division",
-      "Multiplication",
-      "Subtraction",
-      "Exponentiation"
+      "$3.8\\%$",
+      "$26\\%$",
+      "$0.038\\%$",
+      "$3.846\\%$"
     ],
-    "correct": 2,
-    "explanation": "The opposite of addition is subtraction."
+    "correct": 0,
+    "explanation": "Percentage of Error $= (\\frac{A_E}{A}) \\times 100 = (\\frac{0.2}{5.2}) \\times 100 \\approx 3.846...\\%$, which rounds to $3.8\\%$."
   },
   {
     "id": 40,
-    "question": "Convert $1000$ meters to kilometers.",
+    "question": "Using the result from the previous question (Percentage of Error = 3.8%), what is the Percentage of Accuracy?",
     "options": [
-      "$1$ km",
-      "$10$ km",
-      "$100$ km",
-      "$0.1$ km"
+      "$96.2\\%$",
+      "$99.62\\%$",
+      "$3.8\\%$",
+      "$103.8\\%$"
     ],
     "correct": 0,
-    "explanation": "Since $1$ km = $1000$ m, then $1000$ m is equal to $1$ km."
+    "explanation": "Percentage of Accuracy $= 100\\% - \\text{Percentage of Error\\%} = 100\\% - 3.8\\% = 96.2\\%$."
   },
   {
     "id": 41,
-    "question": "How many centimeters are in $10$ millimeters?",
+    "question": "If the coefficients in a multiplication of scientific notations are multiplied to be $0.8$, and the format is 'disobeyed' (less than 1), what adjustment is needed?",
     "options": [
-      "$0.1$ cm",
-      "$1$ cm",
-      "$10$ cm",
-      "$100$ cm"
+      "Move the decimal left and add to the exponent.",
+      "Move the decimal right and subtract from the exponent.",
+      "Move the decimal right and add to the exponent.",
+      "No adjustment is needed."
     ],
     "correct": 1,
-    "explanation": "$1$ cm = $10$ mm, so $10$ mm is equal to $1$ cm."
+    "explanation": "If the coefficient is less than 1, move the decimal to the right and subtract from the exponent."
   },
   {
     "id": 42,
-    "question": "What is the symbol for the fundamental quantity 'Luminous Intensity'?",
+    "question": "In multiplication of scientific notation, what operation is performed on the exponents?",
     "options": [
-      "$L$",
-      "$I$",
-      "$I_v$",
-      "$Iv$"
+      "Subtraction",
+      "Addition",
+      "Multiplication",
+      "Division"
     ],
-    "correct": 2,
-    "explanation": "The symbol for Luminous Intensity is $I_v$."
+    "correct": 1,
+    "explanation": "For multiplication, you add the exponents."
   },
   {
     "id": 43,
-    "question": "The unit 'Pascal' is used for which derived quantity?",
+    "question": "The exponent ($E$) in $N \\times 10^E$ in scientific notation is also known as the ________.",
     "options": [
-      "Force",
-      "Pressure",
+      "Mantissa",
+      "Coefficient",
       "Power",
-      "Energy"
+      "Base"
     ],
-    "correct": 1,
-    "explanation": "The Pascal (Pa) is the unit for Pressure."
+    "correct": 2,
+    "explanation": "The exponent is referred to as $E$, which represents the power of 10."
   },
   {
     "id": 44,
-    "question": "What is the formula to solve for the second mass ($m_2$) from the Law of Universal Gravitation, $F=G\\frac{m_{1}m_{2}}{d^{2}}$?",
+    "question": "When performing multiplication/division with significant figures, the final answer must be rounded to the fewest number of ________.",
     "options": [
-      "$m_2 = \\frac{F d^2}{G m_1}$",
-      "$m_2 = G F d^2 m_1$",
-      "$m_2 = \\frac{G m_1}{F d^2}$",
-      "$m_2 = \\frac{F}{G m_1 d^2}$"
+      "Decimal places",
+      "Significant figures",
+      "Whole numbers",
+      "Trailing zeros"
     ],
-    "correct": 0,
-    "explanation": "To isolate $m_2$, you multiply by $d^2$ and divide by $G m_1$."
+    "correct": 1,
+    "explanation": "The rule for multiplication or division is to use the fewest number of significant figures."
   },
   {
     "id": 45,
-    "question": "What is the formula to solve for the final velocity ($v$) from the Law of Conservation of Momentum, $m_1v_1 + m_2v_2 = m_1{v_1}' + m_2{v_2}'$?",
+    "question": "When performing addition/subtraction with significant figures, the final answer must be rounded to the fewest number of ________.",
     "options": [
-      "$v_2' = \\frac{m_1v_1 + m_2v_2 - m_1v_1'}{m_2}$",
-      "$v_2' = m_1v_1 + m_2v_2 - m_1v_1' - m_2$",
-      "$v_2' = \\frac{m_1v_1 + m_2v_2 + m_1v_1'}{m_2}$",
-      "$v_2' = \\frac{m_2}{m_1v_1 + m_2v_2 - m_1v_1'}$"
-    ],
-    "correct": 0,
-    "explanation": "To isolate the final velocity of the second mass, you subtract $m_1v_1'$ from both sides and then divide the entire expression by $m_2$."
-  },
-  {
-    "id": 46,
-    "question": "In the Combined Gas Law, $\\frac{P_{1}V_{1}}{T_{1}}=\\frac{P_{2}V_{2}}{T_{2}}$, what is the formula to solve for $T_1$?",
-    "options": [
-      "$T_1 = \\frac{P_1V_1 T_2}{P_2V_2}$",
-      "$T_1 = \\frac{P_2V_2}{P_1V_1 T_2}$",
-      "$T_1 = \\frac{P_1V_1P_2V_2}{T_2}$",
-      "$T_1 = P_1V_1 - P_2V_2 + T_2$"
-    ],
-    "correct": 0,
-    "explanation": "To isolate $T_1$, you rearrange the equation to $T_1 = \\frac{P_1V_1 T_2}{P_2V_2}$."
-  },
-  {
-    "id": 47,
-    "question": "What is the unit for the derived quantity 'Velocity'?",
-    "options": [
-      "$m/s$",
-      "$m/s^2$",
-      "$km/h$",
-      "Both A and C are correct"
-    ],
-    "correct": 3,
-    "explanation": "The SI unit for velocity is meters per second ($m/s$), but kilometers per hour ($km/h$) is also a valid unit of velocity."
-  },
-  {
-    "id": 48,
-    "question": "What is the formula for Potential Energy ($PE$)?",
-    "options": [
-      "$PE = \\frac{1}{2}mv^2$",
-      "$PE = mgh$",
-      "$PE = Fd$",
-      "$PE = \\frac{1}{2}kx^2$"
+      "Significant figures",
+      "Decimal places",
+      "Whole numbers",
+      "Non-zero digits"
     ],
     "correct": 1,
-    "explanation": "The formula for gravitational potential energy is $PE = mgh$, where m is mass, g is acceleration due to gravity, and h is height."
-  },
-  {
-    "id": 49,
-    "question": "How do you derive the formula for Force ($F$) from the formula for Pressure, $P=\\frac{F}{A}$?",
-    "options": [
-      "$F = P/A$",
-      "$F = P-A$",
-      "$F = P \\cdot A$",
-      "$F = P+A$"
-    ],
-    "correct": 2,
-    "explanation": "To solve for F, you must multiply both sides by A."
-  },
-  {
-    "id": 50,
-    "question": "Convert $5$ meters to centimeters.",
-    "options": [
-      "$50$ cm",
-      "$500$ cm",
-      "$0.05$ cm",
-      "$5,000$ cm"
-    ],
-    "correct": 1,
-    "explanation": "$1$ meter = $100$ centimeters, so $5$ meters is $5 \\times 100 = 500$ cm."
-  },
-  {
-    "id": 51,
-    "question": "In the formula for Centripetal Force, $F_r = \\frac{mv^2}{r}$, what is the formula to solve for the radius $(r)$?",
-    "options": [
-      "$r = \\frac{mv^2}{F_r}$",
-      "$r = \\frac{F_r}{mv^2}$",
-      "$r = \\sqrt{F_r \\cdot mv^2}$",
-      "$r = F_r - mv^2$"
-    ],
-    "correct": 0,
-    "explanation": "To isolate r, you must multiply both sides by r and then divide by $F_r$."
-  },
-  {
-    "id": 52,
-    "question": "The Law of Conservation of Momentum states that the total momentum of a system remains constant if no external forces act on it. What is its formula?",
-    "options": [
-      "$m_1v_1 + m_2v_2 = m_1{v_1}' + m_2{v_2}'$",
-      "$PE = mgh$",
-      "$F = ma$",
-      "$F = \\frac{G m_1 m_2}{d^2}$"
-    ],
-    "correct": 0,
-    "explanation": "The formula for the Law of Conservation of Momentum is $m_1v_1 + m_2v_2 = m_1{v_1}' + m_2{v_2}'$."
-  },
-  {
-    "id": 53,
-    "question": "From the formula for Acceleration, $\\overline{a}=\\frac{v-v_{0}}{\\Delta t}$, what is the formula to solve for the change in time $(\\Delta t)$?",
-    "options": [
-      "$\\Delta t = \\frac{v-v_0}{\\overline{a}}$",
-      "$\\Delta t = \\overline{a}(v-v_0)$",
-      "$\\Delta t = v-v_0-\\overline{a}$",
-      "$\\Delta t = \\frac{\\overline{a}}{v-v_0}$"
-    ],
-    "correct": 0,
-    "explanation": "To solve for $\\Delta t$, you must multiply both sides by $\\Delta t$ and then divide by $\\overline{a}$."
-  },
-  {
-    "id": 54,
-    "question": "The formula for a parallel circuit is $\\frac{1}{R_{eq}}=\\frac{1}{R_{1}}+\\frac{1}{R_{2}}+...$. Which of the following is an example of algebraic thinking used for derivation?",
-    "options": [
-      "Applying the square root to an equation.",
-      "Adding a constant to both sides of an equation.",
-      "Subtracting from one side of an equation.",
-      "All of the above."
-    ],
-    "correct": 3,
-    "explanation": "All of these are examples of algebraic manipulation used to derive formulas."
-  },
-  {
-    "id": 55,
-    "question": "What is the term for the longest side of a right-angled triangle?",
-    "options": [
-      "Hypotenuse",
-      "Opposite",
-      "Adjacent",
-      "Leg"
-    ],
-    "correct": 0,
-    "explanation": "The hypotenuse is the side opposite the right angle."
-  },
-  {
-    "id": 56,
-    "question": "How many millimeters are in $2$ centimeters?",
-    "options": [
-      "$2$ mm",
-      "$20$ mm",
-      "$0.2$ mm",
-      "$200$ mm"
-    ],
-    "correct": 1,
-    "explanation": "1 centimeter = 10 millimeters, so $2$ cm $\\times$ $10$ mm/cm = $20$ mm."
-  },
-  {
-    "id": 57,
-    "question": "Which of the following is a fundamental quantity?",
-    "options": [
-      "Area",
-      "Temperature",
-      "Density",
-      "Velocity"
-    ],
-    "correct": 1,
-    "explanation": "Temperature is one of the seven fundamental quantities."
-  },
-  {
-    "id": 58,
-    "question": "What is the unit of 'Power'?",
-    "options": [
-      "Joule",
-      "Newton",
-      "Watt",
-      "Pascal"
-    ],
-    "correct": 2,
-    "explanation": "The unit for Power is the Watt (W)."
-  },
-  {
-    "id": 59,
-    "question": "Convert $100$ grams to kilograms.",
-    "options": [
-      "$0.1$ kg",
-      "$1$ kg",
-      "$10$ kg",
-      "$1000$ kg"
-    ],
-    "correct": 0,
-    "explanation": "$1$ kg = $1000$ g, so $100$ g $\\div 1000 = 0.1$ kg."
-  },
-  {
-    "id": 60,
-    "question": "The Law of Universal Gravitation is $F=G\\frac{m_{1}m_{2}}{d^{2}}$. What is the formula to solve for the first mass ($m_1$)?",
-    "options": [
-      "$m_1 = \\frac{F d^2}{G m_2}$",
-      "$m_1 = \\frac{F G m_2}{d^2}$",
-      "$m_1 = \\frac{F}{G m_2 d^2}$",
-      "$m_1 = \\frac{G d^2}{F m_2}$"
-    ],
-    "correct": 0,
-    "explanation": "To solve for $m_1$, you multiply by $d^2$ and divide by $G m_2$."
-  },
-  {
-    "id": 61,
-    "question": "What is the formula to solve for the second volume ($V_2$) from the Combined Gas Law, $\\frac{P_{1}V_{1}}{T_{1}}=\\frac{P_{2}V_{2}}{T_{2}}$?",
-    "options": [
-      "$V_2 = \\frac{P_1V_1T_2}{P_2T_1}$",
-      "$V_2 = \\frac{P_2T_1}{P_1V_1T_2}$",
-      "$V_2 = P_1V_1T_2 P_2T_1$",
-      "$V_2 = \\frac{T_1P_2}{P_1V_1T_2}$"
-    ],
-    "correct": 0,
-    "explanation": "To isolate $V_2$, you multiply both sides by $T_2$ and divide by $P_2$."
-  },
-  {
-    "id": 62,
-    "question": "How many centimeters are in $10$ meters?",
-    "options": [
-      "$1$ cm",
-      "$10$ cm",
-      "$100$ cm",
-      "$1000$ cm"
-    ],
-    "correct": 3,
-    "explanation": "$1$ meter = $100$ centimeters, so $10$ meters is $10 \\times 100 = 1000$ cm."
-  },
-  {
-    "id": 63,
-    "question": "The Law of Conservation of Momentum applies when what condition is met?",
-    "options": [
-      "Temperature is constant",
-      "No external forces act on the system",
-      "Velocity is constant",
-      "The objects are at rest"
-    ],
-    "correct": 1,
-    "explanation": "The law holds true when there are no external forces acting on the system."
-  },
-  {
-    "id": 64,
-    "question": "In the formula for Ohm's Law, $I = \\frac{V}{R}$, what does the variable 'I' represent?",
-    "options": [
-      "Voltage",
-      "Resistance",
-      "Current",
-      "Power"
-    ],
-    "correct": 2,
-    "explanation": "I represents the current in the circuit."
-  },
-  {
-    "id": 65,
-    "question": "Convert $5$ liters to milliliters.",
-    "options": [
-      "$50$ ml",
-      "$500$ ml",
-      "$5,000$ ml",
-      "$0.005$ ml"
-    ],
-    "correct": 2,
-    "explanation": "$1$ liter = $1000$ milliliters, so $5$ L $\\times 1000$ ml/L = $5000$ ml."
-  },
-  {
-    "id": 66,
-    "question": "From the formula for Power, $P=\\frac{w}{t}$, derive the formula for work ($w$).",
-    "options": [
-      "$w = P \\cdot t$",
-      "$w = \\frac{P}{t}$",
-      "$w = t - P$",
-      "$w = P+t$"
-    ],
-    "correct": 0,
-    "explanation": "To solve for work, you must multiply both sides by time."
-  },
-  {
-    "id": 67,
-    "question": "What is the formula to solve for the second pressure ($P_2$) from the Combined Gas Law, $\\frac{P_{1}V_{1}}{T_{1}}=\\frac{P_{2}V_{2}}{T_{2}}$?",
-    "options": [
-      "$P_2 = \\frac{P_1V_1T_2}{V_2T_1}$",
-      "$P_2 = \\frac{V_2T_1}{P_1V_1T_2}$",
-      "$P_2 = P_1V_1T_2V_2T_1$",
-      "$P_2 = \\frac{T_1V_2}{P_1V_1T_2}$"
-    ],
-    "correct": 0,
-    "explanation": "To isolate $P_2$, you must multiply both sides by $T_2$ and divide by $V_2$."
-  },
-  {
-    "id": 68,
-    "question": "A quantity that has both magnitude and direction is called a:",
-    "options": [
-      "Scalar quantity",
-      "Vector quantity",
-      "Fundamental quantity",
-      "Derived quantity"
-    ],
-    "correct": 1,
-    "explanation": "A vector quantity is defined by both its magnitude and its direction."
-  },
-  {
-    "id": 69,
-    "question": "From the formula for Acceleration, $\\overline{a}=\\frac{v-v_{0}}{\\Delta t}$, what is the formula to solve for the final velocity ($v$)?",
-    "options": [
-      "$v = \\overline{a}\\Delta t + v_0$",
-      "$v = \\overline{a}\\Delta t - v_0$",
-      "$v = \\frac{\\overline{a}}{\\Delta t} + v_0$",
-      "$v = \\frac{v_0}{\\overline{a}\\Delta t}$"
-    ],
-    "correct": 0,
-    "explanation": "To solve for $v$, you must multiply both sides by $\\Delta t$ and then add $v_0$."
-  },
-  {
-    "id": 70,
-    "question": "What is the formula to solve for the radius ($r$) from the formula for Centripetal Force, $F_r = \\frac{mv^2}{r}$?",
-    "options": [
-      "$r = \\frac{F_r}{mv^2}$",
-      "$r = \\frac{mv^2}{F_r}$",
-      "$r = F_r \\cdot mv^2$",
-      "$r = F_r + mv^2$"
-    ],
-    "correct": 1,
-    "explanation": "To solve for $r$, you can rearrange the formula to $r = \\frac{mv^2}{F_r}$."
-  },
-  {
-    "id": 71,
-    "question": "The Law of Universal Gravitation is $F=G\\frac{m_{1}m_{2}}{d^{2}}$. What is the formula to solve for the distance ($d$)?",
-    "options": [
-      "$d = \\sqrt{\\frac{G m_1 m_2}{F}}$",
-      "$d = \\frac{G m_1 m_2}{F}$",
-      "$d = \\frac{F}{G m_1 m_2}$",
-      "$d = \\frac{G m_1 m_2}{\\sqrt{F}}$"
-    ],
-    "correct": 0,
-    "explanation": "To solve for $d$, you rearrange to $d^2 = \\frac{G m_1 m_2}{F}$ and then take the square root."
-  },
-  {
-    "id": 72,
-    "question": "Which of the following is a derived quantity?",
-    "options": [
-      "Length",
-      "Time",
-      "Velocity",
-      "Mass"
-    ],
-    "correct": 2,
-    "explanation": "Velocity is a derived quantity, calculated from length and time."
-  },
-  {
-    "id": 73,
-    "question": "The unit for Force is 'Newton'. What is its expression in terms of fundamental quantities?",
-    "options": [
-      "$kg \\cdot m/s$",
-      "$kg \\cdot m/s^2$",
-      "$kg/m \\cdot s$",
-      "$kg/m \\cdot s^2$"
-    ],
-    "correct": 1,
-    "explanation": "Newton is a derived unit of force, which can be expressed as $kg \\cdot m/s^2$."
-  },
-  {
-    "id": 74,
-    "question": "What is the unit of 'Potential Energy'?",
-    "options": [
-      "Newton",
-      "Watt",
-      "Joule",
-      "Pascal"
-    ],
-    "correct": 2,
-    "explanation": "The unit for energy (including potential energy) is the Joule (J)."
-  },
-  {
-    "id": 75,
-    "question": "The formula for the Area of a rectangle is 'Length x Width'. How is 'Area' classified?",
-    "options": [
-      "Fundamental Quantity",
-      "Derived Quantity",
-      "Scalar Quantity",
-      "Vector Quantity"
-    ],
-    "correct": 1,
-    "explanation": "Area is a derived quantity, as it is a combination of two fundamental quantities (length and width)."
-  },
-  {
-    "id": 76,
-    "question": "What is the formula to solve for the first charge ($q_1$) from Coulomb's Law, $F=\\frac{kq_{1}q_{2}}{r^{2}}$?",
-    "options": [
-      "$q_1 = \\frac{F r^2}{k q_2}$",
-      "$q_1 = F k q_2 r^2$",
-      "$q_1 = \\frac{k q_2}{F r^2}$",
-      "$q_1 = F-k q_2-r^2$"
-    ],
-    "correct": 0,
-    "explanation": "To isolate $q_1$, multiply by $r^2$ and divide by $k q_2$."
-  },
-  {
-    "id": 77,
-    "question": "How many meters are in a centimeter?",
-    "options": [
-      "$100$ m",
-      "$10$ m",
-      "$0.1$ m",
-      "$0.01$ m"
-    ],
-    "correct": 3,
-    "explanation": "1 meter = 100 centimeters, so 1 centimeter = 0.01 meters."
-  },
-  {
-    "id": 78,
-    "question": "In the Combined Gas Law, $\\frac{P_{1}V_{1}}{T_{1}}=\\frac{P_{2}V_{2}}{T_{2}}$, what is the formula to solve for the initial pressure ($P_1$)?",
-    "options": [
-      "$P_1 = \\frac{P_2V_2T_1}{V_1T_2}$",
-      "$P_1 = \\frac{V_1T_2}{P_2V_2T_1}$",
-      "$P_1 = P_2V_2T_1V_1T_2$",
-      "$P_1 = \\frac{V_1}{T_1P_2V_2T_2}$"
-    ],
-    "correct": 0,
-    "explanation": "To solve for $P_1$, you must multiply both sides by $T_1$ and divide by $V_1$."
-  },
-  {
-    "id": 79,
-    "question": "Which of the following describes the process of formula derivation?",
-    "options": [
-      "It involves guesswork to rearrange variables.",
-      "It requires a computer to solve equations.",
-      "It involves considering opposite operations to isolate a variable.",
-      "It is a complex process with no clear rules."
-    ],
-    "correct": 2,
-    "explanation": "Formula derivation involves using opposite algebraic operations to isolate the desired variable."
-  },
-  {
-    "id": 80,
-    "question": "What is the formula to solve for the second volume ($V_2$) from the Combined Gas Law, $\\frac{P_{1}V_{1}}{T_{1}}=\\frac{P_{2}V_{2}}{T_{2}}$?",
-    "options": [
-      "$V_2 = \\frac{P_1V_1T_2}{P_2T_1}$",
-      "$V_2 = \\frac{P_2T_1}{P_1V_1T_2}$",
-      "$V_2 = P_1V_1T_2 P_2T_1$",
-      "$V_2 = \\frac{T_1P_2}{P_1V_1T_2}$"
-    ],
-    "correct": 0,
-    "explanation": "To isolate $V_2$, you multiply both sides by $T_2$ and divide by $P_2$."
-  },
-  {
-    "id": 81,
-    "question": "The unit for 'Acceleration' is '$m/s^2$'. How is 'Acceleration' classified?",
-    "options": [
-      "Fundamental Quantity",
-      "Derived Quantity",
-      "Scalar Quantity",
-      "Vector Quantity"
-    ],
-    "correct": 1,
-    "explanation": "Acceleration is a derived quantity, as it is a combination of length and time."
+    "explanation": "The rule for addition or subtraction is to use the fewest number of decimal places."
   }
 ];
 
