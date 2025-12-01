@@ -4039,8 +4039,8 @@ const generalPhysicsQuestions = [
     "options": [
       "$1.23 \\times 10^{-3}$",
       "$12.3 \\times 10^2$",
-      "$1.23 \\times 10^3$",
-      "$1.230 \\times 10^3$"
+      "$123. \\times 10^3$",
+      "$1.23 \\times 10^3$"
     ],
     "correct": 3,
     "explanation": "Move the decimal point 3 places to the left to get a mantissa of 1.230, resulting in $1.230 \\times 10^3$. Moving left gives a positive exponent."
