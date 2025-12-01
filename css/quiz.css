@@ -1222,3 +1222,24 @@
         font-size: 0.8rem;
     }
 }
+
+/* Question image styling */
+.question-image {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+}
+
+.question-image-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.question-image-caption {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}

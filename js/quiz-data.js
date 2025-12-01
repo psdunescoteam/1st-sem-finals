@@ -4,6 +4,9 @@ const workImmersionQuestions = [
   {
     "id": 1,
     "question": "Which specific DepEd Order Series dictates the Work Immersion Guidelines?",
+    "image": "images/work-immersion-deped-order.jpg",
+    "imageAlt": "DepEd Order document example",
+    "imageCaption": "Example: DepEd Order No. 30, Series of 2017",
     "options": [
       "DepEd Order No. 20, Series of 2017",
       "DepEd Order No. 30, Series of 2017",
@@ -4056,15 +4059,16 @@ const generalPhysicsQuestions = [
   },
   {
     "id": 5,
-    "question": "Convert $6.532 \\times 10^2$ from scientific notation to normal notation.",
+    "question": "Which of the follow is true for the picture shown below?",
+    "image": "images/Physics/Physics 1.png",
     "options": [
-      "6532",
-      "0.06532",
-      "653.2",
-      "65.32"
+      "It is accurate and precise.",
+      "It is not accurate but is precise.",
+      "It is accurate but not precise.",
+      "It is not accurate nor is it precise."
     ],
-    "correct": 2,
-    "explanation": "The positive exponent ($+2$) means moving the decimal 2 places to the right, resulting in 653.2."
+    "correct": 1,
+    "explanation": "The image shows that it is not accurate (not close to the middle) but is precise (the points are close to each other)."
   },
   {
     "id": 6,

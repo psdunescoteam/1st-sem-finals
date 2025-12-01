@@ -254,6 +254,49 @@ class QuizSystem {
         document.getElementById('question-num').textContent = `Question ${this.currentQuestionIndex + 1}`;
         document.getElementById('question-text').innerHTML = question.question;
         document.getElementById('current-question').textContent = this.currentQuestionIndex + 1;
+
+        // Remove any previous question images
+        const previousImages = document.querySelectorAll('.question-image');
+        previousImages.forEach(imgEl => {
+            if (imgEl && imgEl.parentNode) imgEl.parentNode.removeChild(imgEl);
+        });
+
+        // If the question includes an image, render it above the options
+        // Supported properties on question object: `image` (string URL/path),
+        // `imageAlt` (optional alt text), `imageCaption` (optional caption text)
+        if (question.image) {
+            try {
+                const questionCard = document.querySelector('.question-card') || document.getElementById('question-container') || document.body;
+
+                const figure = document.createElement('figure');
+                figure.className = 'question-image';
+
+                const img = document.createElement('img');
+                img.src = question.image;
+                img.alt = question.imageAlt || `Question ${this.currentQuestionIndex + 1} image`;
+                img.loading = 'lazy';
+                img.className = 'question-image-img';
+
+                figure.appendChild(img);
+
+                if (question.imageCaption) {
+                    const figcap = document.createElement('figcaption');
+                    figcap.className = 'question-image-caption';
+                    figcap.textContent = question.imageCaption;
+                    figure.appendChild(figcap);
+                }
+
+                // Insert the image figure after the question text if possible
+                const questionTextEl = document.getElementById('question-text');
+                if (questionTextEl && questionTextEl.parentNode) {
+                    questionTextEl.parentNode.insertBefore(figure, questionTextEl.nextSibling);
+                } else {
+                    questionCard.insertBefore(figure, questionCard.firstChild);
+                }
+            } catch (err) {
+                console.error('Error rendering question image:', err);
+            }
+        }
         
         // Add or update bookmark button
         this.renderBookmarkButton();
