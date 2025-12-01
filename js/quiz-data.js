@@ -4065,7 +4065,7 @@ const generalPhysicsQuestions = [
       "It is accurate and precise.",
       "It is not accurate but is precise.",
       "It is accurate but not precise.",
-      "It is not accurate nor is it precise."
+      "It is not accurate nor precise."
     ],
     "correct": 1,
     "explanation": "The image shows that it is not accurate (not close to the middle) but is precise (the points are close to each other)."
