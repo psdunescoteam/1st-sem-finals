@@ -4059,7 +4059,7 @@ const generalPhysicsQuestions = [
   },
   {
     "id": 5,
-    "question": "Which of the follow is true for the picture shown below?",
+    "question": "Which of the following is true for the picture shown below?",
     "image": "images/Physics/Physics 1.png",
     "options": [
       "It is accurate and precise.",
