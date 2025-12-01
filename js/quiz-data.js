@@ -3709,301 +3709,305 @@ const generalMathematicsQuestions = [
 const physicalEducationQuestions = [
   {
     "id": 1,
-    "question": "The ability to perform daily tasks with ease without becoming tired and with extra energy for leisure activities is the definition of:",
+    "question": "What is the fastest swimming stroke, also known as the Front Crawl?",
     "options": [
-      "Physical Activity",
-      "Physical Fitness",
-      "Competitive Sports",
-      "Exercise and Fitness"
+      "Breaststroke",
+      "Backstroke",
+      "Freestyle",
+      "Butterfly"
     ],
-    "correct": 1,
-    "explanation": "Physical Fitness is defined as the ability to perform daily tasks with ease without becoming tired and with extra energy for leisure activities."
+    "correct": 2,
+    "explanation": "Freestyle (or Front Crawl) is known as the fastest and most efficient swimming stroke used in competition."
   },
   {
     "id": 2,
-    "question": "Which of the following is an example of a \"Home & Occupational\" physical activity?",
+    "question": "Which swimming stroke is characterized by simultaneous arm movements followed by a frog-like kick?",
     "options": [
-      "Bowling",
-      "Soccer",
-      "Gardening",
-      "Yoga"
+      "Butterfly",
+      "Backstroke",
+      "Front Crawl",
+      "Breaststroke"
     ],
-    "correct": 2,
-    "explanation": "Gardening is a home and occupational physical activity as it involves physical work done at home or as part of household maintenance."
+    "correct": 3,
+    "explanation": "The Breaststroke is characterized by simultaneous arm movements and a frog-like kick."
   },
   {
     "id": 3,
-    "question": "This health-related component of fitness is the amount of fat mass compared to lean muscle mass, bone, and organs.",
+    "question": "What swimming stroke is shown below?",
+    "image": "images/PE/PE 2.png",
     "options": [
-      "Muscular Strength",
-      "Body Composition",
-      "Flexibility",
-      "Cardiovascular Endurance"
+      "Backstroke",
+      "Breaststroke",
+      "Front Crawl",
+      "Butterfly"
     ],
     "correct": 1,
-    "explanation": "Body Composition refers to the proportion of fat mass compared to lean muscle mass, bone, and organs in the body."
+    "explanation": "Breaststroke is characterized the image shown above."
   },
   {
     "id": 4,
-    "question": "The ability of the muscles to perform a long period of repetitive muscle contractions is known as:",
+    "question": "Which kick movement is primarily used in the Freestyle (Front Crawl) stroke?",
     "options": [
-      "Muscular Strength",
-      "Muscular Endurance",
-      "Flexibility",
-      "Body Composition"
+      "Scissors kick",
+      "Dolphin kick",
+      "Frog-like kick",
+      "Flutter kick"
     ],
-    "correct": 1,
-    "explanation": "Muscular Endurance is the ability of muscles to perform repetitive contractions over an extended period without fatigue."
+    "correct": 3,
+    "explanation": "The Freestyle stroke uses the Flutter kick movement."
   },
   {
     "id": 5,
-    "question": "The ability of the heart, lungs, and blood vessels to supply oxygen to the body during physical activity is called:",
+    "question": "The **Backstroke** is characterized by what type of arm movement?",
     "options": [
-      "Flexibility",
-      "Cardiovascular Endurance",
-      "Muscular Strength",
-      "Body Composition"
+      "Simultaneous pull-and-recovery",
+      "Alternate pull underwater, recovery above water",
+      "Pull from the hip to overhead only",
+      "Pull from overhead to the hip only"
     ],
     "correct": 1,
-    "explanation": "Cardiovascular Endurance (also called cardiorespiratory endurance) is the ability of the heart, lungs, and blood vessels to deliver oxygen to working muscles during sustained physical activity."
+    "explanation": "Backstroke uses alternate arm movement, where one pulls underwater from overhead to the hip, while the other recovers above water from the hip to overhead."
   },
   {
     "id": 6,
-    "question": "What specific test measures a person's flexibility?",
+    "question": "The **Butterfly** stroke is known for which characteristic kick movement?",
     "options": [
-      "Stork Balance Stand Test",
-      "Sit & Reach Test",
-      "Push-up Test",
-      "Shuttle Run"
+      "Flutter kick",
+      "Whip kick",
+      "Undulating dolphin kick",
+      "Scissor kick"
     ],
-    "correct": 1,
-    "explanation": "The Sit & Reach Test is specifically designed to measure flexibility, particularly of the hamstrings and lower back."
+    "correct": 2,
+    "explanation": "The Butterfly technique is characterized by simultaneous arm movement and the undulating dolphin kick."
   },
   {
     "id": 7,
-    "question": "Which of the following is a health-related component of fitness?",
+    "question": "What challenging swimming technique is characterized by simultaneous arm movement and an undulating dolphin kick?",
     "options": [
-      "Agility",
-      "Power",
-      "Balance",
-      "Flexibility"
+      "Front Crawl",
+      "Backstroke",
+      "Breaststroke",
+      "Butterfly"
     ],
     "correct": 3,
-    "explanation": "Flexibility is one of the five health-related components of fitness. The others are cardiovascular endurance, muscular strength, muscular endurance, and body composition."
+    "explanation": "The Butterfly stroke is described as a challenging swimming technique."
   },
   {
     "id": 8,
-    "question": "The ability to use the senses with the body parts to perform motor tasks smoothly and accurately is defined as:",
+    "question": "What swimming technique is shown below?",
+    "image": "images/PE/PE 1.png",
     "options": [
-      "Balance",
-      "Coordination",
-      "Agility",
-      "Speed"
+      "Streamline",
+      "Diving",
+      "Sculling",
+      "Flip Turn"
     ],
-    "correct": 1,
-    "explanation": "Coordination is the ability to use the senses together with body parts to perform motor tasks smoothly and accurately."
+    "correct": 0,
+    "explanation": "The swimming technique shown in the image above is Streamline."
   },
   {
     "id": 9,
-    "question": "A person's ability to respond to changing external motives is known as:",
+    "question": "What swimming skill involves curling your body forward toward the water until you fall in, headfirst?",
     "options": [
-      "Reaction Time",
-      "Power",
-      "Speed",
-      "Agility"
+      "Flip Turn",
+      "Streamline",
+      "Diving",
+      "Front Crawl"
     ],
-    "correct": 0,
-    "explanation": "Reaction Time is the ability to respond quickly to changing external stimuli or motives."
+    "correct": 2,
+    "explanation": "Diving involves curling your body forward toward the water until you fall in, headfirst."
   },
   {
     "id": 10,
-    "question": "The Standing Long Jump is a test used to measure which skill-related component of fitness?",
+    "question": "What is the body position that minimizes drag and maximizes efficiency, used underwater in every stroke?",
     "options": [
-      "Agility",
-      "Speed",
-      "Power",
-      "Balance"
+      "Sculling",
+      "Flip Turn",
+      "Streamline",
+      "Front Crawl"
     ],
     "correct": 2,
-    "explanation": "The Standing Long Jump test measures Power, which is the ability to exert maximum force in the shortest time possible."
+    "explanation": "Streamline is a body position that minimizes drag and maximizes efficiency, and is used underwater in every stroke."
   },
   {
     "id": 11,
-    "question": "What test is used to assess a person's balance?",
+    "question": "Which of the following is an alternate name for the Freestyle swimming stroke?",
     "options": [
-      "Sit & Reach Test",
-      "Stick Drop Test",
-      "Stork Balance Stand Test",
-      "40-Meter Sprint"
+      "Butterfly",
+      "Backstroke",
+      "Breaststroke",
+      "Front Crawl"
     ],
-    "correct": 2,
-    "explanation": "The Stork Balance Stand Test is specifically designed to assess a person's static balance ability."
+    "correct": 3,
+    "explanation": "Freestyle is also known as the Front Crawl."
   },
   {
     "id": 12,
-    "question": "According to the F.I.T.T. Principle, the letter \"T\" stands for:",
+    "question": "A turn used in backstroke and freestyle where the swimmer rotates in the water without touching the wall is called a:",
     "options": [
-      "Training",
-      "Time and Type",
-      "Technique",
-      "Tempo"
+      "Diving Turn",
+      "Breaststroke Turn",
+      "Flip Turn",
+      "Butterfly Turn"
     ],
-    "correct": 1,
-    "explanation": "In the F.I.T.T. Principle, the two T's stand for Time (duration of exercise) and Type (kind of exercise performed)."
+    "correct": 2,
+    "explanation": "The Flip Turn is used in backstroke and freestyle events where the swimmer rotates in the water without touching the wall."
   },
   {
     "id": 13,
-    "question": "How often you should do an exercise refers to which component of the F.I.T.T. Principle?",
+    "question": "What is the length of an Olympic-sized pool in meters?",
     "options": [
-      "Frequency",
-      "Intensity",
-      "Time",
-      "Type"
+      "25 meters",
+      "50 meters",
+      "100 meters",
+      "2 meters"
     ],
-    "correct": 0,
-    "explanation": "Frequency refers to how often you should perform an exercise or how many times per week you exercise."
+    "correct": 1,
+    "explanation": "An Olympic-sized pool is 50 meters in length."
   },
   {
     "id": 14,
-    "question": "The principle of exercise that states training must be specific to a sport or activity is called:",
+    "question": "How many lanes does an Olympic-sized pool have in total?",
     "options": [
-      "Overload",
-      "Progression",
-      "Specificity",
-      "Reversibility"
+      "6",
+      "8",
+      "10",
+      "4"
     ],
-    "correct": 2,
-    "explanation": "The Principle of Specificity states that training must be specific to the particular sport or physical activity to improve performance in that area."
+    "correct": 1,
+    "explanation": "The Olympic-sized pool has 8 lanes in total."
   },
   {
     "id": 15,
-    "question": "If a person reduces or stops their exercise intensity, the benefits they have gained may be lost quickly. This refers to the principle of:",
+    "question": "What is the shortest distance swimming event in competitive swimming?",
     "options": [
-      "Adaptation",
-      "Progression",
-      "Individual Differences",
-      "Reversibility"
+      "100 meters",
+      "25 meters",
+      "50 meters",
+      "200 meters"
     ],
-    "correct": 3,
-    "explanation": "The Principle of Reversibility states that fitness gains are lost when training intensity is reduced or stopped (use it or lose it)."
+    "correct": 2,
+    "explanation": "The shortest distance swimming event in competitive swimming is 50 meters."
   },
   {
     "id": 16,
-    "question": "What principle of exercise states that training must be raised to a higher level than normal to create an extra demand on the body?",
+    "question": "In a competitive swimming event, how is the champion determined?",
     "options": [
-      "Progression",
-      "Specificity",
-      "Overload",
-      "Adaptation"
+      "The swimmer with the most efficient technique",
+      "The swimmer with the fastest time",
+      "The swimmer with the fewest disqualifications",
+      "The swimmer who uses the Front Crawl"
     ],
-    "correct": 2,
-    "explanation": "The Principle of Overload states that to improve fitness, training must be raised to a higher level than normal to create additional stress on the body."
+    "correct": 1,
+    "explanation": "The swimmer with the fastest time is regarded as the champion."
   },
   {
     "id": 17,
-    "question": "With continued practice, your body turning a new sport or movement skill into \"second nature\" is an example of which principle?",
+    "question": "A race that consists of all four swimming strokes is called what (for a single person)?",
     "options": [
-      "Progression",
-      "Adaptation",
-      "Specificity",
-      "Reversibility"
+      "Freestyle Relay",
+      "Individual Medley",
+      "Sprint Race",
+      "Long Distance"
     ],
     "correct": 1,
-    "explanation": "The Principle of Adaptation explains how the body adjusts to training stress and makes movements become more natural and efficient with practice."
+    "explanation": "The Individual Medley (1 person) consists of a race with all four strokes."
   },
   {
     "id": 18,
-    "question": "What does the \"T\" in the F.I.T.T. principle stand for regarding what exercise you should do?",
+    "question": "What does a Medley Race (4 people) consist of?",
     "options": [
-      "Time",
-      "Tempo",
-      "Type",
-      "Target"
+      "Only Freestyle and Backstroke",
+      "Only Butterfly and Breaststroke",
+      "All 4 strokes",
+      "Only the fastest stroke"
     ],
     "correct": 2,
-    "explanation": "Type refers to the kind or mode of exercise you should do (aerobic, resistance training, flexibility, etc.)."
+    "explanation": "The Medley Race (4 people) consists of a race with all four strokes."
   },
   {
     "id": 19,
-    "question": "Which test is a measure of muscular endurance?",
+    "question": "Which of the following is considered the most efficient and common of the swimming strokes used in competition?",
     "options": [
-      "Sit-up Test",
-      "Shuttle Run",
-      "Stick Drop Test",
-      "Standing Long Jump"
+      "Breaststroke",
+      "Backstroke",
+      "Freestyle",
+      "Butterfly"
     ],
-    "correct": 0,
-    "explanation": "The Sit-up Test measures muscular endurance of the abdominal muscles by counting how many sit-ups can be performed in a given time period."
+    "correct": 2,
+    "explanation": "Freestyle is the most efficient and common of the swimming strokes used in competition."
   },
   {
     "id": 20,
-    "question": "A person's ability to change the direction of their body in a quick and controlled manner is called:",
+    "question": "What is the width of an Olympic-sized pool in meters?",
     "options": [
-      "Speed",
-      "Reaction Time",
-      "Coordination",
-      "Agility"
+      "50 meters",
+      "164 feet",
+      "25 meters",
+      "8 lanes"
     ],
-    "correct": 3,
-    "explanation": "Agility is the ability to change direction quickly and in a controlled manner while maintaining speed and balance."
+    "correct": 2,
+    "explanation": "An Olympic-sized pool is 25 meters in width."
   },
   {
     "id": 21,
-    "question": "A person's body mass index (BMI) is a measurement used to assess which component of health-related fitness?",
+    "question": "The Breaststroke arm movements are described as:",
     "options": [
-      "Muscular Endurance",
-      "Body Composition",
-      "Flexibility",
-      "Cardiovascular Endurance"
+      "Alternate",
+      "Simultaneous",
+      "Winding",
+      "Descending"
     ],
     "correct": 1,
-    "explanation": "BMI (Body Mass Index) is used to assess body composition by calculating the ratio of weight to height to determine if someone is underweight, normal weight, overweight, or obese."
+    "explanation": "Breaststroke is characterized by simultaneous arm movements."
   },
   {
     "id": 22,
-    "question": "The 40-Meter Sprint is a test for which skill-related component?",
+    "question": "What is the first set of safety skills that beginners learn in swimming?",
     "options": [
-      "Agility",
-      "Speed",
-      "Power",
-      "Balance"
+      "Diving",
+      "Flip Turn",
+      "Sculling",
+      "Treading Water"
     ],
-    "correct": 1,
-    "explanation": "The 40-Meter Sprint test measures Speed, which is the ability to move from one point to another in the shortest time possible."
+    "correct": 2,
+    "explanation": "Sculling is listed as one of the first safety skills beginners learn."
   },
   {
     "id": 23,
-    "question": "The ability of a muscle to exert maximal force is:",
+    "question": "When converting the length of an Olympic-sized pool from meters to feet, what is the length?",
     "options": [
-      "Muscular Strength",
-      "Muscular Endurance",
-      "Flexibility",
-      "Power"
+      "164 feet",
+      "25 feet",
+      "8 feet",
+      "50 feet"
     ],
     "correct": 0,
-    "explanation": "Muscular Strength is the maximum amount of force that a muscle or muscle group can exert in a single effort."
+    "explanation": "An Olympic-sized pool is 50 meters (164 feet) in length."
   },
   {
     "id": 24,
-    "question": "A basketball game is classified under what type of physical activity?",
+    "question": "In the Backstroke, the arm recovers above water from the hip to what position?",
     "options": [
-      "Lifetime",
-      "Fun & Leisure",
-      "Competitive Sports",
-      "Home & Occupational"
+      "To the chest",
+      "To the hip again",
+      "To overhead",
+      "To the knee"
     ],
     "correct": 2,
-    "explanation": "Basketball is classified as a Competitive Sport as it involves organized competition with rules, strategies, and skill development."
+    "explanation": "In the Backstroke, one arm pulls underwater from overhead to the hip, while the other recovers above water from the hip to overhead."
   },
   {
     "id": 25,
-    "question": "The Principle of Individual Differences highlights that each person has a different response to exercise and training.",
+    "question": "The Streamline position is designed to maximize what aspect of a swimmer's movement?",
     "options": [
-      "True",
-      "False"
+      "Splashing",
+      "Visibility",
+      "Efficiency",
+      "Treading"
     ],
-    "correct": 0,
-    "explanation": "True. The Principle of Individual Differences recognizes that people respond differently to exercise and training due to genetics, fitness level, age, and other factors."
+    "correct": 2,
+    "explanation": "Streamline is a body position that minimizes drag and maximizes efficiency."
   }
 ];
 

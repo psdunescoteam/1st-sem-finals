@@ -8,6 +8,20 @@ class QuizSystem {
         // Core quiz state
         this.currentSubject = this.detectCurrentSubject();
         this.questions = this.loadQuestionsForSubject(this.currentSubject);
+
+        // Defensive checks: ensure questions is a valid non-empty array
+        if (!Array.isArray(this.questions) || this.questions.length === 0) {
+            console.error(`QuizSystem: No questions found for subject '${this.currentSubject}'.`, this.questions);
+            // Attempt to fallback to workImmersionQuestions if available
+            if (typeof workImmersionQuestions !== 'undefined' && Array.isArray(workImmersionQuestions)) {
+                console.warn('QuizSystem: Falling back to workImmersionQuestions to avoid blank UI.');
+                this.questions = workImmersionQuestions;
+                this.currentSubject = 'work-immersion';
+            } else {
+                // As a last resort, set an empty array and error out later
+                this.questions = [];
+            }
+        }
         this.currentQuestionIndex = 0;
         this.userAnswers = new Array(this.questions.length).fill(null);
         this.revealedAnswers = new Array(this.questions.length).fill(false);
@@ -114,6 +128,16 @@ class QuizSystem {
      */
     initializeQuiz() {
         this.updateTotalQuestions();
+        if (!this.shuffledQuestions || this.shuffledQuestions.length === 0) {
+            console.error('QuizSystem: No questions available to initialize the quiz UI.');
+            const questionTextEl = document.getElementById('question-text');
+            if (questionTextEl) {
+                questionTextEl.innerHTML = 'No questions available for this subject.';
+            }
+            const optionsContainer = document.getElementById('options-container');
+            if (optionsContainer) optionsContainer.innerHTML = '';
+            return;
+        }
         this.renderCurrentQuestion();
         this.updateProgress();
         this.updateSubmitButton();
@@ -1196,23 +1220,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
     };
     
-    // Check if MathJax is ready, if not wait for it
-    if (typeof MathJax !== 'undefined' && MathJax.startup && MathJax.startup.document) {
-        console.log('MathJax already ready, initializing quiz...');
-        initializeQuizSystem();
-    } else {
-        console.log('Waiting for MathJax to be ready...');
-        // Wait for MathJax to be ready
-        const checkMathJax = () => {
-            if (typeof MathJax !== 'undefined' && MathJax.startup && MathJax.startup.document) {
-                console.log('MathJax is now ready, initializing quiz...');
-                initializeQuizSystem();
-            } else {
-                setTimeout(checkMathJax, 100);
-            }
-        };
-        checkMathJax();
-    }
+    // Initialize the quiz system immediately (MathJax is optional)
+    console.log('Initializing quiz system (MathJax optional)...');
+    initializeQuizSystem();
+
+    // If MathJax is not ready yet, poll for it and render math when available
+    const pollMathJax = () => {
+        if (typeof MathJax !== 'undefined' && MathJax.startup && MathJax.startup.document) {
+            console.log('MathJax ready — performing MathJax typeset.');
+            if (quizSystem && quizSystem.renderMathJax) quizSystem.renderMathJax();
+        } else {
+            setTimeout(pollMathJax, 300);
+        }
+    };
+    pollMathJax();
 });
 
 /**
