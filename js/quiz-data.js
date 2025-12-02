@@ -2914,8 +2914,8 @@ const empowermentTechnologiesQuestions = [
       "Clarity",
       "Contrast"
     ],
-    "correct": 2,
-    "explanation": "Clarity suggests using bullet points and short sentences and following the 6x7 rule (6 lines and 7 words per line)."
+    "correct": 1,
+    "explanation": "Simplicity suggests using bullet points and short sentences and following the 6x7 rule (6 lines and 7 words per line)."
   },
   {
     "id": 37,
