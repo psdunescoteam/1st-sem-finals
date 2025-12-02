@@ -2703,7 +2703,7 @@ const empowermentTechnologiesQuestions = [
   },
   {
     "id": 19,
-    "question": "Which image format is relatively small in file size but does not support transparency?",
+    "question": "Which image format is relatively small in file size and supports transparency?",
     "options": [
       ".GIF",
       ".PNG",
@@ -2711,7 +2711,7 @@ const empowermentTechnologiesQuestions = [
       "CLIP ART"
     ],
     "correct": 0,
-    "explanation": ".GIF (Graphics Interchange Format) images are relatively small in file size but do not support transparency (Note: While later standards of GIF support transparency, the text explicitly states it does not support transparency under the .GIF description, while stating .PNG is capable of displaying transparency. Based on the document, .GIF is the best fit.)"
+    "explanation": ".GIF (Graphics Interchange Format) images are relatively small in file size and supports transparency."
   },
   {
     "id": 20,
