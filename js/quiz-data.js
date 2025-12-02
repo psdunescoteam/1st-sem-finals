@@ -4525,723 +4525,754 @@ const generalPhysicsQuestions = [
 const philosophyQuestions = [
   {
     "id": 1,
-    "question": "According to the reviewer, what is the core idea of 'Reality'?",
+    "question": "According to Karl Jaspers, what is the term for certain situations that are inescapable, inevitable breaks of ordinary patterns of human existence, such as death, suffering, and guilt?",
     "options": [
-      "It is a social construct.",
-      "It is what truly exists, independent of perception.",
-      "It is an illusion created by our minds.",
-      "It is the subjective feelings of an individual."
+      "Perennial Scopes",
+      "Grenzsituation (Limit Situation)",
+      "Tabula Rasa",
+      "Axiological Encounter"
     ],
     "correct": 1,
-    "explanation": "Reality refers to what truly exists—independent of illusion, imagination, or subjective perception."
+    "explanation": "Karl Jaspers described 'Limit Situations' (Grenzsituation) as the inescapable, inevitable breaks from the ordinary patterns of human existence."
   },
   {
     "id": 2,
-    "question": "Which philosophical school believes that reality exists independently of our perceptions?",
+    "question": "In the context of the duality of body and soul, what term refers to the quality of existing as a physical, tangible body?",
     "options": [
-      "Anti-realists",
-      "Empiricists",
-      "Realists",
-      "Structuralists"
+      "Finitude",
+      "Corporeality",
+      "Consciousness",
+      "Impermanence"
     ],
-    "correct": 2,
-    "explanation": "Realists believe that reality exists independently of our perceptions and beliefs."
+    "correct": 1,
+    "explanation": "Corporeality is the state or quality of being a physical body, as opposed to the immaterial nature of the soul."
   },
   {
     "id": 3,
-    "question": "Which of the following philosophers is an example of an Anti-realist?",
+    "question": "Which philosophical theory is based on the idea that human beings are made up of two independent constituents, the body and the mind or soul?",
     "options": [
-      "John Locke",
-      "René Descartes",
-      "Immanuel Kant",
-      "Plato"
+      "Monism",
+      "Existentialism",
+      "Dualism",
+      "Phenomenology"
     ],
     "correct": 2,
-    "explanation": "The reviewer lists Kant and Nietzsche as examples of Anti-realists who argue that reality is shaped by our minds."
+    "explanation": "Dualism is the philosophical theory that posits two independent components—body and mind/soul—make up a human being."
   },
   {
     "id": 4,
-    "question": "According to the document, which philosophical school says reality is known through sensory experience?",
+    "question": "According to Plato's Theory of Forms, where is true knowledge to be found?",
     "options": [
-      "Empiricists",
-      "Rationalists",
-      "Existentialists",
-      "Structuralists"
+      "In the physical world of appearances",
+      "In the realm of eternal ideas or essences",
+      "In the sensory experiences of the body",
+      "In recollecting past lives"
     ],
-    "correct": 0,
-    "explanation": "Empiricists say reality is known through sensory experience, with Locke and Hume as examples."
+    "correct": 1,
+    "explanation": "Plato believed that true knowledge is found in the non-material realm of Forms or essences, which are eternal and true."
   },
   {
     "id": 5,
-    "question": "Which of the following philosophers is an example of a Rationalist?",
+    "question": "For Plato, what is the process of learning, given that the soul pre-existed in the world of forms?",
     "options": [
-      "Jean-Paul Sartre",
-      "John Locke",
-      "Michel Foucault",
-      "Gottfried Leibniz"
+      "Sensation and reflection",
+      "Cognition and experimentation",
+      "Mere remembering or recollecting",
+      "Accumulation of experience"
     ],
-    "correct": 3,
-    "explanation": "The reviewer lists Descartes and Leibniz as examples of Rationalists."
+    "correct": 2,
+    "explanation": "Plato proposed that the soul is immortal and pre-existed in the World of Forms; therefore, learning is just the process of remembering or recollecting what the soul already knew."
   },
   {
     "id": 6,
-    "question": "What kind of reality is described as 'existence that is independent of any consciousness, thoughts, feelings, or perceptions'?",
+    "question": "Which philosopher is associated with the doctrine of 'tabula rasa,' the idea that the mind is a blank slate at birth?",
     "options": [
-      "Subjective reality",
-      "Intersubjective reality",
-      "Objective reality",
-      "Transcendental reality"
+      "Immanuel Kant",
+      "René Descartes",
+      "John Locke",
+      "Thomas Aquinas"
     ],
     "correct": 2,
-    "explanation": "Objective reality is defined as existence that is independent of any consciousness, thoughts, feelings, or perceptions."
+    "explanation": "John Locke advanced the theory of 'tabula rasa' (blank slate), suggesting that all knowledge comes from experience."
   },
   {
     "id": 7,
-    "question": "Which branch of philosophy deals with the study of knowledge and justified belief?",
+    "question": "Which philosopher did not believe in dualism, arguing that the body (matter) and soul (form) are not two separate entities but one being?",
     "options": [
-      "Metaphysics",
-      "Epistemology",
-      "Ethics",
-      "Aesthetics"
+      "Plato",
+      "René Descartes",
+      "Thomas Aquinas",
+      "Karl Jaspers"
     ],
-    "correct": 1,
-    "explanation": "Epistemology is the branch of philosophy that deals with the study of knowledge."
+    "correct": 2,
+    "explanation": "Thomas Aquinas, following Aristotle, rejected dualism, seeing the body and soul as a single, composite being made of matter and form."
   },
   {
     "id": 8,
-    "question": "Which branch of philosophy is concerned with the nature of reality and being?",
+    "question": "To a phenomenologist, consciousness is always directed towards an object. What is the philosophical term for this characteristic?",
     "options": [
-      "Logic",
-      "Epistemology",
-      "Metaphysics",
-      "Political Philosophy"
+      "Autonomy",
+      "Finitude",
+      "Intentionality",
+      "Corporeality"
     ],
     "correct": 2,
-    "explanation": "Metaphysics is the branch of philosophy concerned with the nature of reality and being."
+    "explanation": "The Intentionality of consciousness means that consciousness is always 'of something,' or directed towards an object."
   },
   {
     "id": 9,
-    "question": "The study of moral principles and what is 'good' and 'bad' falls under which branch of philosophy?",
+    "question": "In the Triunity of Man model (Spirit, Soul, Body), which component is described as the 'God-consciousness' and relates a person to God?",
     "options": [
-      "Ethics",
-      "Aesthetics",
-      "Philosophy of Mind",
-      "Logic"
+      "Body",
+      "Soul",
+      "Spirit",
+      "Mind"
     ],
-    "correct": 0,
-    "explanation": "Ethics is the branch of philosophy that studies moral principles."
+    "correct": 2,
+    "explanation": "The Spirit is associated with God-consciousness and relates a human to the divine."
   },
   {
     "id": 10,
-    "question": "Which branch of philosophy is the study of valid reasoning and argumentation?",
+    "question": "Which philosopher is known for the phrase 'Death is nothing to us' because we do not experience it?",
     "options": [
-      "Aesthetics",
-      "Political Philosophy",
-      "Logic",
-      "Ethics"
+      "Socrates",
+      "Jean-Paul Sartre",
+      "Epicurus",
+      "Martin Heidegger"
     ],
     "correct": 2,
-    "explanation": "Logic is the branch of philosophy that is the study of valid reasoning and argumentation."
+    "explanation": "Epicurus argued that death is nothing to fear, as 'when we are, death is not come, and when death is come, we are not.'"
   },
   {
     "id": 11,
-    "question": "Which of the following is the study of the nature of art, beauty, and taste?",
+    "question": "Which existentialist philosopher viewed death as 'absurd,' but believed confronting it can give life freedom and authenticity?",
     "options": [
-      "Epistemology",
-      "Aesthetics",
-      "Ethics",
-      "Metaphysics"
+      "Socrates",
+      "Martin Heidegger",
+      "Epicurus",
+      "Jean-Paul Sartre"
     ],
-    "correct": 1,
-    "explanation": "Aesthetics is the study of the nature of art, beauty, and taste."
+    "correct": 3,
+    "explanation": "Jean-Paul Sartre, an existentialist, saw death as absurd but a factor that pushes one towards authentic existence."
   },
   {
     "id": 12,
-    "question": "Which branch of philosophy studies the nature of the mind, consciousness, and their relationship to the body?",
+    "question": "In Buddhism, what is the term for the ultimate goal—a state beyond birth, death, desires, and suffering—which liberates the individual from the cycle of rebirth?",
     "options": [
-      "Philosophy of Mind",
-      "Political Philosophy",
-      "Epistemology",
-      "Logic"
+      "Karma",
+      "Nirvana",
+      "Anicca",
+      "Samsara"
     ],
-    "correct": 0,
-    "explanation": "Philosophy of Mind studies the nature of the mind, consciousness, and their relationship to the body."
+    "correct": 1,
+    "explanation": "Nirvana is the ultimate goal in Buddhism, a state of liberation from the cycle of suffering and rebirth (Samsara)."
   },
   {
     "id": 13,
-    "question": "In which era was the human person understood in reference to God?",
+    "question": "In the Hindu view of death, what is the moral law of cause and effect, where every action shapes one's future experiences and next birth?",
     "options": [
-      "Cosmocentric Era",
-      "Anthropocentric Era",
-      "Theocentric Era",
-      "Scientific Era"
+      "Moksha",
+      "Dukkha",
+      "Anicca",
+      "Karma"
     ],
-    "correct": 2,
-    "explanation": "The Theocentric Era is where the human person is being studied or understood in reference to God."
+    "correct": 3,
+    "explanation": "Karma, meaning 'action' or 'deed,' is the moral law of cause and effect in Hinduism that dictates one's cycle of rebirth."
   },
   {
     "id": 14,
-    "question": "Thales, Heraclitus, and Parmenides are philosophers from which era?",
+    "question": "According to the scientific definition, what constitutes death?",
     "options": [
-      "The Theocentric Era",
-      "The Cosmocentric Era",
-      "The Anthropocentric Era",
-      "The Modern Period"
+      "The separation of body and spirit",
+      "The cessation of all vital bodily functions",
+      "The irreversible cessation of the functioning of the entire brain",
+      "The final stage of the law of entropy"
     ],
-    "correct": 1,
-    "explanation": "These philosophers are listed under the Cosmocentric Era, which is the Pre-Socratic era."
+    "correct": 2,
+    "explanation": "Science defines death as 'the irreversible cessation of functioning of the entire brain.'"
   },
   {
     "id": 15,
-    "question": "Who is known for the famous phrase, 'I think, therefore I am'?",
+    "question": "Which of the following approaches to the environment affirms its protection only as long as it holds value or serves a purpose for human beings and civilization?",
     "options": [
-      "John Locke",
-      "Immanuel Kant",
-      "René Descartes",
-      "Jean-Paul Sartre"
+      "Axiological Approach",
+      "Virtue Ethics Perspective",
+      "Instrumental Approach",
+      "Sacredness of Environment"
     ],
     "correct": 2,
-    "explanation": "René Descartes is known for this famous phrase, which reveals the human person's existence in his philosophy."
+    "explanation": "The Instrumental Approach views the environment as a means to serve human purpose and utility."
   },
   {
     "id": 16,
-    "question": "Which philosopher believed that the fundamental substance of all things is water?",
+    "question": "Which philosopher used 'doubt' as the basis for proving his own existence, leading to the statement, 'I exist because doubt requires a doubter'?",
     "options": [
-      "Heraclitus",
-      "Thales",
-      "Parmenides",
-      "Socrates"
+      "Immanuel Kant",
+      "Socrates",
+      "René Descartes",
+      "John Locke"
     ],
-    "correct": 1,
-    "explanation": "Thales is a philosopher from the Cosmocentric Era who believed water was the fundamental substance."
+    "correct": 2,
+    "explanation": "René Descartes used systematic doubt to conclude that the act of doubting (thinking) proved his existence: 'I think, therefore I am.'"
   },
   {
     "id": 17,
-    "question": "Heraclitus is known for his philosophy that the world is in a constant state of ______.",
+    "question": "What is the Hindu view on the ultimate goal of life?",
     "options": [
-      "unchanging being",
-      "harmony",
-      "perpetual change",
-      "stasis"
+      "Achieving Nirvana, a state beyond all suffering",
+      "Attaining Moksha, the release of the soul from the endless cycle of reincarnation",
+      "Following the Eightfold Path to liberation",
+      "Living a righteous life to receive a glorified body"
     ],
-    "correct": 2,
-    "explanation": "Heraclitus believed that everything in the world is in a constant state of flux and perpetual change."
+    "correct": 1,
+    "explanation": "Moksha is the ultimate goal of life in Hinduism, representing the soul's liberation from the cycle of reincarnation (Samsara) to become one with Brahman."
   },
   {
     "id": 18,
-    "question": "Parmenides is credited with the concept of 'being' and the idea that reality is ______.",
+    "question": "Which approach to the environment recognizes the environment's intrinsic value, separate from human utility?",
     "options": [
-      "constantly changing",
-      "an illusion",
-      "unchanging and eternal",
-      "perceived through the senses"
+      "Instrumental Approach",
+      "Virtue Ethics Perspective",
+      "Anthropocentric Approach",
+      "Axiological Approach"
     ],
-    "correct": 2,
-    "explanation": "Parmenides focused on the concept of 'being' and argued that reality is unchanging and eternal."
+    "correct": 3,
+    "explanation": "The Axiological Approach recognizes the intrinsic value of the environment, not just its utility to humans."
   },
   {
     "id": 19,
-    "question": "Who is known for the phrase 'An unexamined life is not worth living'?",
+    "question": "According to the Christian perspective, which of the following describes the relationship between Soul and Spirit?<br>I. Soul speaks of a person's inner-life in relation to their own experience (mind, heart, will, imagination).<br>II. Spirit speaks of the same inner-life in relation to God (faith, hope, love, character).<br>III. They are two distinct terms that refer to different aspects of the same inner-life.",
     "options": [
-      "Socrates",
-      "Plato",
-      "Aristotle",
-      "Thales"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 0,
-    "explanation": "Socrates is known for this phrase, emphasizing the importance of self-knowledge."
+    "correct": 2,
+    "explanation": "From a Christian perspective, the soul and spirit refer to different aspects of the inner life: the soul to self-experience, and the spirit to the relationship with God."
   },
   {
     "id": 20,
-    "question": "Which of the following is not a part of Plato's tripartite theory of the soul?",
+    "question": "What is the philosophical view of Martin Heidegger regarding death?",
     "options": [
-      "Reason",
-      "Spirit",
-      "Appetite",
-      "Consciousness"
+      "Death is a journey of the soul",
+      "Death is nothing to us",
+      "'Being-toward-death' gives life urgency and meaning",
+      "Death is an exit to this life and entrance to eternity"
     ],
-    "correct": 3,
-    "explanation": "Plato's theory of the soul consists of Reason, Spirit, and Appetite."
+    "correct": 2,
+    "explanation": "Martin Heidegger viewed death as 'Being-toward-death,' a defining boundary of human existence that gives life urgency and meaning."
   },
   {
     "id": 21,
-    "question": "Who is the philosopher associated with the 'Allegory of the Cave'?",
+    "question": "According to Plato, what happens to the soul upon death?",
     "options": [
-      "Aristotle",
-      "Plato",
-      "Socrates",
-      "Parmenides"
+      "It dissolves with the body, as they are one composite unit",
+      "It is reunited with the body in a glorified form",
+      "It is freed from the body, its prison, and returns to the world of eternal truths",
+      "It takes on a new form according to karma"
     ],
-    "correct": 1,
-    "explanation": "Plato is the philosopher associated with the 'Allegory of the Cave'."
+    "correct": 2,
+    "explanation": "Plato taught that death is the separation of the soul from the body (its prison), allowing the immortal soul to return to the world of eternal truths."
   },
   {
     "id": 22,
-    "question": "Aristotle's philosophy is known as _______, which states that a substance is a composite of form and matter.",
+    "question": "What does the 'Law of Entropy' philosophically mirror, according to the documents?",
     "options": [
-      "hylomorphism",
-      "idealism",
-      "dualism",
-      "atomism"
+      "The certainty of death and human mortality",
+      "The process of reincarnation and liberation",
+      "The duality of body and soul",
+      "The intrinsic value of the environment"
     ],
     "correct": 0,
-    "explanation": "Aristotle's philosophy is called hylomorphism, which states that a substance is a composite of form and matter."
+    "explanation": "Philosophically, the Law of Entropy (the natural progression from order to disorder) mirrors the human experience of mortality and the impermanence of existence."
   },
   {
     "id": 23,
-    "question": "The concept of the 'Golden Mean' is central to the ethical philosophy of which philosopher?",
+    "question": "Which concept does Buddhism use to describe the acceptance of impermanence (the constant change in all things), which helps to reduce suffering?",
     "options": [
-      "Plato",
-      "Socrates",
-      "Aristotle",
-      "Heraclitus"
+      "Dukkha",
+      "Anicca",
+      "Moksha",
+      "Karma"
     ],
-    "correct": 2,
-    "explanation": "The 'Golden Mean' is a central concept in Aristotle's virtue ethics."
+    "correct": 1,
+    "explanation": "Anicca is the Buddhist concept of impermanence, where acceptance of change and dissolution (death) reduces suffering."
   },
   {
     "id": 24,
-    "question": "St. Augustine derived the study of the human person from which two philosophers?",
+    "question": "What are the five stages people go through while contemplating death, according to the Kubler-Ross Model?",
     "options": [
-      "Socrates and Plato",
-      "Plato and Plotinus",
-      "Aristotle and Avicenna",
-      "Descartes and Locke"
+      "Awakening, Reflection, Guilt, Acceptance, Joy",
+      "Denial, Anger, Bargaining, Depression, Acceptance",
+      "Doubt, Will, Emotion, Sensation, Cognition",
+      "Conflict, Suffering, Tragedy, Guilt, Failure"
     ],
     "correct": 1,
-    "explanation": "Augustine derived the study of a human person from Plato and Plotinus."
+    "explanation": "The Kubler-Ross Model lists the five stages of grief/contemplation as Denial, Anger, Bargaining, Depression, and Acceptance."
   },
   {
     "id": 25,
-    "question": "Which of the following works was written by St. Thomas Aquinas?",
+    "question": "What faculty enables human beings to think, reason, understand, compare, analyze, and associate ideas?",
     "options": [
-      "The Republic",
-      "Meditations on First Philosophy",
-      "Summa Theologica",
-      "The Confessions"
+      "The Will",
+      "The Body",
+      "The Spirit",
+      "The Faculty of Reason"
     ],
-    "correct": 2,
-    "explanation": "St. Thomas Aquinas wrote Summa Theologica, a comprehensive work of Christian theology."
+    "correct": 3,
+    "explanation": "The Faculty of Reason is the mental capacity that enables higher-level cognitive functions like thinking, analysis, and understanding."
   },
   {
     "id": 26,
-    "question": "According to the reviewer, what is St. Thomas Aquinas's view on the human person?",
+    "question": "What concept, according to Hindu philosophy, is the endless cycle of reincarnation—the continuous cycle of birth, life, death, and rebirth?",
     "options": [
-      "A human person is composed of body and soul.",
-      "A human person is a soul trapped in a body.",
-      "A human person is a collection of memories.",
-      "A human person is pure spirit."
+      "Karma",
+      "Moksha",
+      "Samsara",
+      "Brahman"
     ],
-    "correct": 0,
-    "explanation": "St. Thomas Aquinas believed a human person is composed of body and soul."
+    "correct": 2,
+    "explanation": "Samsara is the term for the endless cycle of reincarnation (birth, life, death, and rebirth) in Hindu and Buddhist philosophy."
   },
   {
     "id": 27,
-    "question": "Avicenna, also known as Ibn Sīnā, believed that the starting point of the entire chain of existence is:",
+    "question": "Which of the following is an example of an Existential Limit Situation, as discussed by Karl Jaspers?",
     "options": [
-      "Matter",
-      "Human Reason",
-      "God",
-      "Consciousness"
+      "Winning a lottery",
+      "Receiving a promotion",
+      "Death",
+      "Attaining enlightenment"
     ],
     "correct": 2,
-    "explanation": "Avicenna believed that the existence of being could be traced to another being responsible for their existence, and that being is God."
+    "explanation": "Boundary situations include death, suffering, conflict, tragedy, sickness, failures, and guilt."
   },
   {
     "id": 28,
-    "question": "What is the primary focus of the Anthropocentric Era (Modern Period)?",
+    "question": "In the Triunity of Man model, which component is associated with 'Self-consciousness' and includes the mind, will, and emotion?",
     "options": [
-      "The relationship between humans and God.",
-      "The existence of the human person.",
-      "The nature of the cosmos.",
-      "The search for absolute truth."
+      "Body",
+      "Soul",
+      "Spirit",
+      "Physiological"
     ],
     "correct": 1,
-    "explanation": "The Anthropocentric Era focuses on the existence of the human person."
+    "explanation": "The Soul is associated with Self-consciousness (the psychological realm), including the mind, will, and emotion."
   },
   {
     "id": 29,
-    "question": "John Locke's concept of 'tabula rasa' means the mind is a/an:",
+    "question": "What does the Virtue Ethics Perspective on the environment emphasize?",
     "options": [
-      "blank slate",
-      "computer",
-      "ever-changing river",
-      "prison"
+      "Treating the environment as a means to human ends",
+      "Recognizing the intrinsic value of the environment",
+      "Respecting nature because God created it for a divine purpose",
+      "Analyzing and reshaping the environment through science and technology"
     ],
-    "correct": 0,
-    "explanation": "John Locke introduced the concept of 'tabula rasa,' which means the mind is a blank slate at birth, and all knowledge comes from experience."
+    "correct": 2,
+    "explanation": "The Virtue Ethics Perspective respects nature because it is a creation of God with a divine purpose, encouraging a habitual performance of caring and respecting it."
   },
   {
     "id": 30,
-    "question": "Immanuel Kant's philosophical idea that reality is shaped by our minds is called:",
+    "question": "According to Thomas Aquinas and Aristotle, what is the relationship between the body and the soul?",
     "options": [
-      "Transcendental idealism",
-      "Rationalism",
-      "Existentialism",
-      "Empiricism"
+      "The soul is the master, and the body is its prison",
+      "The body and soul are two separate, interacting entities",
+      "The body is the matter, and the soul is the form, forming one complete being",
+      "The body and soul are both immaterial"
     ],
-    "correct": 0,
-    "explanation": "The reviewer states that Kant's idea of reality shaped by our minds is called transcendental idealism."
+    "correct": 2,
+    "explanation": "Aquinas and Aristotle viewed the body and soul as matter and form, respectively, which are united to constitute one complete being."
   },
   {
     "id": 31,
-    "question": "Jean-Paul Sartre's famous saying, 'Existence precedes essence,' is a key tenet of which philosophical school?",
+    "question": "According to Immanuel Kant, which of the following statements about human beings is/are correct?<br>I. They are endowed with reason.<br>II. They are self-autonomous with a self-regulating will.<br>III. They have a strict duty to make choices in accordance with moral law.",
     "options": [
-      "Realism",
-      "Structuralism",
-      "Existentialism",
-      "Rationalism"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "Sartre is listed as an Existentialist, and his idea that existence precedes essence is a core tenet of this philosophy."
+    "explanation": "Kant viewed human individuals as autonomous agents with reason, whose choices, especially moral ones, are governed by a strict duty to moral law."
   },
   {
     "id": 32,
-    "question": "In the context of philosophy, what does 'intersubjective reality' refer to?",
+    "question": "Which of the following statements is/are true regarding Karl Jaspers' philosophy on the human self?<br>I. The question 'Who am I?' leads the human being into the depth of his/her being.<br>II. The being of a human is lost in a context of total determination.<br>III. Boundary situations lead humans to a deeper level of reflection on their own self being.",
     "options": [
-      "Reality that is independent of any consciousness.",
-      "Reality that is shared and agreed upon by multiple subjects.",
-      "Reality that is unique to an individual's perception.",
-      "Reality based on logical deduction alone."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "Intersubjective reality is described as a 'reality that is shared and agreed upon by multiple subjects.'"
+    "correct": 2,
+    "explanation": "Jaspers states that the being of human is lost in total determination, leading to the deep question of 'Who am I?', and that boundary situations provoke deeper self-reflection."
   },
   {
     "id": 33,
-    "question": "According to the reviewer, what is one reason for philosophical disagreement?",
+    "question": "Which of the following statements correctly describes Plato's Dualism?<br>I. The human soul exists prior to the body and after the body is gone.<br>II. The physical world is made up of appearances, which are illusionary and unreliable.<br>III. The soul is immortal, and learning is merely recollecting what the soul once knew in the realm of forms.",
     "options": [
-      "Lack of intelligence.",
-      "Reliance on scientific data.",
-      "Varying starting assumptions.",
-      "Strict adherence to tradition."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "The document lists 'Starting assumptions' as one of the reasons for so much disagreement in philosophy."
+    "explanation": "Plato's dualism holds that the immortal soul pre-exists the body, the physical world is unreliable, and learning is recollection."
   },
   {
     "id": 34,
-    "question": "What does a 'human person' refer to in philosophy, according to the reviewer?",
+    "question": "Which of the following statements is/are true regarding René Descartes' view on the self?<br>I. He is a 'thing that thinks,' which is the proof of his existence.<br>II. Self-identity depends on consciousness.<br>III. He acknowledged that he is a body bound by figure that occupies space.",
     "options": [
-      "A purely biological entity.",
-      "A creature with a soul.",
-      "An individual human being.",
-      "A being with a body and a soul."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "The reviewer defines the human person as an individual human being."
+    "explanation": "Descartes defined the self as a thinking thing, tied self-identity to consciousness, and acknowledged the body's material nature."
   },
   {
     "id": 35,
-    "question": "In the Theocentric Era, a human person was considered to be a created being in the image and likeness of whom?",
+    "question": "Which of the following statements accurately reflects Thomas Aquinas and Aristotle's view on the Body and Soul?<br>I. The body and soul are not two separate entities but are one being made up of matter and form.<br>II. The soul is the form, and the body is the matter.<br>III. A being ceases to exist in death because the matter and form are no longer complete.",
     "options": [
-      "Plato",
-      "Socrates",
-      "God",
-      "St. Augustine"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "In the Christian Era, a human person was considered a created being in the image and likeness of God."
+    "explanation": "Aquinas and Aristotle viewed the body and soul as matter and form, respectively, united as one being, which ceases to be whole upon death."
   },
   {
     "id": 36,
-    "question": "According to the document, what did St. Augustine believe a human person needs to do to reach their final destiny of salvation?",
+    "question": "According to John Locke, which of the following is/are correct regarding human consciousness?<br>I. Thoughts are conscious (we reflect and introspect).<br>II. Consciousness is the criterion for personal identity.<br>III. The self consists of thoughts and sensations of which we are conscious.",
     "options": [
-      "Perform good deeds.",
-      "Obey God's law.",
-      "Study philosophy.",
-      "Engage in logical reasoning."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "St. Augustine believed a human person needs to obey or follow God's law to reach his final destiny which is salvation."
+    "correct": 2,
+    "explanation": "Locke believed that consciousness (thoughts, sensations, and reflection) is what defines personal identity."
   },
   {
     "id": 37,
-    "question": "The second part of St. Thomas Aquinas's 'Summa Theologica' deals with which topic?",
+    "question": "Which of the following statements is/are true concerning the philosophical views on death?<br>I. For Socrates, death might be a dreamless sleep or a journey of the soul.<br>II. For Martin Heidegger, death is 'Being-toward-death.'<br>III. For Existentialists like Sartre, confronting the 'absurdity' of death can give freedom and authenticity.",
     "options": [
-      "God",
-      "Man",
-      "Jesus Christ",
-      "Logic"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "The second part of the 'Summa Theologica' deals with man."
+    "correct": 2,
+    "explanation": "All three statements correctly summarize the respective philosopher's views on death."
   },
   {
     "id": 38,
-    "question": "Who is considered the 'father of modern philosophy'?",
+    "question": "In the context of the distinction between body and spirit, which of the following is/are correct?<br>I. The body, being material, is bound by the laws of time and space.<br>II. The body is subject to growth, death, and decay.<br>III. The spirit, being immaterial, will continue to exist even after the body has passed.",
     "options": [
-      "John Locke",
-      "Immanuel Kant",
-      "René Descartes",
-      "Jean-Paul Sartre"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "René Descartes is a central figure in the Anthropocentric Era and is often considered the 'father of modern philosophy'."
+    "explanation": "The body is material and perishable, governed by time and space, while the immaterial spirit is seen as continuing its existence after death."
   },
   {
     "id": 39,
-    "question": "The reviewer states that the Sophists were known for being _____.",
+    "question": "Which of the following statements is/are true regarding the Christian view of death?<br>I. Death is seen as a passage to eternal life, not an end.<br>II. The soul is immortal, and after death, those with faith go to be with God.<br>III. On the Day of Resurrection, believers will receive glorified bodies.",
     "options": [
-      "lovers of wisdom",
-      "teachers of virtue",
-      "professional teachers of rhetoric",
-      "seekers of the truth"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "The Sophists are described as professional teachers of rhetoric and debate, not necessarily seeking objective truth."
+    "explanation": "The Christian view emphasizes eternal life, the immortality of the soul, and the future resurrection of the body."
   },
   {
     "id": 40,
-    "question": "The Socratic Method is a form of cooperative argumentative dialogue that involves:",
+    "question": "Which of the following statements correctly describes the Buddhist view on death and suffering?<br>I. Life is full of suffering (Dukkha).<br>II. Suffering is caused by passionate desires and cravings.<br>III. Eradication of desire, which leads to the end of suffering, is accomplished by following the Eightfold Path.",
     "options": [
-      "lecturing",
-      "questioning and answering",
-      "reciting poetry",
-      "writing essays"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "The Socratic Method is a form of cooperative argumentative dialogue between individuals, based on asking and answering questions to stimulate critical thinking."
+    "correct": 2,
+    "explanation": "These three statements are the first three of the Four Noble Truths of Buddhism, which form the basis of their view on suffering."
   },
   {
     "id": 41,
-    "question": "Who was the founder of the Academy in Athens?",
+    "question": "Which of the following statements correctly represents Plato's Theory of Forms?<br>I. The material world is a realm of appearances, destructible, and unreliable.<br>II. Knowledge is to be found in the realm of ideas or essences, which are eternal and true.<br>III. The human body is part of the realm of eternal ideas.",
     "options": [
-      "Socrates",
-      "Aristotle",
-      "Plato",
-      "Thales"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 2,
-    "explanation": "Plato was the founder of the Academy in Athens, the first institution of higher learning in the Western world."
+    "correct": 1,
+    "explanation": "The physical world is unreliable, and knowledge is in the realm of forms. The body is material and destructible, not part of the eternal realm."
   },
   {
     "id": 42,
-    "question": "Aristotle was a student of which philosopher?",
+    "question": "Which of the following statements is/are true regarding the relationship of body and soul according to Aristotle and Thomas Aquinas?<br>I. The body and soul are only two aspects of the whole man.<br>II. The relation of the body to the soul is the relation of matter to form.<br>III. The whole is the sum of its parts; remove one part (body or soul), and it is no longer whole.",
     "options": [
-      "Socrates",
-      "Thales",
-      "Plato",
-      "Heraclitus"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "Aristotle was a student of Plato at the Academy."
+    "explanation": "For Aquinas and Aristotle, the body and soul are interdependent aspects of a single composite being; the whole is lost if they separate."
   },
   {
     "id": 43,
-    "question": "What did Aristotle believe was the ultimate goal of human life?",
+    "question": "Which of the following statements is/are true from an Existentialist and Phenomenological perspective on consciousness?<br>I. Feelings are being awakened by consciousness (Existentialists).<br>II. Consciousness is thought that is always directed towards an object (Phenomenologists).<br>III. Our mind presents phenomena that are distinct from those experienced by the body.",
     "options": [
-      "Pleasure",
-      "Knowledge",
-      "Happiness or Eudaimonia",
-      "Wealth"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "Aristotle believed that the ultimate goal of human life is happiness, or Eudaimonia."
+    "explanation": "Existentialists focus on feelings being awakened by consciousness, while Phenomenologists stress the intentionality of consciousness, and the mind's distinct phenomena are acknowledged."
   },
   {
     "id": 44,
-    "question": "The Christian Era is a part of which larger philosophical era?",
+    "question": "Which of the following stages is/are part of the Kubler-Ross Model for contemplating death?<br>I. Bargaining<br>II. Denial<br>III. Acceptance",
     "options": [
-      "Cosmocentric Era",
-      "Theocentric Era",
-      "Anthropocentric Era",
-      "Post-Modern Era"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "The Christian Era is a subdivision of the Theocentric Era."
+    "correct": 2,
+    "explanation": "Denial, Bargaining, and Acceptance are all recognized stages in the Kubler-Ross Model (along with Anger and Depression)."
   },
   {
     "id": 45,
-    "question": "Which of the following is NOT a part of the 'Summa Theologica'?",
+    "question": "Which of the following statements is/are philosophically true regarding the Law of Entropy?<br>I. It states that all systems naturally progress from order to disorder and decay.<br>II. It is viewed as a metaphor for the impermanence of existence and mortality.<br>III. It applies only to the physical realm and has no relevance to the human soul.",
     "options": [
-      "The first part addresses God.",
-      "The second part deals with man.",
-      "The third part discusses Jesus Christ.",
-      "The fourth part deals with the nature of angels."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 3,
-    "explanation": "The 'Summa Theologica' only has three parts: God, Man, and Jesus Christ."
+    "correct": 1,
+    "explanation": "Entropy is the law of decay and is used as a metaphor for impermanence. Its philosophical application to the soul is a complex debate, but the documents present it as mirroring the human experience of mortality."
   },
   {
     "id": 46,
-    "question": "What is the primary concern of 'political philosophy' according to the document?",
+    "question": "Which of the following statements is/are true concerning the Hindu concepts of Samsara and Moksha?<br>I. Samsara is the cycle of reincarnation driven by the law of Karma.<br>II. Moksha is the ultimate goal, which is the release from Samsara.<br>III. When Moksha is achieved, the soul becomes one with Brahman, the Supreme Reality.",
     "options": [
-      "The study of human behavior.",
-      "The study of governance and power.",
-      "The study of the mind.",
-      "The study of reality."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "Political philosophy is described as the study of governance, power, and justice."
+    "correct": 2,
+    "explanation": "Samsara is the cycle of rebirth; Moksha is the liberation from this cycle, resulting in unity with Brahman."
   },
   {
     "id": 47,
-    "question": "Which branch of philosophy is defined as 'the study of the human person'?",
+    "question": "Which of the following statements is/are correct regarding the Instrumental and Axiological Approaches to the environment?<br>I. The Instrumental Approach treats the environment as a means to serve human purposes and civilization.<br>II. The Axiological Approach recognizes the intrinsic value of the environment itself.<br>III. Only the Axiological Approach affirms the protection of the environment.",
     "options": [
-      "Aesthetics",
-      "Anthropology",
-      "Philosophy of Man",
-      "Ethics"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 2,
-    "explanation": "The Philosophy of Man is defined as the study of the human person."
+    "correct": 1,
+    "explanation": "The Instrumental Approach treats the environment as a means, and the Axiological Approach recognizes its intrinsic value. Both, however, can affirm protection, though for different reasons."
   },
   {
     "id": 48,
-    "question": "According to the reviewer, who believed that the mind and body are distinct substances?",
+    "question": "Which of the following statements is/are true regarding the Sacredness of the Environment perspective?<br>I. Recognition of sacredness is based on the creation of all things by a Creator.<br>II. The environment symbolizes a possible encounter with the Divine.<br>III. The environment shall always have an inherent relationship with the Creator.",
     "options": [
-      "John Locke",
-      "René Descartes",
-      "Aristotle",
-      "St. Thomas Aquinas"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "The reviewer mentions Descartes's mind-body dualism."
+    "correct": 2,
+    "explanation": "The Sacredness of the Environment perspective is based on the idea of creation and the environment's inherent relationship with the Creator."
   },
   {
     "id": 49,
-    "question": "Which philosophical school emphasizes systems, language, and power structures that shape what we call 'real'?",
+    "question": "According to Karl Jaspers, which of the following is/are characteristics of Boundary Situations?<br>I. They are inescapable and inevitable breaks of ordinary patterns of human existence.<br>II. They include conflict, tragedy, sickness, and failures.<br>III. They lead to a deeper consciousness and experience of one's limitations and finitude.",
     "options": [
-      "Existentialists",
-      "Structuralists",
-      "Realists",
-      "Empiricists"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "Structuralists emphasize systems, language, and power structures that shape what we call 'real'."
+    "correct": 2,
+    "explanation": "Boundary Situations are inescapable breaks that include various sufferings and lead to a deeper awareness of human finitude."
   },
   {
     "id": 50,
-    "question": "Which of the following is NOT listed as a core concept of reality in the document?",
+    "question": "In the context of Dualism, which of the following is/are generally considered true about the Body?<br>I. It shows corporeality (existing as a physical body).<br>II. It is destructible, illusionary, and unreliable (Plato).<br>III. It is immaterial and subject only to the soul's will.",
     "options": [
-      "Objective reality",
-      "Subjective reality",
-      "Interdependent reality",
-      "Intersubjective reality"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 2,
-    "explanation": "The document lists objective, subjective, and intersubjective reality, but not 'interdependent reality'."
+    "correct": 1,
+    "explanation": "The body is corporeal and viewed as unreliable by Plato. It is not immaterial; the soul is."
   },
   {
     "id": 51,
-    "question": "According to the reviewer, the Theocentric Era is the era of:",
+    "question": "Which of the following statements is/are true regarding the nature of the Soul in Plato's philosophy?<br>I. The soul is immortal and invisible.<br>II. The soul is divine and pre-exists the body.<br>III. The soul is a substance that composes our self-identity (Descartes).",
     "options": [
-      "Ancient Greek philosophy",
-      "Islamic philosophy",
-      "Medieval Christian philosophy",
-      "Modern philosophy"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 2,
-    "explanation": "The Theocentric Era is also referred to as the Christian Era in the document, which falls under Medieval philosophy."
+    "correct": 1,
+    "explanation": "The soul is immortal, invisible, divine, and pre-exists the body (Plato). Statement III is attributable to Descartes."
   },
   {
     "id": 52,
-    "question": "Which philosopher is known for the idea that 'knowledge is the recollection of what the soul has already learned'?",
+    "question": "Which of the following is/are descriptions used by René Descartes to describe what a 'thing which thinks' is?<br>I. It is a thing which doubts, understands, and affirms.<br>II. It is a thing which denies, wills, and refuses.<br>III. It is a thing which also imagines and feels.",
     "options": [
-      "Socrates",
-      "Aristotle",
-      "Plato",
-      "St. Augustine"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "This idea is part of Plato's Theory of Forms, where a human person is a soul in search of knowledge and wisdom."
+    "explanation": "Descartes defined the thinking thing as everything from doubting and understanding to imagining and feeling."
   },
   {
     "id": 53,
-    "question": "What is the main goal of the Socratic Method?",
+    "question": "Which of the following statements correctly describes the components of the Man-a-Triunity model (Body, Soul, Spirit)?<br>I. The Body is associated with World-consciousness and relates a person to the environment.<br>II. The Soul is associated with Self-consciousness and includes the mind, will, and emotion.<br>III. The Spirit is associated with God-consciousness and relates a person to God.",
     "options": [
-      "To win an argument.",
-      "To expose the opponent's flaws.",
-      "To stimulate critical thinking and elicit ideas.",
-      "To prove a single truth."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "The Socratic Method is used to stimulate critical thinking and elicit ideas by asking and answering questions."
+    "explanation": "The Triunity model breaks down human consciousness into the three domains of Spirit (God), Soul (Self), and Body (World/Environment)."
   },
   {
     "id": 54,
-    "question": "Who is known as the teacher of Plato?",
+    "question": "Which of the following is/are characteristics of Nirvana in Buddhism?<br>I. It is a state beyond birth and death.<br>II. It is a state beyond all desires and suffering.<br>III. It is attained when the cycle of rebirth (Samsara) ends.",
     "options": [
-      "Aristotle",
-      "Parmenides",
-      "Socrates",
-      "Heraclitus"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "Socrates was the teacher of Plato."
+    "explanation": "Nirvana is the state of liberation, free from the cycle of Samsara, suffering, and desire."
   },
   {
     "id": 55,
-    "question": "What is the core belief of Existentialism, as per the reviewer?",
+    "question": "Which of the following is/are the views of Immanuel Kant regarding the Self?<br>I. The self is a rational agent.<br>II. The self can know their own thoughts and attitudes.<br>III. The self is responsible for their own thoughts and attitudes.",
     "options": [
-      "The mind is a blank slate.",
-      "Individual experience and freedom are the basis of reality.",
-      "Reality is unchanging.",
-      "Reason is the primary tool for knowledge."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "Existentialists focus on individual experience and freedom as the basis of reality."
+    "correct": 2,
+    "explanation": "Kant defined the self as a rational agent with the capacity to know, and therefore be responsible for, their thoughts and attitudes."
   },
   {
     "id": 56,
-    "question": "The review states that philosophy is built on reason, but reason depends on personal intuitions and ____.",
+    "question": "Which of the following statements is/are true regarding the philosophical concepts of Soul and Spirit?<br>I. The Soul relates to the inner-life in terms of mind, will, and imagination (psychological).<br>II. The Spirit relates to the inner-life in terms of faith, hope, and love (spiritual).<br>III. The Soul is philosophically discussed as the mind because mental capacities are attributed to it.",
     "options": [
-      "scientific data",
-      "historical context",
-      "political agendas",
-      "religious beliefs"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 1,
-    "explanation": "The document mentions that reason depends on cultural and historical context, among other things."
+    "correct": 2,
+    "explanation": "The documents distinguish the soul (mind, will, emotion) and the spirit (God-consciousness), with the soul often discussed as the mind."
   },
   {
     "id": 57,
-    "question": "What is the meaning of 'Philos' and 'Sophia' in the word 'Philosophy'?",
+    "question": "According to Karl Jaspers, why does the question 'Who am I?' lead a human being into the depth of his/her being?<br>I. Because the being of a human is lost in a context of total determination.<br>II. Because the question is obvious and ordinary.<br>III. Because the question summons the person to leave the ordinariness of given time and context of his/her existence.",
     "options": [
-      "Love of wisdom",
-      "Study of knowledge",
-      "Search for truth",
-      "Human existence"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
-    "correct": 0,
-    "explanation": "Philosophy is derived from the Greek words 'philos' (love) and 'sophia' (wisdom), meaning 'love of wisdom'."
+    "correct": 2,
+    "explanation": "The question 'Who am I?' is ordinary but leads to depth because the human being's existence is lost in total determination, requiring an escape from ordinariness."
   },
   {
     "id": 58,
-    "question": "What is the philosophical view of a person who is called a 'Dualist'?",
+    "question": "Which of the following statements is/are true regarding Plato's view on the body and the soul?<br>I. The soul is separate and distinct from the body.<br>II. The body is the prison or temporary dwelling for the soul.<br>III. Death is simply the separation of the soul from the body.",
     "options": [
-      "The mind is all that exists.",
-      "The body is all that exists.",
-      "Mind and body are distinct substances.",
-      "The mind is a product of the body."
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "The document mentions that Descartes's philosophy is known as dualism, which separates the mind and the body."
+    "explanation": "Plato's dualism is built on the separation of body and soul, where the body is a prison, and death is the soul's liberation."
   },
   {
     "id": 59,
-    "question": "According to the document, the 'Sophists' were known for their expertise in:",
+    "question": "Which of the following is/are examples of Boundary Situations that break the conventional pattern or ordinaryness of life?<br>I. Suffering and conflict<br>II. Tragedy and sickness<br>III. Death and guilt",
     "options": [
-      "Logic",
-      "Ethics",
-      "Rhetoric",
-      "Mathematics"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "The reviewer describes the Sophists as 'professional teachers of rhetoric'."
+    "explanation": "All listed items (suffering, conflict, tragedy, sickness, death, guilt, failures) are examples of Boundary Situations."
   },
   {
     "id": 60,
-    "question": "Who wrote 'The Republic'?",
+    "question": "Which of the following is/are true regarding the dualist position on the mind and brain?<br>I. The mind (mental) is a unique phenomenon that cannot be reduced to the physical.<br>II. The mind is not to be mistaken for the brain (physical).<br>III. The soul is immaterial, while the body shows corporeality.",
     "options": [
-      "Socrates",
-      "Aristotle",
-      "Plato",
-      "St. Augustine"
+      "Statement I. Only",
+      "Statements I. and II. Only",
+      "All statements are correct",
+      "Statements I. and III. Only",
+      "None of the statements are correct"
     ],
     "correct": 2,
-    "explanation": "Plato wrote 'The Republic', which explores his Theory of Forms and justice."
+    "explanation": "Dualists maintain that the mental (mind/soul) is distinct from the physical (brain/body) and cannot be reduced to it, hence the soul is immaterial and the body is corporeal."
   }
 ];
 
