@@ -5247,725 +5247,629 @@ const philosophyQuestions = [
 
 // Basic Calculus Quiz Data - 60 Questions
 const basicCalculusQuestions = [
-  {
+{
     "id": 1,
-    "question": "What is the value of $\\lim_{x\\to 3} (2x^2 - 5x + 4)$?",
+    "question": "What mathematical concept is defined as the slope of a tangent line to a curve?",
     "options": [
-      "5",
-      "7",
-      "9",
-      "10"
+      "The Limit",
+      "The Derivative",
+      "The Integral",
+      "Differential Calculus"
     ],
     "correct": 1,
-    "explanation": "Substitute $x=3$ directly into the function: $2(3)^2 - 5(3) + 4 = 2(9) - 15 + 4 = 18 - 15 + 4 = 7$."
+    "explanation": "The derivative is defined as the instantaneous rate of change and the slope of a tangent line to a curve."
   },
   {
     "id": 2,
-    "question": "Evaluate $\\lim_{x\\to 2} \\frac{x^2 - 4}{x - 2}$.",
+    "question": "Which formula represents the Limit Definition of a Derivative?",
     "options": [
-      "0",
-      "2",
-      "4",
-      "Does not exist"
+      "$f'(x) = \\lim_{h \\rightarrow 0} \\frac{f(x) - f(h)}{h}$",
+      "$f'(x) = \\frac{f(x+h) - f(x)}{h}$",
+      "$f'(x) = \\lim_{h \\rightarrow 0} \\frac{f(x+h) - f(x)}{h}$",
+      "$f'(x) = \\lim_{x \\rightarrow c} \\frac{f(x+h) - f(x)}{h}$"
     ],
     "correct": 2,
-    "explanation": "Factoring the numerator gives $\\lim_{x\\to 2} \\frac{(x-2)(x+2)}{x-2}$. Cancel out $(x-2)$ and substitute $x=2$ into the remaining expression: $2+2=4$."
+    "explanation": "The limit definition of a derivative is $f'(x) = \\lim_{h \\rightarrow 0} \\frac{f(x+h) - f(x)}{h}$."
   },
   {
     "id": 3,
-    "question": "For the function $f(x) = \\begin{cases} x+1 & \\text{if } x \\neq 4 \\\\ 5 & \\text{if } x = 4 \\end{cases}$, find $\\lim_{x\\to 4} f(x)$.",
+    "question": "If $f(x)=C$ where C is a constant, what is the derivative $f'(x)$ according to the Constant Rule?",
     "options": [
-      "5",
-      "4",
-      "2",
-      "Does not exist"
+      "C",
+      "1",
+      "x",
+      "0"
     ],
-    "correct": 0,
-    "explanation": "The limit as $x$ approaches a value does not depend on the function's value at that point. As $x$ approaches 4, the function behaves like $x+1$, so the limit is $4+1=5$."
+    "correct": 3,
+    "explanation": "The Constant Rule states that if $f(x)=C$, then $f'(x)=0$."
   },
   {
     "id": 4,
-    "question": "What is the limit of $\\lim_{x\\to\\infty} \\frac{3x^2 + 2x - 1}{5x^2 - 4x + 7}$?",
+    "question": "Find the derivative of $f(x) = x$ using the Identity Rule.",
     "options": [
+      "x",
       "0",
-      "$\\frac{3}{5}$",
-      "$\\infty$",
-      "Does not exist"
+      "1",
+      "$x^2$"
     ],
-    "correct": 1,
-    "explanation": "The degrees of the numerator and denominator are equal. The limit at infinity is the ratio of the leading coefficients, which is $\\frac{3}{5}$."
+    "correct": 2,
+    "explanation": "The Identity Rule states that if $f(x)=x$, then $f'(x)=1$."
   },
   {
     "id": 5,
-    "question": "Find the value of $\\lim_{x\\to 1} \\frac{x - 1}{\\sqrt{x} - 1}$.",
+    "question": "Apply the Power Rule to find the derivative of $f(x) = x^{10}$.",
     "options": [
-      "0",
-      "1",
-      "2",
-      "Does not exist"
+      "$10x^{10}$",
+      "$9x^{10}$",
+      "$10x^9$",
+      "$x^9$"
     ],
     "correct": 2,
-    "explanation": "Multiply the numerator and denominator by the conjugate of the denominator, $\\sqrt{x}+1$. This gives $\\lim_{x\\to 1} \\frac{(x-1)(\\sqrt{x}+1)}{x-1}$. Cancel out $(x-1)$ and substitute $x=1$ into the remaining expression: $\\sqrt{1}+1=2$."
+    "explanation": "Using the Power Rule ($f'(x)=nx^{n-1}$), $f'(x) = 10x^{10-1} = 10x^9$."
   },
   {
     "id": 6,
-    "question": "Evaluate $\\lim_{x\\to -1} (x^3 + 2x^2 - 3x + 1)$.",
+    "question": "Use the Constant Multiple Rule to find the derivative of $f(x) = 4x^5$.",
     "options": [
-      "-1",
-      "5",
-      "1",
-      "0"
+      "$20x^5$",
+      "$5x^4$",
+      "$20x^4$",
+      "$4x^4$"
     ],
-    "correct": 1,
-    "explanation": "Substitute $x=-1$ directly: $(-1)^3 + 2(-1)^2 - 3(-1) + 1 = -1 + 2(1) + 3 + 1 = -1 + 2 + 3 + 1 = 5$."
+    "correct": 2,
+    "explanation": "Using the Constant Multiple Rule ($f'(x)=k \\cdot nx^{n-1}$), $f'(x) = 4 \\cdot 5x^{5-1} = 20x^4$."
   },
   {
     "id": 7,
-    "question": "Find $\\lim_{x\\to 0} \\frac{x^2 - 5x}{x}$.",
+    "question": "The formula $f'(x) = u'(x) \\pm v'(x)$ corresponds to which differentiation rule for $f(x)=u(x)\\pm v(x)$?",
     "options": [
-      "0",
-      "-5",
-      "5",
-      "Does not exist"
+      "Product Rule",
+      "Quotient Rule",
+      "Sum and Difference Rule",
+      "Chain Rule"
     ],
-    "correct": 1,
-    "explanation": "Factor $x$ from the numerator: $\\lim_{x\\to 0} \\frac{x(x - 5)}{x}$. Cancel $x$ and substitute $x=0$ into the remaining expression: $0-5=-5$."
+    "correct": 2,
+    "explanation": "This formula is the Sum and Difference Rule."
   },
   {
     "id": 8,
-    "question": "What is the limit of $\\lim_{x\\to -\\infty} \\frac{x^3 + 5}{x^2 - 2}$?",
+    "question": "Find the derivative of $f(x) = x^3 + 5$.",
     "options": [
-      "0",
-      "$\\infty$",
-      "Does not exist",
-      "$-2$"
+      "$3x^2 + 5$",
+      "$3x^2$",
+      "$3x^3$",
+      "$3x$"
     ],
-    "correct": 2,
-    "explanation": "The degree of the numerator is greater than the denominator. As $x$ approaches $-\\infty$, the function approaches $-\\infty$. Therefore, the limit does not exist."
+    "correct": 1,
+    "explanation": "Using the Sum and Constant Rules, $f'(x) = 3x^{3-1} + 0 = 3x^2$."
   },
   {
     "id": 9,
-    "question": "Evaluate $\\lim_{x\\to 9} \\frac{x-9}{\\sqrt{x}-3}$.",
+    "question": "Find the derivative of $f(x) = 7x^2 - 2x$.",
     "options": [
-      "3",
-      "6",
-      "9",
-      "$\\frac{1}{6}$"
+      "$14x - 2$",
+      "$7x - 2$",
+      "$14x^2 - 2$",
+      "$14x$"
     ],
-    "correct": 1,
-    "explanation": "Multiply numerator and denominator by the conjugate of the denominator, $\\sqrt{x}+3$. This gives $\\lim_{x\\to 9} \\frac{(x-9)(\\sqrt{x}+3)}{x-9}$. Cancel $(x-9)$ and substitute $x=9$: $\\sqrt{9}+3=3+3=6$."
+    "correct": 0,
+    "explanation": "Using the Sum/Difference and Constant Multiple Rules, $f'(x) = 7(2)x^{1} - 2(1) = 14x - 2$."
   },
   {
     "id": 10,
-    "question": "If $\\lim_{x\\to a} f(x) = L$ and $\\lim_{x\\to a} g(x) = M$, then $\\lim_{x\\to a} [f(x) + g(x)]$ is equal to:",
+    "question": "Which rule is defined by the formula $f'(x)=(g(x) \\cdot h'(x))+(g'(x) \\cdot h(x))$ for $f(x)=g(x)h(x)$?",
     "options": [
-      "$\\frac{L}{M}$",
-      "$LM$",
-      "$L+M$",
-      "$L-M$"
+      "Quotient Rule",
+      "Chain Rule",
+      "Product Rule",
+      "Power Rule"
     ],
     "correct": 2,
-    "explanation": "This is the Sum Rule for limits. The limit of a sum is the sum of the limits."
+    "explanation": "This formula is the Product Rule."
   },
   {
     "id": 11,
-    "question": "Find $\\lim_{x\\to 5} \\frac{1}{x-5}$.",
+    "question": "When applying the Quotient Rule to $f(x)=\\frac{g(x)}{h(x)}$, what is the denominator of the derivative $f'(x)$?",
     "options": [
-      "0",
-      "$\\frac{1}{5}$",
-      "Does not exist",
-      "$\\infty$"
+      "$h(x)$",
+      "$g(x)^2$",
+      "$h'(x)$",
+      "$(h(x))^2$"
     ],
-    "correct": 2,
-    "explanation": "As $x$ approaches 5, the denominator approaches 0. From the left, it approaches 0 from the negative side, and from the right, it approaches 0 from the positive side. The one-sided limits are not equal, so the overall limit does not exist."
+    "correct": 3,
+    "explanation": "The denominator of the Quotient Rule formula is ${(h(x))}^2$."
   },
   {
     "id": 12,
-    "question": "What is the value of $\\lim_{x\\to -2} \\frac{x^2 + 5x + 6}{x+2}$?",
+    "question": "Which rule uses the formula $f'(x)=h'(g(x))(g'(x))$ for $f(x)=h(g(x))$?",
     "options": [
-      "-1",
-      "1",
-      "0",
-      "3"
+      "Product Rule",
+      "Chain Rule",
+      "Quotient Rule",
+      "Sum and Difference Rule"
     ],
     "correct": 1,
-    "explanation": "Factor the numerator: $\\lim_{x\\to -2} \\frac{(x+2)(x+3)}{x+2}$. Cancel out $(x+2)$ and substitute $x=-2$ into the remaining expression: $-2+3=1$."
+    "explanation": "This is the formula for the Chain Rule."
   },
   {
     "id": 13,
-    "question": "Evaluate $\\lim_{x\\to\\infty} \\frac{2x^3 - x + 1}{x^4 + 3x^2 - 5}$.",
+    "question": "What is the first step in the 'Four-Step Rule' for finding a derivative?",
     "options": [
-      "0",
-      "2",
-      "$\\infty$",
-      "Does not exist"
+      "Find $f'(x)$ using the limit formula.",
+      "Divide $f(x+h)-f(x)$ by $h$.",
+      "Find $f(x+h)$.",
+      "Find and simplify $f(x+h) - f(x)$."
     ],
-    "correct": 0,
-    "explanation": "The degree of the denominator (4) is greater than the degree of the numerator (3). Therefore, the limit at infinity is 0."
+    "correct": 2,
+    "explanation": "Step 1 of the Four-Step Rule is to FIND $f(x+h)$."
   },
   {
     "id": 14,
-    "question": "Find $\\lim_{x\\to 0} \\frac{\\sqrt{4+x} - 2}{x}$.",
+    "question": "The result of taking the derivative of a derivative of a function is called a:",
     "options": [
-      "0",
-      "$\\frac{1}{4}$",
-      "1",
-      "2"
+      "Definite Integral",
+      "Limit at Infinity",
+      "Higher Order Derivative",
+      "Chain Function"
     ],
-    "correct": 1,
-    "explanation": "Multiply by the conjugate of the numerator: $\\lim_{x\\to 0} \\frac{(\\sqrt{4+x}-2)(\\sqrt{4+x}+2)}{x(\\sqrt{4+x}+2)} = \\lim_{x\\to 0} \\frac{4+x-4}{x(\\sqrt{4+x}+2)} = \\lim_{x\\to 0} \\frac{x}{x(\\sqrt{4+x}+2)}$. Cancel $x$ and substitute $x=0$: $\\frac{1}{\\sqrt{4+0}+2} = \\frac{1}{2+2} = \\frac{1}{4}$."
+    "correct": 2,
+    "explanation": "Higher Order Derivatives are the result of taking the derivative of a derivative of a function."
   },
   {
     "id": 15,
-    "question": "For what values of $x$ is the function $f(x) = \\frac{1}{x-3}$ continuous?",
+    "question": "If $f(x) = 4x^3 + 2x + 6$, calculate the first derivative $f'(x)$.",
     "options": [
-      "All real numbers",
-      "All real numbers except 0",
-      "All real numbers except 3",
-      "All real numbers except -3"
+      "$12x^2 + 2x + 6$",
+      "$12x^2 + 2$",
+      "$4x^2 + 2$",
+      "$12x + 2$"
     ],
-    "correct": 2,
-    "explanation": "A rational function is continuous everywhere its denominator is not zero. The denominator $x-3$ is zero when $x=3$."
+    "correct": 1,
+    "explanation": "Using Power and Sum/Difference Rules: $4(3)x^{3-1} + 2(1)x^{1-1} + 0 = 12x^2 + 2$."
   },
   {
     "id": 16,
-    "question": "Evaluate $\\lim_{x\\to 2^-} \\frac{x}{x-2}$.",
+    "question": "Given $f'(x) = 12x^2 + 2$, find the second derivative $f''(x)$.",
     "options": [
-      "$\\infty$",
-      "$-2$",
-      "$-\\infty$",
-      "2"
+      "$24x + 2$",
+      "$24x$",
+      "$12x^2$",
+      "$12x$"
     ],
-    "correct": 2,
-    "explanation": "As $x$ approaches 2 from the left (e.g., $x=1.99$), the numerator is positive and the denominator is a small negative number. Therefore, the fraction approaches $-\\infty$."
+    "correct": 1,
+    "explanation": "The second derivative is the derivative of the first: $f''(x) = 12(2)x + 0 = 24x$."
   },
   {
     "id": 17,
-    "question": "What is $\\lim_{x\\to -4} \\frac{x+4}{x^2+3x-4}$?",
+    "question": "Differentiate $f(x) = \\frac{1}{x^2}$ (Hint: use $x^{-2}$).",
     "options": [
-      "$\\frac{1}{5}$",
-      "-5",
-      "$-\\frac{1}{5}$",
-      "0"
+      "$2x^{-3}$",
+      "$-2x^{-3}$",
+      "$-2x^{-1}$",
+      "$-x^{-3}$"
     ],
-    "correct": 2,
-    "explanation": "Factor the denominator: $x^2+3x-4 = (x+4)(x-1)$. The expression becomes $\\lim_{x\\to -4} \\frac{x+4}{(x+4)(x-1)}$. Cancel $(x+4)$ and substitute $x=-4$ into the remaining expression: $\\frac{1}{-4-1} = -\\frac{1}{5}$."
+    "correct": 1,
+    "explanation": "Using the Power Rule on $x^{-2}$: $-2x^{-2-1} = -2x^{-3}$."
   },
   {
     "id": 18,
-    "question": "If a function $f(x)$ is continuous at $x=c$, then $\\lim_{x\\to c} f(x)$ must be equal to:",
+    "question": "Find $f'(x)$ for $f(x) = 10x^2 + 3x - 1$.",
     "options": [
-      "$\\infty$",
-      "Does not exist",
-      "$f(c)$",
-      "0"
+      "$20x + 3$",
+      "$10x + 3$",
+      "$20x^2 + 3$",
+      "$20x$"
     ],
-    "correct": 2,
-    "explanation": "This is a key part of the definition of continuity. A function $f(x)$ is continuous at $x=c$ if and only if $\\lim_{x\\to c} f(x) = f(c)$."
+    "correct": 0,
+    "explanation": "Applying the rules: $10(2)x + 3(1) - 0 = 20x + 3$."
   },
   {
     "id": 19,
-    "question": "Evaluate $\\lim_{x\\to\\infty} \\frac{x - 3}{x^2 + 5x - 2}$.",
+    "question": "What is the derivative of $f(x) = \\sqrt{x}$ (Hint: use $x^{1/2}$)?",
     "options": [
-      "0",
-      "1",
-      "$\\infty$",
-      "Does not exist"
+      "$\\frac{1}{2}x^{1/2}$",
+      "$\\frac{1}{2\\sqrt{x}}$",
+      "$x^{-1/2}$",
+      "$2\\sqrt{x}$"
     ],
-    "correct": 0,
-    "explanation": "The degree of the denominator (2) is greater than the degree of the numerator (1). Therefore, the limit at infinity is 0."
+    "correct": 1,
+    "explanation": "Using the Power Rule on $x^{1/2}$: $\\frac{1}{2}x^{\\frac{1}{2}-1} = \\frac{1}{2}x^{-1/2} = \\frac{1}{2\\sqrt{x}}$."
   },
   {
     "id": 20,
-    "question": "What is the limit of a constant function, $\\lim_{x\\to c} 7$?",
+    "question": "If $g(x)=x^2$ and $h(x)=x^3$, apply the Product Rule to find the derivative of $f(x)=g(x)h(x)$.",
     "options": [
-      "7",
-      "0",
-      "c",
-      "Does not exist"
+      "$5x^4$",
+      "$2x^3 + 3x^2$",
+      "$2x^3 + 3x^4$",
+      "$2x(x^3) + 3x^2(x^2)$"
     ],
-    "correct": 0,
-    "explanation": "The limit of a constant is the constant itself, as the function's value does not change."
+    "correct": 2,
+    "explanation": "The rule is $g(x)h'(x) + g'(x)h(x)$. $x^2(3x^2) + 2x(x^3) = 3x^4 + 2x^4 = 5x^4$ (simplifying the correct option)."
   },
   {
     "id": 21,
-    "question": "Find $\\lim_{x\\to 2} (x^2 + x - 6)$.",
+    "question": "Which of the following is NOT a symbol used for a derivative according to the reviewer?",
     "options": [
-      "0",
-      "2",
-      "6",
-      "-6"
+      "$y'$",
+      "$\\frac{dy}{dx}$",
+      "$D_x[f(x)]$",
+      "$d(x)$"
     ],
-    "correct": 0,
-    "explanation": "Substitute $x=2$ directly into the expression: $(2)^2 + 2 - 6 = 4 + 2 - 6 = 0$."
+    "correct": 3,
+    "explanation": "The note explicitly states that $dx$ is not equal to $d(x)$."
   },
   {
     "id": 22,
-    "question": "Evaluate $\\lim_{x\\to -3} \\frac{x^2 - 9}{x+3}$.",
+    "question": "The process for finding a derivative of a function is called:",
     "options": [
-      "0",
-      "$-6$",
-      "$-3$",
-      "Does not exist"
+      "Integration",
+      "Simplification",
+      "Differentiation",
+      "Limiting"
     ],
-    "correct": 1,
-    "explanation": "Factor the numerator: $\\lim_{x\\to -3} \\frac{(x-3)(x+3)}{x+3}$. Cancel $(x+3)$ and substitute $x=-3$: $-3-3=-6$."
+    "correct": 2,
+    "explanation": "Differentiation is the process for finding a derivative of a function."
   },
   {
     "id": 23,
-    "question": "Find $\\lim_{x\\to\\infty} \\frac{x^2 + 1}{x - 1}$.",
+    "question": "Find the derivative of $f(x) = (x^2+1)^4$ using the Chain Rule.",
     "options": [
-      "0",
-      "1",
-      "$\\infty$",
-      "Does not exist"
+      "$4(x^2+1)^3$",
+      "$8x(x^2+1)^3$",
+      "$4x^3(2x)$",
+      "$4(2x)^3$"
     ],
-    "correct": 2,
-    "explanation": "The degree of the numerator (2) is greater than the denominator (1). As $x$ approaches $\\infty$, the function approaches $\\infty$."
+    "correct": 1,
+    "explanation": "Chain Rule: $4(x^2+1)^3 \\cdot (2x) = 8x(x^2+1)^3$."
   },
   {
     "id": 24,
-    "question": "Evaluate $\\lim_{x\\to 2^+} \\frac{1}{x-2}$.",
+    "question": "If $f(x) = \\frac{x}{x^2+1}$, which term will appear in the numerator of $f'(x)$ according to the Quotient Rule formula?",
     "options": [
-      "$\\infty$",
-      "$-\\infty$",
-      "2",
-      "Does not exist"
+      "$(x^2+1)(1) - x(2x)$",
+      "$(x^2+1)(2x) - x(1)$",
+      "$x(x^2+1)'$",
+      "$2x(x^2+1)$"
     ],
     "correct": 0,
-    "explanation": "As $x$ approaches 2 from the right (e.g., $x=2.01$), the denominator is a small positive number. Therefore, the fraction approaches $\\infty$."
+    "explanation": "Numerator of Quotient Rule: $h(x)g'(x) - g(x)h'(x)$. Here $h(x)=x^2+1, g(x)=x$. So, $(x^2+1)(1) - x(2x)$."
   },
   {
     "id": 25,
-    "question": "What is the value of $\\lim_{x\\to 0} \\frac{x}{\\sqrt{x+1} - 1}$?",
+    "question": "In the Chain Rule $f'(x) = h'(g(x))(g'(x))$, $g(x)$ is differentiated to become $g'(x)$. This is differentiation of the:",
     "options": [
-      "0",
-      "1",
-      "2",
-      "Does not exist"
+      "Outer function $h$",
+      "Constant $C$",
+      "Inner function $g$",
+      "Variable $x$"
     ],
     "correct": 2,
-    "explanation": "Multiply the numerator and denominator by the conjugate of the denominator, $\\sqrt{x+1}+1$. This gives $\\lim_{x\\to 0} \\frac{x(\\sqrt{x+1}+1)}{x+1-1} = \\lim_{x\\to 0} \\frac{x(\\sqrt{x+1}+1)}{x}$. Cancel $x$ and substitute $x=0$: $\\sqrt{0+1}+1=1+1=2$."
+    "explanation": "The Chain Rule differentiates the inner function $g(x)$ as $g'(x)$."
   },
   {
     "id": 26,
-    "question": "Evaluate $\\lim_{x\\to 0} (5x^3 - 2x^2 + 4)$.",
+    "question": "If $\\lim_{x \\rightarrow 0} \\frac{\\sin x}{x} = 1$, what is the value of $\\lim_{x \\rightarrow 0} \\frac{x}{\\sin x}$ (reciprocal)?",
     "options": [
       "0",
-      "4",
-      "-2",
-      "5"
+      "1",
+      "$\\infty$",
+      "$-1$"
     ],
     "correct": 1,
-    "explanation": "Substitute $x=0$ directly: $5(0)^3 - 2(0)^2 + 4 = 4$."
+    "explanation": "The reviewer states that the reciprocal, $\\frac{x}{\\sin x}$, works as well, meaning the limit is also 1."
   },
   {
     "id": 27,
-    "question": "If $\\lim_{x\\to a} f(x) = 4$ and $\\lim_{x\\to a} g(x) = 2$, what is $\\lim_{x\\to a} \\frac{f(x)}{g(x)}$?",
+    "question": "What is the value of $\\lim_{x \\rightarrow 0} \\frac{1 - \\cos x}{x}$?",
     "options": [
-      "6",
-      "2",
-      "8",
-      "$\\frac{1}{2}$"
+      "1",
+      "0",
+      "Undefined",
+      "$\\infty$"
     ],
     "correct": 1,
-    "explanation": "Using the Quotient Rule for limits, $\\lim_{x\\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x\\to a} f(x)}{\\lim_{x\\to a} g(x)} = \\frac{4}{2} = 2$."
+    "explanation": "One of the theorems involving trigonometric limits states $\\lim_{x \\rightarrow 0} \\frac{1 - \\cos x}{x} = 0$."
   },
   {
     "id": 28,
-    "question": "For the function $f(x) = \\begin{cases} 2x+1 & \\text{if } x < 1 \\\\ 3x & \\text{if } x \\geq 1 \\end{cases}$, find $\\lim_{x\\to 1} f(x)$.",
+    "question": "When evaluating the limit $\\lim_{x \\rightarrow c} \\sec x$, the result is:",
     "options": [
-      "3",
-      "2",
-      "1",
-      "Does not exist"
+      "$\\sin c$",
+      "$\\cos c$",
+      "$\\sec c$",
+      "$\\csc c$"
     ],
-    "correct": 0,
-    "explanation": "Check the one-sided limits. Left-hand limit: $\\lim_{x\\to 1^-} (2x+1) = 2(1)+1 = 3$. Right-hand limit: $\\lim_{x\\to 1^+} (3x) = 3(1) = 3$. Since the left and right limits are equal, the overall limit is 3."
+    "correct": 2,
+    "explanation": "The rule for trigonometric function values at $x=c$ states $\\lim_{x \\rightarrow c} \\sec x = \\sec c$."
   },
   {
     "id": 29,
-    "question": "Evaluate $\\lim_{x\\to\\infty} (\\sqrt{x^2+x} - x)$.",
+    "question": "In the process of proving trigonometric identities, what is the recommended second step?",
     "options": [
-      "0",
-      "$\\infty$",
-      "$\\frac{1}{2}$",
-      "Does not exist"
+      "Determine the LHS and RHS.",
+      "Convert all functions to sine and cosine.",
+      "Evaluate accordingly.",
+      "Multiply by the conjugate."
     ],
-    "correct": 2,
-    "explanation": "Multiply by the conjugate: $\\lim_{x\\to\\infty} \\frac{(\\sqrt{x^2+x}-x)(\\sqrt{x^2+x}+x)}{\\sqrt{x^2+x}+x} = \\lim_{x\\to\\infty} \\frac{x^2+x-x^2}{\\sqrt{x^2+x}+x} = \\lim_{x\\to\\infty} \\frac{x}{\\sqrt{x^2+x}+x}$. Divide numerator and denominator by $x$: $\\lim_{x\\to\\infty} \\frac{1}{\\sqrt{1+\\frac{1}{x}}+1} = \\frac{1}{\\sqrt{1+0}+1} = \\frac{1}{2}$."
+    "correct": 1,
+    "explanation": "Step 2 is to Convert all functions to sine and cosine."
   },
   {
     "id": 30,
-    "question": "What is the value of $\\lim_{x\\to 0} \\frac{(x+2)^2 - 4}{x}$?",
+    "question": "The Pythagorean Identity $\\sin^2 \\theta + \\cos^2 \\theta$ is equal to:",
     "options": [
-      "0",
-      "2",
-      "4",
-      "Does not exist"
+      "$\\tan^2 \\theta$",
+      "1",
+      "$\\sec^2 \\theta$",
+      "$\\csc^2 \\theta$"
     ],
-    "correct": 2,
-    "explanation": "Expand the numerator: $\\lim_{x\\to 0} \\frac{x^2+4x+4-4}{x} = \\lim_{x\\to 0} \\frac{x^2+4x}{x}$. Factor $x$: $\\lim_{x\\to 0} \\frac{x(x+4)}{x}$. Cancel $x$ and substitute $x=0$: $0+4=4$."
+    "correct": 1,
+    "explanation": "The Pythagorean Identity is $\\sin^2 \\theta + \\cos^2 \\theta = 1$."
   },
   {
     "id": 31,
-    "question": "Find $\\lim_{x\\to 1} \\frac{x^3 - 1}{x - 1}$.",
+    "question": "Which of the following is a Reciprocal Identity for $\\tan \\theta$?",
     "options": [
-      "1",
-      "3",
-      "0",
-      "Does not exist"
+      "$\\frac{\\cos \\theta}{\\sin \\theta}$",
+      "$\\frac{1}{\\cot \\theta}$",
+      "$\\frac{1}{\\sec \\theta}$",
+      "$\\frac{\\sin \\theta}{\\cos \\theta}$"
     ],
     "correct": 1,
-    "explanation": "Factor the numerator using the difference of cubes formula, $a^3-b^3=(a-b)(a^2+ab+b^2)$: $\\lim_{x\\to 1} \\frac{(x-1)(x^2+x+1)}{x-1}$. Cancel $(x-1)$ and substitute $x=1$: $1^2+1+1=3$."
+    "explanation": "The reciprocal identity is $\\tan \\theta = \\frac{1}{\\cot \\theta}$."
   },
   {
     "id": 32,
-    "question": "Evaluate $\\lim_{x\\to\\infty} \\frac{5x^3}{2x^3 - 7x}$.",
+    "question": "What is the Quotient Identity for $\\cot \\theta$?",
     "options": [
-      "0",
-      "$\\frac{5}{2}$",
-      "$\\infty$",
-      "Does not exist"
+      "$\\frac{\\sin \\theta}{\\cos \\theta}$",
+      "$\\frac{\\sec \\theta}{\\csc \\theta}$",
+      "$\\frac{\\cos \\theta}{\\sin \\theta}$",
+      "$\\frac{\\tan \\theta}{\\sin \\theta}$"
     ],
-    "correct": 1,
-    "explanation": "The degrees of the numerator and denominator are equal. The limit is the ratio of the leading coefficients, which is $\\frac{5}{2}$."
+    "correct": 2,
+    "explanation": "The quotient identity is $\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}$ (also $\\frac{\\csc \\theta}{\\sec \\theta}$)."
   },
   {
     "id": 33,
-    "question": "What is the limit of $\\lim_{x\\to 4} \\frac{x^2 - 16}{x - 4}$?",
+    "question": "If $y = 3x^2(2x+1)$, find $\\frac{dy}{dx}$ using the Product Rule. (Hint: $g(x)=3x^2$, $h(x)=2x+1$).",
     "options": [
-      "8",
-      "4",
-      "0",
-      "Does not exist"
+      "$18x^2 + 6x$",
+      "$6x(2x+1) + 3x^2(2)$",
+      "$12x^2 + 3x^2$",
+      "$18x^2 + 6$"
     ],
-    "correct": 0,
-    "explanation": "Factor the numerator: $\\lim_{x\\to 4} \\frac{(x-4)(x+4)}{x-4}$. Cancel $(x-4)$ and substitute $x=4$: $4+4=8$."
+    "correct": 1,
+    "explanation": "Product Rule: $g'(x)h(x) + g(x)h'(x) = (6x)(2x+1) + (3x^2)(2)$."
   },
   {
     "id": 34,
-    "question": "Find $\\lim_{x\\to 1} \\frac{x^2 + 2x - 3}{x - 1}$.",
+    "question": "If $f(x) = \\frac{1}{x} + 4x$, find $f'(x)$.",
     "options": [
-      "4",
-      "0",
-      "-3",
-      "Does not exist"
+      "$-x^{-2} + 4$",
+      "$x^{-2} + 4$",
+      "$-x^2 + 4$",
+      "$1 + 4$"
     ],
     "correct": 0,
-    "explanation": "Factor the numerator: $\\lim_{x\\to 1} \\frac{(x-1)(x+3)}{x-1}$. Cancel $(x-1)$ and substitute $x=1$: $1+3=4$."
+    "explanation": "Rewrite $f(x) = x^{-1} + 4x$. $f'(x) = -1x^{-2} + 4 = -x^{-2} + 4$."
   },
   {
     "id": 35,
-    "question": "Evaluate $\\lim_{x\\to 0} \\frac{\\sqrt{1-x} - 1}{x}$.",
+    "question": "In a 30-60-90 triangle, if the side opposite the $30^{\\circ}$ angle is $x$, what is the side opposite the $60^{\\circ}$ angle?",
     "options": [
-      "$\\frac{1}{2}$",
-      "$-\\frac{1}{2}$",
-      "0",
-      "1"
+      "$x\\sqrt{2}$",
+      "$2x$",
+      "$x\\sqrt{3}$",
+      "$x$"
     ],
-    "correct": 1,
-    "explanation": "Multiply by the conjugate: $\\lim_{x\\to 0} \\frac{(\\sqrt{1-x}-1)(\\sqrt{1-x}+1)}{x(\\sqrt{1-x}+1)} = \\lim_{x\\to 0} \\frac{1-x-1}{x(\\sqrt{1-x}+1)} = \\lim_{x\\to 0} \\frac{-x}{x(\\sqrt{1-x}+1)}$. Cancel $x$ and substitute $x=0$: $\\frac{-1}{\\sqrt{1-0}+1} = -\\frac{1}{2}$."
+    "correct": 2,
+    "explanation": "The ratio is $1:\\sqrt{3}:2$, so the side opposite $60^{\\circ}$ is $x\\sqrt{3}$."
   },
   {
     "id": 36,
-    "question": "If $\\lim_{x\\to 5} f(x) = 3$ and $\\lim_{x\\to 5} g(x) = -2$, what is $\\lim_{x\\to 5} [f(x) - g(x)]$?",
+    "question": "What factor is used to convert an angle from Degrees to Radians?",
     "options": [
-      "1",
-      "5",
-      "$-5$",
-      "$-1$"
+      "$\\frac{180}{\\pi}$",
+      "$\\frac{\\pi}{180}$",
+      "$\\frac{2}{\\pi}$",
+      "$\\frac{360}{\\pi}$"
     ],
     "correct": 1,
-    "explanation": "Using the Difference Rule for limits, $\\lim_{x\\to 5} [f(x)-g(x)] = \\lim_{x\\to 5} f(x) - \\lim_{x\\to 5} g(x) = 3 - (-2) = 5$."
+    "explanation": "The formula is $d^{\\circ} \\times \\frac{\\pi}{180}$."
   },
   {
     "id": 37,
-    "question": "Find $\\lim_{x\\to 0} (x^2 + 2x - 3)$.",
+    "question": "If $y = (x^3 - 2)^6$, use the Chain Rule to find $\\frac{dy}{dx}$.",
     "options": [
-      "0",
-      "1",
-      "-3",
-      "2"
+      "$6(x^3 - 2)^5$",
+      "$6(3x^2)$",
+      "$6(x^3 - 2)^5 \\cdot 3x^2$",
+      "$18x^2$"
     ],
     "correct": 2,
-    "explanation": "Substitute $x=0$ directly: $(0)^2 + 2(0) - 3 = -3$."
+    "explanation": "Outer derivative: $6(x^3-2)^5$. Inner derivative: $3x^2$. Result: $6(x^3 - 2)^5 \\cdot 3x^2$."
   },
   {
     "id": 38,
-    "question": "Evaluate $\\lim_{x\\to\\infty} \\frac{2x^2+1}{3x^3 - 4}$.",
+    "question": "The symbol $\\frac{d}{dx}f(x)$ is read as:",
     "options": [
-      "$\\frac{2}{3}$",
-      "0",
-      "$\\infty$",
-      "Does not exist"
+      "The value of $f(x)$",
+      "The integral of $f(x)$",
+      "The derivative of $f(x)$ with respect to $x$",
+      "The change in $x$"
     ],
-    "correct": 1,
-    "explanation": "The degree of the denominator (3) is greater than the degree of the numerator (2). The limit at infinity is 0."
+    "correct": 2,
+    "explanation": "Derivatives like $\\frac{dy}{dx}$ are read as 'the derivative of y with respect to x' (or $f(x)$)."
   },
   {
     "id": 39,
-    "question": "What is the value of $\\lim_{x\\to 1} (x - 1)^2$?",
+    "question": "Which of the following is the final step in the 'Four-Step Rule'?",
     "options": [
-      "1",
-      "0",
-      "2",
-      "$-1$"
+      "Find $f(x+h) - f(x)$",
+      "Divide the result by $h$",
+      "Find $f(x+h)$",
+      "Find $f'(x)$ using the limit as $h\\rightarrow 0$"
     ],
-    "correct": 1,
-    "explanation": "Substitute $x=1$ directly: $(1-1)^2 = 0^2 = 0$."
+    "correct": 3,
+    "explanation": "The final step is to FIND $f'(x)$ using the formula $f'(x)=\\lim_{h\\rightarrow 0}\\frac{f(x+h)-f(x)}{h}$."
   },
   {
     "id": 40,
-    "question": "Find $\\lim_{x\\to 3^+} \\frac{5}{x-3}$.",
+    "question": "What is the Pythagorean Identity involving $\\sec^2 \\theta$?",
     "options": [
-      "0",
-      "5",
-      "$\\infty$",
-      "$-\\infty$"
+      "$\\sin^2 \\theta + \\cos^2 \\theta = \\sec^2 \\theta$",
+      "$\\cot^2 \\theta + 1 = \\sec^2 \\theta$",
+      "$\\tan^2 \\theta + 1 = \\sec^2 \\theta$",
+      "$\\sec^2 \\theta + 1 = \\tan^2 \\theta$"
     ],
     "correct": 2,
-    "explanation": "As $x$ approaches 3 from the right (e.g., $x=3.01$), the numerator is positive and the denominator is a small positive number. The fraction approaches $\\infty$."
+    "explanation": "The Pythagorean Identity is $\\tan^2 \\theta + 1 = \\sec^2 \\theta$."
   },
   {
     "id": 41,
-    "question": "Evaluate $\\lim_{x\\to 1} \\frac{x^2 - 3x + 2}{x - 1}$.",
+    "question": "Differentiate $y = (x^2+1)(x+3)$ using the Product Rule. (Hint: $g'(x)=2x, h'(x)=1$).",
     "options": [
-      "0",
-      "-1",
-      "1",
-      "2"
+      "$(x^2+1)(1) + (2x)(x+3)$",
+      "$(2x)(1)$",
+      "$(x^2+1) + (x+3)$",
+      "$x^2+2x+4$"
     ],
-    "correct": 1,
-    "explanation": "Factor the numerator: $\\lim_{x\\to 1} \\frac{(x-1)(x-2)}{x-1}$. Cancel $(x-1)$ and substitute $x=1$: $1-2=-1$."
+    "correct": 0,
+    "explanation": "Product Rule: $g(x)h'(x) + g'(x)h(x) = (x^2+1)(1) + (2x)(x+3)$."
   },
   {
     "id": 42,
-    "question": "Find $\\lim_{x\\to 2} \\frac{\\sqrt{x+2}-2}{x-2}$.",
+    "question": "Which trigonometric limit rule has a value of $\\sin c$?",
     "options": [
-      "$\\frac{1}{4}$",
-      "4",
-      "0",
-      "Does not exist"
+      "$\\lim_{x \\rightarrow c} \\cos x$",
+      "$\\lim_{x \\rightarrow c} \\sin x$",
+      "$\\lim_{x \\rightarrow c} \\tan x$",
+      "$\\lim_{x \\rightarrow 0} \\frac{\\sin x}{x}$"
     ],
-    "correct": 0,
-    "explanation": "Multiply by the conjugate of the numerator: $\\lim_{x\\to 2} \\frac{(\\sqrt{x+2}-2)(\\sqrt{x+2}+2)}{(x-2)(\\sqrt{x+2}+2)} = \\lim_{x\\to 2} \\frac{x+2-4}{(x-2)(\\sqrt{x+2}+2)} = \\lim_{x\\to 2} \\frac{x-2}{(x-2)(\\sqrt{x+2}+2)}$. Cancel $(x-2)$ and substitute $x=2$: $\\frac{1}{\\sqrt{2+2}+2} = \\frac{1}{2+2} = \\frac{1}{4}$."
+    "correct": 1,
+    "explanation": "The rule is $\\lim_{x \\rightarrow c} \\sin x = \\sin c$."
   },
   {
     "id": 43,
-    "question": "What is $\\lim_{x\\to\\infty} (3x^2 - 4x^3)$?",
+    "question": "Differential Calculus is a branch of mathematics that deals with the rates at which quantities:",
     "options": [
-      "$\\infty$",
-      "$-\\infty$",
-      "0",
-      "3"
+      "Remain Constant",
+      "Are Integrated",
+      "Are Multiplied",
+      "Change"
     ],
-    "correct": 1,
-    "explanation": "The term with the highest power determines the behavior of a polynomial as $x$ approaches infinity. The term is $-4x^3$. As $x\\to\\infty$, $-4x^3\\to -\\infty$."
+    "correct": 3,
+    "explanation": "Differential Calculus deals with the rates at which quantities change."
   },
   {
     "id": 44,
-    "question": "Evaluate $\\lim_{x\\to -2} \\frac{x^3 + 8}{x + 2}$.",
+    "question": "What is the derivative of $f(x) = 2x^3 - 6x^2 + 1$?",
     "options": [
-      "12",
-      "0",
-      "4",
-      "Does not exist"
+      "$6x^2 - 12x + 1$",
+      "$6x^2 - 12x$",
+      "$2x^2 - 12x$",
+      "$6x - 12$"
     ],
-    "correct": 0,
-    "explanation": "Factor the numerator using the sum of cubes formula, $a^3+b^3=(a+b)(a^2-ab+b^2)$: $\\lim_{x\\to -2} \\frac{(x+2)(x^2-2x+4)}{x+2}$. Cancel $(x+2)$ and substitute $x=-2$: $(-2)^2 - 2(-2) + 4 = 4+4+4=12$."
+    "correct": 1,
+    "explanation": "Applying the rules: $2(3)x^2 - 6(2)x + 0 = 6x^2 - 12x$."
   },
   {
     "id": 45,
-    "question": "If $\\lim_{x\\to 2} f(x) = 5$, what is $\\lim_{x\\to 2} [f(x)]^2$?",
+    "question": "If $f(x) = \\frac{1}{x^3}$, find $f'(x)$.",
     "options": [
-      "5",
-      "25",
-      "10",
-      "Does not exist"
+      "$-3x^{-4}$",
+      "$3x^{-4}$",
+      "$-3x^{-2}$",
+      "$3x^4$"
     ],
-    "correct": 1,
-    "explanation": "Using the Power Rule for limits, $\\lim_{x\\to 2} [f(x)]^2 = [\\lim_{x\\to 2} f(x)]^2 = 5^2 = 25$."
+    "correct": 0,
+    "explanation": "Rewrite $f(x) = x^{-3}$. $f'(x) = -3x^{-3-1} = -3x^{-4}$."
   },
   {
     "id": 46,
-    "question": "What is the limit of $\\lim_{x\\to 2} \\frac{x^2 - x - 2}{x^2 + x - 6}$?",
+    "question": "Which of the following is a Product Identity involving $\\cos \\theta$?",
     "options": [
-      "$\\frac{1}{5}$",
-      "0",
-      "1",
-      "$\\frac{3}{5}$"
+      "$\\cos \\theta = \\frac{1}{\\sec \\theta}$",
+      "$\\cos \\theta = \\sin \\theta \\cot \\theta$",
+      "$\\cos \\theta = \\tan \\theta \\sin \\theta$",
+      "$\\cos \\theta = \\sec \\theta \\csc \\theta$"
     ],
-    "correct": 3,
-    "explanation": "Factor both numerator and denominator: $\\lim_{x\\to 2} \\frac{(x-2)(x+1)}{(x-2)(x+3)}$. Cancel $(x-2)$ and substitute $x=2$: $\\frac{2+1}{2+3} = \\frac{3}{5}$."
+    "correct": 1,
+    "explanation": "The reviewer lists $\\cos \\theta = \\sin \\theta \\cot \\theta$ as a Product Identity."
   },
   {
     "id": 47,
-    "question": "Evaluate $\\lim_{x\\to 4^-} \\frac{2}{x-4}$.",
+    "question": "In a 45-45-90 triangle, what is the length of the hypotenuse if the two legs are both length $x$?",
     "options": [
-      "2",
-      "$-2$",
-      "$\\infty$",
-      "$-\\infty$"
+      "$2x$",
+      "$x\\sqrt{3}$",
+      "$x\\sqrt{2}$",
+      "$x$"
     ],
-    "correct": 3,
-    "explanation": "As $x$ approaches 4 from the left (e.g., $x=3.99$), the numerator is positive and the denominator is a small negative number. The fraction approaches $-\\infty$."
+    "correct": 2,
+    "explanation": "The ratio is $1:1:\\sqrt{2}$, so the hypotenuse is $x\\sqrt{2}$."
   },
   {
     "id": 48,
-    "question": "Find $\\lim_{x\\to\\infty} \\frac{\\sqrt{4x^2 - 1}}{x + 1}$.",
+    "question": "What is the derivative of $f(x) = 8x^2 + 5x$?",
     "options": [
-      "1",
-      "2",
-      "4",
-      "0"
+      "$16x + 5x$",
+      "$16x + 5$",
+      "$8x + 5$",
+      "$16x^2 + 5$"
     ],
     "correct": 1,
-    "explanation": "Divide the numerator and denominator by the highest power of $x$ in the denominator, which is $x$. Inside the square root, $x$ becomes $\\sqrt{x^2}$. The limit becomes $\\lim_{x\\to\\infty} \\frac{\\sqrt{4 - \\frac{1}{x^2}}}{1 + \\frac{1}{x}} = \\frac{\\sqrt{4-0}}{1+0} = 2$."
+    "explanation": "Applying the rules: $8(2)x + 5(1) = 16x + 5$."
   },
   {
     "id": 49,
-    "question": "What is the value of $\\lim_{x\\to -1} (x^2 + 2x + 1)$?",
+    "question": "The Quotient Identity $\\cos \\theta = \\frac{\\cot \\theta}{\\csc \\theta}$ can be simplified using Reciprocal and Quotient Identities to show it is true. This process is part of:",
     "options": [
-      "4",
-      "1",
-      "0",
-      "-1"
+      "Evaluating accordingly",
+      "Determining the LHS and RHS",
+      "Proving Trigonometric Identities",
+      "Finding the limit"
     ],
     "correct": 2,
-    "explanation": "Substitute $x=-1$ directly: $(-1)^2 + 2(-1) + 1 = 1 - 2 + 1 = 0$."
+    "explanation": "The example is directly related to the section on Proving Trigonometric Identities."
   },
   {
     "id": 50,
-    "question": "Evaluate $\\lim_{x\\to 0} \\frac{x^2 - 3x}{x}$.",
+    "question": "If $f(x) = x^4 + 3x^2$, find the second derivative $f''(x)$.",
     "options": [
-      "0",
-      "3",
-      "-3",
-      "Does not exist"
+      "$4x^3 + 6x$",
+      "$12x^2 + 6$",
+      "$12x + 6$",
+      "$x^4 + 6$"
     ],
-    "correct": 2,
-    "explanation": "Factor $x$ from the numerator: $\\lim_{x\\to 0} \\frac{x(x-3)}{x}$. Cancel $x$ and substitute $x=0$: $0-3=-3$."
+    "correct": 1,
+    "explanation": "First derivative $f'(x) = 4x^3 + 6x$. Second derivative $f''(x) = 4(3)x^2 + 6(1) = 12x^2 + 6$."
   },
   {
     "id": 51,
-    "question": "Find $\\lim_{x\\to 2} \\frac{x - 2}{x^2 - 5x + 6}$.",
+    "question": "The rule $f'(x) = k \\cdot nx^{n-1}$ is defined as the derivative of which function type?",
     "options": [
-      "1",
-      "$-1$",
-      "0",
-      "Does not exist"
+      "Power Rule",
+      "Constant Rule",
+      "Identity Rule",
+      "Constant Multiple Rule"
     ],
-    "correct": 1,
-    "explanation": "Factor the denominator: $\\lim_{x\\to 2} \\frac{x - 2}{(x-2)(x-3)}$. Cancel $(x-2)$ and substitute $x=2$: $\\frac{1}{2-3}=-1$."
+    "correct": 3,
+    "explanation": "This is the formula for the Constant Multiple Rule: $f(x) = k \\cdot x^n$."
   },
   {
     "id": 52,
-    "question": "What is the limit of $\\lim_{x\\to\\infty} (\\frac{2x^2 + 1}{x^2})$?",
+    "question": "The symbol $y'$ is a notation used for the:",
     "options": [
-      "1",
-      "2",
-      "0",
-      "Does not exist"
+      "Original function $y$",
+      "Second derivative",
+      "First derivative",
+      "Change in $y$"
     ],
-    "correct": 1,
-    "explanation": "Divide each term in the numerator by $x^2$: $\\lim_{x\\to\\infty} (2 + \\frac{1}{x^2})$. As $x\\to\\infty$, $\\frac{1}{x^2}\\to 0$. The limit is $2+0=2$."
-  },
-  {
-    "id": 53,
-    "question": "Evaluate $\\lim_{x\\to 0} \\frac{\\sqrt{25+x}-5}{x}$.",
-    "options": [
-      "$\\frac{1}{10}$",
-      "10",
-      "$\\frac{1}{5}$",
-      "Does not exist"
-    ],
-    "correct": 0,
-    "explanation": "Multiply by the conjugate of the numerator: $\\lim_{x\\to 0} \\frac{(\\sqrt{25+x}-5)(\\sqrt{25+x}+5)}{x(\\sqrt{25+x}+5)} = \\lim_{x\\to 0} \\frac{25+x-25}{x(\\sqrt{25+x}+5)} = \\lim_{x\\to 0} \\frac{x}{x(\\sqrt{25+x}+5)}$. Cancel $x$ and substitute $x=0$: $\\frac{1}{\\sqrt{25+0}+5} = \\frac{1}{5+5} = \\frac{1}{10}$."
-  },
-  {
-    "id": 54,
-    "question": "Find $\\lim_{x\\to 3} \\frac{x^2 - 9}{x - 3}$.",
-    "options": [
-      "6",
-      "3",
-      "0",
-      "Does not exist"
-    ],
-    "correct": 0,
-    "explanation": "Factor the numerator: $\\lim_{x\\to 3} \\frac{(x-3)(x+3)}{x-3}$. Cancel $(x-3)$ and substitute $x=3$: $3+3=6$."
-  },
-  {
-    "id": 55,
-    "question": "What is the limit of $\\lim_{x\\to\\infty} \\frac{1}{x}$?",
-    "options": [
-      "1",
-      "0",
-      "$\\infty$",
-      "Does not exist"
-    ],
-    "correct": 1,
-    "explanation": "As the denominator of a fraction grows infinitely large, the value of the fraction approaches 0."
-  },
-  {
-    "id": 56,
-    "question": "Evaluate $\\lim_{x\\to 4} \\frac{\\sqrt{x}-2}{x-4}$.",
-    "options": [
-      "0",
-      "$\\frac{1}{4}$",
-      "4",
-      "Does not exist"
-    ],
-    "correct": 1,
-    "explanation": "Multiply by the conjugate of the numerator: $\\lim_{x\\to 4} \\frac{(\\sqrt{x}-2)(\\sqrt{x}+2)}{(x-4)(\\sqrt{x}+2)} = \\lim_{x\\to 4} \\frac{x-4}{(x-4)(\\sqrt{x}+2)}$. Cancel $(x-4)$ and substitute $x=4$: $\\frac{1}{\\sqrt{4}+2}=\\frac{1}{2+2}=\\frac{1}{4}$."
-  },
-  {
-    "id": 57,
-    "question": "Find $\\lim_{x\\to 2} \\frac{x^2-4}{x^2-x-2}$.",
-    "options": [
-      "0",
-      "$\\frac{4}{3}$",
-      "2",
-      "Does not exist"
-    ],
-    "correct": 1,
-    "explanation": "Factor both numerator and denominator: $\\lim_{x\\to 2} \\frac{(x-2)(x+2)}{(x-2)(x+1)}$. Cancel $(x-2)$ and substitute $x=2$: $\\frac{2+2}{2+1} = \\frac{4}{3}$."
-  },
-  {
-    "id": 58,
-    "question": "What is the value of $\\lim_{x\\to 5} \\frac{x - 5}{x^2 - 25}$?",
-    "options": [
-      "$\\frac{1}{10}$",
-      "10",
-      "0",
-      "Does not exist"
-    ],
-    "correct": 0,
-    "explanation": "Factor the denominator: $\\lim_{x\\to 5} \\frac{x-5}{(x-5)(x+5)}$. Cancel $(x-5)$ and substitute $x=5$: $\\frac{1}{5+5} = \\frac{1}{10}$."
-  },
-  {
-    "id": 59,
-    "question": "If $\\lim_{x\\to a} f(x) = 0$ and $\\lim_{x\\to a} g(x) = 0$, what can be said about $\\lim_{x\\to a} \\frac{f(x)}{g(x)}$?",
-    "options": [
-      "The limit is 0",
-      "The limit is 1",
-      "The limit is undefined",
-      "The limit is an indeterminate form, requiring further analysis"
-    ],
-    "correct": 3,
-    "explanation": "When the numerator and denominator both approach 0, the limit is of the indeterminate form $\\frac{0}{0}$. This means more work is needed (like factoring, using conjugates, or L'Hopital's rule) to find the limit, which may or may not exist."
-  },
-  {
-    "id": 60,
-    "question": "For a rational function $f(x) = \\frac{p(x)}{q(x)}$, a vertical asymptote exists at $x=c$ if:",
-    "options": [
-      "$\\lim_{x\\to c} f(x) = 0$",
-      "$q(c) = 0$ but $p(c) \\neq 0$",
-      "$\\lim_{x\\to c} f(x) = 1$",
-      "$\\lim_{x\\to c} f(x)$ exists"
-    ],
-    "correct": 1,
-    "explanation": "A vertical asymptote occurs where the denominator is zero and the numerator is non-zero, causing the limit to approach $\\pm\\infty$."
+    "correct": 2,
+    "explanation": "$y'$ is one of the symbols used for the first derivative."
   }
 ];
 
