@@ -2485,810 +2485,774 @@ const contemporaryArtsQuestions = [
 
 // Empowerment Technologies Quiz Data - 67 Questions
 const empowermentTechnologiesQuestions = [
-  {
+ {
     "id": 1,
-    "question": "What is the primary purpose of a firewall in network security?",
+    "question": "What component of an Excel spreadsheet runs vertically and is identified by letters (A, B, C, etc.)?",
     "options": [
-      "To monitor website traffic.",
-      "To prevent unauthorized access to a network.",
-      "To encrypt all data transmissions.",
-      "To scan for viruses in emails."
+      "Rows",
+      "Cells",
+      "Columns",
+      "Worksheet Tab"
     ],
-    "correct": 1,
-    "explanation": "Firewalls are defined as security tools that prevent unauthorized access to a network."
+    "correct": 2,
+    "explanation": "Columns run vertically on the sheet and are identified by letters (A, B, C, etc.)."
   },
   {
     "id": 2,
-    "question": "Which of the following is NOT one of the four periods in the evolution of ICT?",
+    "question": "The individual rectangular unit in an Excel spreadsheet where you type values is called a(n):",
     "options": [
-      "Electromechanical Period",
-      "Mechanical Period",
-      "Biological Period",
-      "Electronic Period"
+      "Active Cell",
+      "Formula Bar",
+      "Column Header",
+      "Cell"
     ],
-    "correct": 2,
-    "explanation": "The four periods are Pre-Mechanical, Mechanical, Electromechanical, and Electronic. There is no 'Biological Period'."
+    "correct": 3,
+    "explanation": "The individual rectangular unit is a cell, and the content you type is its content."
   },
   {
     "id": 3,
-    "question": "What is the main function of a Trojan horse malware?",
+    "question": "The bar that displays and allows modification of the value currently typed in the active cell is the:",
     "options": [
-      "To replicate itself and spread to other computers.",
-      "To secretly steal user data and passwords.",
-      "To appear as a legitimate file while hiding malicious code.",
-      "To display unwanted advertisements."
+      "Title Bar",
+      "Status Bar",
+      "Formula Bar",
+      "Name Box"
     ],
     "correct": 2,
-    "explanation": "The reviewer defines a Trojan horse as a malicious program disguised as a legitimate file or application."
+    "explanation": "The Formula Bar shows the value typed in the cell and allows for modification."
   },
   {
     "id": 4,
-    "question": "The invention of the telephone is credited to which individual?",
+    "question": "Which function allows for the summing of numerical data across any number of selected columns or rows?",
     "options": [
-      "Marconi",
-      "Samuel Morse",
-      "Alexander Graham Bell",
-      "Charles Babbage"
+      "SUMIF()",
+      "AVERAGE()",
+      "COUNT()",
+      "SUM()"
     ],
-    "correct": 2,
-    "explanation": "Alexander Graham Bell is credited with revolutionizing communications by inventing the telephone in 1876."
+    "correct": 3,
+    "explanation": "The SUM() function allows for the summing of numerical data in any number of columns or rows by selecting them."
   },
   {
     "id": 5,
-    "question": "What does MFA stand for in the context of internet security?",
+    "question": "A group or collection of cells, which can be a group within a row, column, or combination of both, is defined as a(n):",
     "options": [
-      "Mainframe Authorization",
-      "Multifactor Authentication",
-      "Multi-Function Application",
-      "Malware Filtering Agent"
+      "Criteria",
+      "Sum_Range",
+      "Range",
+      "Table_range"
     ],
-    "correct": 1,
-    "explanation": "MFA is an acronym for Multifactor Authentication, a process that requires several authentication mechanisms for computer access."
+    "correct": 2,
+    "explanation": "A Range is a group or collection of cells, which can be a group of cells within a row, column, or combination of both."
   },
   {
     "id": 6,
-    "question": "During which period did the discovery of papyrus and paper occur?",
+    "question": "Which function is used to summate the values of cells in a range that meet a specific criteria?",
     "options": [
-      "Electronic Period",
-      "Pre-Mechanical Period",
-      "Mechanical Period",
-      "Electromechanical Period"
+      "SUM()",
+      "AVERAGEIF()",
+      "IF()",
+      "SUMIF()"
     ],
-    "correct": 1,
-    "explanation": "The Pre-Mechanical Period is characterized by the use of words and pictograms carved in rocks and the discovery of papyrus and paper."
+    "correct": 3,
+    "explanation": "The SUMIF() function is used to summate the values of cells in a range that meet the criteria."
   },
   {
     "id": 7,
-    "question": "Who is known as the 'Father of the Modern Computer'?",
+    "question": "What is the correct syntax for the AVERAGE() function?",
     "options": [
-      "William Cooke",
-      "Blaise Pascal",
-      "Charles Babbage",
-      "Marconi"
+      "=AVERAGE(criteria, range)",
+      "=AVERAGE(range to be averaged)",
+      "=AVERAGE(range, criteria)",
+      "=AVERAGE(number1, number2)"
     ],
-    "correct": 2,
-    "explanation": "The reviewer explicitly names Charles Babbage as the 'Father of the Modern Computer'."
+    "correct": 1,
+    "explanation": "The formula for the AVERAGE() function is =AVERAGE(range to be averaged)."
   },
   {
     "id": 8,
-    "question": "A virus is a type of malware that does what?",
+    "question": "The COUNT() function counts the number of selected cells that contain a:",
     "options": [
-      "Displays pop-up ads and unwanted content.",
-      "Infects other programs and self-replicates.",
-      "Logs keystrokes to steal information.",
-      "Encrypts files and demands a ransom."
+      "Text string",
+      "Logical value (TRUE/FALSE)",
+      "Numerical value",
+      "Blank space"
     ],
-    "correct": 1,
-    "explanation": "A virus is defined as a malicious program that infects other programs and self-replicates, spreading to other computers."
+    "correct": 2,
+    "explanation": "The COUNT() function counts the number of chosen cells that contain a numerical value."
   },
   {
     "id": 9,
-    "question": "Which of the following is considered a key component of Information and Communication Technology (ICT)?",
+    "question": "The correct syntax for the =IF() function is:",
     "options": [
-      "Datafication",
-      "Automotive Engineering",
-      "Biotechnology",
-      "Traditional Media"
+      "=IF(Condition, Result if True, Result if False)",
+      "=IF(Result if True, Condition, Result if False)",
+      "=IF(Condition, 'Result if True', 'Result if False')",
+      "=IF('Result if True', 'Result if False', Condition)"
     ],
-    "correct": 0,
-    "explanation": "The reviewer lists Datafication as one of the ICT components, along with Internet Access and Cloud Computing."
+    "correct": 2,
+    "explanation": "The syntax for the IF() function is =IF(Condition, 'Result if True', 'Result if False')."
   },
   {
     "id": 10,
-    "question": "The ENIAC, a vacuum tube machine, was the first general-purpose what?",
+    "question": "The AND() function will return FALSE if:",
     "options": [
-      "Electronic digital computer",
-      "Mechanical calculator",
-      "Analytical engine",
-      "Single-circuit telegraph"
+      "All conditions are met.",
+      "At least one condition is met.",
+      "Even if one of the conditions is not met.",
+      "The AND() function always returns TRUE."
     ],
-    "correct": 0,
-    "explanation": "The ENIAC (Electronic Numerical Integrator and Computer) is identified as the first general-purpose electronic digital computer."
+    "correct": 2,
+    "explanation": "The AND() function will return TRUE if all conditions are met and FALSE even if one of the conditions is not met."
   },
   {
     "id": 11,
-    "question": "What is the main goal of phishing scams?",
+    "question": "Which function is used to find data by row in a table by searching for the lookup value in the leftmost column of the chosen range?",
     "options": [
-      "To install a virus on a computer.",
-      "To obtain private and illicit information from users.",
-      "To display a large number of advertisements.",
-      "To slow down a computer's performance."
+      "CONCATENATE()",
+      "VLOOKUP()",
+      "SUMIF()",
+      "MAX()"
     ],
     "correct": 1,
-    "explanation": "Phishing is a scam created by cybercriminals who intend to ask for private and elicit information."
+    "explanation": "The VLOOKUP() function is used to find data by row in a table or a range by finding the lookup value in the leftmost column."
   },
   {
     "id": 12,
-    "question": "What is the Abacus, invented in Mesopotamia, primarily known for?",
+    "question": "In VLOOKUP(), what does the logical value 'TRUE' for 'Range\_lookup' signify?",
     "options": [
-      "Being the first mechanical calculator.",
-      "The first device to use electricity for communication.",
-      "The first multipurpose computer.",
-      "An early computing device used for arithmetic calculations."
+      "It will look for an exact match.",
+      "It will return the column index number.",
+      "It will look for the closest value in Column 1.",
+      "It will return an error."
     ],
-    "correct": 3,
-    "explanation": "The Abacus is listed under the Mechanical Period and is an early device for calculations, but it is not called the 'first mechanical calculator'."
+    "correct": 2,
+    "explanation": "Range\_lookup returns TRUE if it will look for the closest value in Column 1."
   },
   {
     "id": 13,
-    "question": "According to the reviewer, what is online ethics?",
+    "question": "Which function combines the values from two or more cells into another cell, storing up to 255 text strings?",
     "options": [
-      "A set of rules for proper online behavior.",
-      "The analysis of how the internet contributes to a good life for people and society.",
-      "A legal framework for regulating internet use.",
-      "A guide for creating secure passwords."
+      "VLOOKUP()",
+      "CONCATENATE()",
+      "MAX()",
+      "Text to Columns"
     ],
     "correct": 1,
-    "explanation": "Online ethics is defined as the analysis of the role that the internet plays in the development of a good life."
+    "explanation": "The CONCATENATE() function combines two or more text strings/values from cells."
   },
   {
     "id": 14,
-    "question": "Which company did John Bardeen, Walter Brattain, and William Shockley work for when they invented the transistor?",
+    "question": "Which Excel feature is described as the opposite of the CONCATENATE() function, separating the contents of one column into two or more columns?",
     "options": [
-      "Google Labs",
-      "Bell Labs",
-      "Microsoft Research",
-      "Apple"
+      "Data Validation",
+      "Conditional Formatting",
+      "Graphs",
+      "Text to Columns"
     ],
-    "correct": 1,
-    "explanation": "The reviewer states that the transistor was invented by the three individuals at Bell Labs."
+    "correct": 3,
+    "explanation": "Text to Columns is the opposite of the concatenate function, separating contents of one column into two or more."
   },
   {
     "id": 15,
-    "question": "The first single-circuit telegraph was introduced by whom?",
+    "question": "The feature that limits what particular value can be entered in a cell to ensure it is reasonable and valid is called:",
     "options": [
-      "Alexander Graham Bell",
-      "Samuel Morse",
-      "Blaise Pascal",
-      "Marconi"
+      "Conditional Formatting",
+      "Data Validation",
+      "Graphs",
+      "Cell Content"
     ],
     "correct": 1,
-    "explanation": "Samuel Morse in the USA introduced the first single-circuit telegraph."
+    "explanation": "Data Validation is a feature that limits what value can be entered in a cell to ensure it is reasonable and valid."
   },
   {
     "id": 16,
-    "question": "What is the primary difference between a virus and a worm?",
+    "question": "The MAX() function searches for the highest value in a specified:",
     "options": [
-      "Worms steal data, while viruses only encrypt it.",
-      "Viruses only affect documents, while worms affect applications.",
-      "A virus requires a host program to spread, while a worm can self-replicate independently.",
-      "A worm is a type of phishing scam, while a virus is not."
+      "Cell",
+      "Row",
+      "Range",
+      "Column"
     ],
     "correct": 2,
-    "explanation": "The reviewer specifies that a virus needs to attach to a host program to replicate, while a worm self-replicates to infect other computers."
+    "explanation": "The MAX() function searches for the highest value in an array (range)."
   },
   {
     "id": 17,
-    "question": "What is the primary function of a Pascaline?",
+    "question": "The feature that enables users to highlight specific cells with desired formatting is known as:",
     "options": [
-      "To transmit information over electrical media.",
-      "To serve as a multipurpose computer.",
-      "To convert sound into electricity.",
-      "To be the first mechanical calculator."
+      "Text to Columns",
+      "Data Validation",
+      "Conditional Formatting",
+      "Workbook Views"
     ],
-    "correct": 3,
-    "explanation": "The Pascaline is identified as the 'First Mechanical Calculator'."
+    "correct": 2,
+    "explanation": "Conditional Formatting enables users to highlight specific cells with the desired formatting."
   },
   {
     "id": 18,
-    "question": "What is the core principle of a secure browser?",
+    "question": "Which image format supports 16.7 million colors and is suitable for full-color photographic images?",
     "options": [
-      "It allows all websites to be accessed.",
-      "It requires a VPN to be used at all times.",
-      "It employs control settings to protect its users.",
-      "It is a browser that is free to use."
+      ".GIF",
+      ".PNG",
+      ".JPG",
+      "CLIP ART"
     ],
     "correct": 2,
-    "explanation": "Secure browsers employ control settings to protect its users."
+    "explanation": ".JPG (Joint Photographic Experts Group) supports 16.7 million colors and is suitable for full-color photographic images."
   },
   {
     "id": 19,
-    "question": "Which type of malware is designed to display unwanted advertisements?",
+    "question": "Which image format is relatively small in file size but does not support transparency?",
     "options": [
-      "Ransomware",
-      "Adware",
-      "Spyware",
-      "Worm"
+      ".GIF",
+      ".PNG",
+      ".JPG",
+      "CLIP ART"
     ],
-    "correct": 1,
-    "explanation": "Adware is defined as a malware that displays unwanted advertisements or pop-ups."
+    "correct": 0,
+    "explanation": ".GIF (Graphics Interchange Format) images are relatively small in file size but do not support transparency (Note: While later standards of GIF support transparency, the text explicitly states it does not support transparency under the .GIF description, while stating .PNG is capable of displaying transparency. Based on the document, .GIF is the best fit.)"
   },
   {
     "id": 20,
-    "question": "What is a key aspect of online etiquette regarding humor?",
+    "question": "Which image format is built around the capabilities of GIF, supports transparency, but **not** animation?",
     "options": [
-      "Always use sarcasm to be witty.",
-      "Use as much humor as possible to lighten the mood.",
-      "Use appropriate humor and avoid sarcasm.",
-      "Never use humor online, as it can be misunderstood."
+      ".JPG",
+      "CLIP ART",
+      ".PNG",
+      ".GIF"
     ],
     "correct": 2,
-    "explanation": "The reviewer states to 'Use appropriate humor and avoid sarcasm'."
+    "explanation": ".PNG (Portable Graphics Network) is built around the capabilities of GIF, supports transparency, but not animation."
   },
   {
     "id": 21,
-    "question": "The Analytical Engine, a multipurpose computer, was designed by whom?",
+    "question": "What type of material refers to line art drawings or images used as a generic representation for ideas and objects?",
     "options": [
-      "Samuel Morse",
-      "Blaise Pascal",
-      "Charles Babbage",
-      "William Cooke"
+      "PICTURES",
+      "CLIP ART",
+      "SMART ART",
+      "SCREENSHOTS"
     ],
-    "correct": 2,
-    "explanation": "Charles Babbage is credited with creating both the Difference Engine and the Analytical Engine."
+    "correct": 1,
+    "explanation": "CLIP ART refers to line art drawings or images used as a generic representation for ideas and objects."
   },
   {
     "id": 22,
-    "question": "Which period in ICT history saw the invention of the internet and mobile phones?",
+    "question": "Which Wrap Text option in Word causes the image to be located directly at the position where the text is located?",
     "options": [
-      "Pre-Mechanical Period",
-      "Electronic Period",
-      "Mechanical Period",
-      "Electromechanical Period"
+      "Square",
+      "In front of the text",
+      "In line with the text",
+      "Top and Bottom"
     ],
-    "correct": 1,
-    "explanation": "The Electronic Period is marked by the invention of the internet and mobile phones, among other telecommunications innovations."
+    "correct": 2,
+    "explanation": "The 'In line with the text' option means the image is located where the text is located."
   },
   {
     "id": 23,
-    "question": "Which of the following is a key rule of online etiquette for respectful communication?",
+    "question": "Which Wrap Text option causes the image to be located behind the text?",
     "options": [
-      "Using only uppercase letters for emphasis.",
-      "Always being the first to comment on a post.",
-      "Respecting others' opinions and dealing with everyone in a humanitarian approach.",
-      "Sharing confidential information with a wide audience."
+      "In front of the text",
+      "Behind text",
+      "Tight",
+      "Through"
     ],
-    "correct": 2,
-    "explanation": "The reviewer states: 'Respect others' opinions, deal with everyone in a humanitarian approach'."
+    "correct": 1,
+    "explanation": "The 'Behind text' option locates the image behind the text."
   },
   {
     "id": 24,
-    "question": "What is the main objective of a ransomware attack?",
+    "question": "Which Wrap Text option causes the text to surround the image with a smaller margin between the text and the image?",
     "options": [
-      "To gain control of your computer remotely.",
-      "To hold your data for ransom by encrypting it.",
-      "To send you unwanted emails and spam.",
-      "To track your online activities and sell your data."
+      "Square",
+      "Through",
+      "Top and Bottom",
+      "Tight"
     ],
-    "correct": 1,
-    "explanation": "Ransomware is a malware that encrypts files and holds them for ransom, demanding a payment to restore access."
+    "correct": 3,
+    "explanation": "The 'Tight' option causes the text to surround the image, but the margin between the image and text is smaller."
   },
   {
     "id": 25,
-    "question": "Information and Communication Technology (ICT) involves the processing of data using what?",
+    "question": "The default text wrapping for **Shapes** when inserted into a Word document is:",
     "options": [
-      "Only traditional pen and paper.",
-      "Only the internet and websites.",
-      "Different hardware and software components.",
-      "Only mobile phones and tablets."
+      "Square",
+      "In line with the text",
+      "Behind text",
+      "In Front of Text"
     ],
-    "correct": 2,
-    "explanation": "ICT is defined as the processing of data that includes sending, receiving, editing, locating, and saving using different hardware and software components."
+    "correct": 3,
+    "explanation": "The default text wrapping for Shapes is In Front of Text."
   },
   {
     "id": 26,
-    "question": "Which of the following is an example of an internet security strategy?",
+    "question": "The placeholder for texts that appears at the bottom margin of each page in a document is the:",
     "options": [
-      "Creating a simple password that is easy to remember.",
-      "Only using a public Wi-Fi network.",
-      "Using Multifactor Authentication (MFA).",
-      "Disabling all firewalls on your network."
+      "Footnote",
+      "Endnote",
+      "Header",
+      "Footer"
     ],
-    "correct": 2,
-    "explanation": "Multifactor Authentication (MFA) is listed as one of the key internet security strategies."
+    "correct": 3,
+    "explanation": "The Footer is the placeholder for texts at the bottom margin of each page."
   },
   {
     "id": 27,
-    "question": "What is spyware primarily designed to do?",
+    "question": "Which citation note consists of short citations used directly at the bottom of the page where the text is supported?",
     "options": [
-      "To install a virus on a computer.",
-      "To steal your personal data.",
-      "To encrypt your files and demand a ransom.",
-      "To display unwanted advertisements."
+      "Endnote",
+      "Footnote",
+      "Header",
+      "Page Number"
     ],
     "correct": 1,
-    "explanation": "Spyware is a type of malware designed to secretly steal user data and information without their consent."
+    "explanation": "A Footnote consists of short citations used directly at the bottom of the page where the text supported by the note is located."
   },
   {
     "id": 28,
-    "question": "Who invented the radio by discovering that electrical waves travel through space?",
+    "question": "Which citation note consists of long and more detailed citations located at the end of the document?",
     "options": [
-      "Marconi",
-      "William Cooke",
-      "Samuel Morse",
-      "Alexander Graham Bell"
+      "Endnote",
+      "Footnote",
+      "Header",
+      "Footer"
     ],
     "correct": 0,
-    "explanation": "The reviewer states that Marconi discovered that electrical waves travel through space and can produce an effect far from the point."
+    "explanation": "Endnotes are long and more detailed citations located at the end of the documents."
   },
   {
     "id": 29,
-    "question": "The Mechanical Period in ICT history is noted for the development of what?",
+    "question": "Adding columns in a Word document is a technique used in newspaper publishing to prevent an article from looking:",
     "options": [
-      "The first single-circuit telegraph.",
-      "The first mechanical calculators and computers.",
-      "The first general-purpose digital computers.",
-      "The discovery of papyrus and paper."
+      "Too short and brief",
+      "Very heavy and long",
+      "Disorganized and confusing",
+      "Too technical"
     ],
     "correct": 1,
-    "explanation": "The Mechanical Period includes the invention of the Abacus and the Pascaline, which is described as the first mechanical calculator."
+    "explanation": "Add Columns is a technique used in newspaper publishing so that an article will not look very heavy and long."
   },
   {
     "id": 30,
-    "question": "According to the reviewer, what should you do with a material you use in your work that belongs to someone else?",
+    "question": "To completely remove page numbers from a Word document, which option should be chosen from the Page Number menu?",
     "options": [
-      "Use it without acknowledging the owner.",
-      "Always acknowledge the owner of the idea or material.",
-      "Change it slightly so it is no longer theirs.",
-      "Only acknowledge the owner if asked to do so."
+      "Format Page Numbers...",
+      "Remove Page Numbers",
+      "Current Position",
+      "Bottom of Page"
     ],
     "correct": 1,
-    "explanation": "A key rule of online etiquette is to 'Always acknowledge the owners of ideas and materials used'."
+    "explanation": "If you want to completely remove page numbers, you may choose Remove Page Numbers."
   },
   {
     "id": 31,
-    "question": "The Electromechanical Period is characterized by the use of electricity for what purpose?",
+    "question": "What feature is a symbol, text, logo, or pattern that is superimposed onto another symbol, text, or logo within a document?",
     "options": [
-      "For creating computers and mobile phones.",
-      "For a device that could transmit information over electrical media.",
-      "For powering vacuum tubes.",
-      "For mechanical calculators and engines."
+      "Page Border",
+      "Watermark",
+      "Page Color",
+      "Mail Merge"
     ],
     "correct": 1,
-    "explanation": "The Electromechanical Period is described as having the first device to use electricity to transmit information over an electrical media, the telegraph."
+    "explanation": "Watermark is a symbol, text, logo, or a pattern that is superimposed onto another symbol, text, logo, within a document."
   },
   {
     "id": 32,
-    "question": "What is the primary characteristic of a worm?",
+    "question": "Which component of Mail Merge contains the main body of the message to be conveyed or sent?",
     "options": [
-      "It requires a host file to spread.",
-      "It hides within a legitimate program.",
-      "It self-replicates and spreads to other computers.",
-      "It monitors user activity secretly."
+      "Source Document (Data File)",
+      "Form Document",
+      "Label Generation",
+      "Merge Field"
     ],
-    "correct": 2,
-    "explanation": "A worm is a type of malware that self-replicates and spreads to other computers without needing to attach to an existing file."
+    "correct": 1,
+    "explanation": "The Form Document contains the main body of the message to be conveyed or sent."
   },
   {
     "id": 33,
-    "question": "Which of the following is NOT a defined component of ICT?",
+    "question": "What is the primary content of the Source Document (Data File) in Mail Merge?",
     "options": [
-      "Internet Access",
-      "Communication Technology",
-      "Physical Storage",
-      "Cloud Computing"
+      "The main message body",
+      "Individual information or data that needs to be merged",
+      "The final merged letters",
+      "The formatting and layout of the page"
     ],
-    "correct": 2,
-    "explanation": "The reviewer lists Datafication, Internet Access, Cloud Computing, Software/hardware, Transactions, and Communication Technology as ICT components, but not 'Physical Storage'."
+    "correct": 1,
+    "explanation": "The Source Document (Data File) contains individual information or data that needs to be merged with the form document."
   },
   {
     "id": 34,
-    "question": "What is the primary function of email security?",
+    "question": "Which step in creating a simple mail merge involves choosing 'Select Recipients' and then selecting 'Type New List'?",
     "options": [
-      "To prevent unauthorized access to a network.",
-      "To protect from threats associated with email use.",
-      "To ensure all emails are sent and received instantly.",
-      "To store emails in the cloud."
+      "Step 2",
+      "Step 4",
+      "Step 6",
+      "Step 22"
     ],
-    "correct": 1,
-    "explanation": "Email security is described as a strategy to 'significantly increase protection from threats associated with email use'."
+    "correct": 2,
+    "explanation": "Step 6 is: On the Mailings tab in the Start Mail Merge group, choose Select Recipients—Type New List."
   },
   {
     "id": 35,
-    "question": "The Pre-Mechanical Period is characterized by the use of what to store information?",
+    "question": "In the Mail Merge process, once the ALL CAPS placeholder text is selected in the main document, the next step is to click which command button?",
     "options": [
-      "Punch cards and vacuum tubes.",
-      "Words and pictograms carved in rocks.",
-      "The first mechanical calculators.",
-      "Electrical waves and signals."
+      "Finish & Merge",
+      "Preview Results",
+      "Customize Columns",
+      "Insert Merge Field"
     ],
-    "correct": 1,
-    "explanation": "The reviewer states that the Pre-Mechanical Period began with words and pictograms carved in rocks."
+    "correct": 3,
+    "explanation": "After selecting the placeholder field (ALL CAPS), click the Insert Merge Field command button."
   },
   {
     "id": 36,
-    "question": "What is the key difference between a Trojan horse and a virus?",
+    "question": "Which of the following is a guide in making an effective presentation related to the **6x7 rule**?",
     "options": [
-      "A Trojan horse replicates, while a virus does not.",
-      "A virus is hidden, while a Trojan horse is not.",
-      "A Trojan horse tricks the user into installing it, while a virus can infect a program on its own.",
-      "A virus is a type of malware, while a Trojan is not."
+      "Minimalism",
+      "Simplicity",
+      "Clarity",
+      "Contrast"
     ],
     "correct": 2,
-    "explanation": "The reviewer defines a Trojan horse as a malicious program disguised as a legitimate one, whereas a virus is a program that infects other programs."
+    "explanation": "Clarity suggests using bullet points and short sentences and following the 6x7 rule (6 lines and 7 words per line)."
   },
   {
     "id": 37,
-    "question": "What does a good life, according to the Markkula Center for Applied Ethics, refer to?",
+    "question": "What presentation guide advises against using a different background for every slide and stresses uniform fonts and colors?",
     "options": [
-      "A life of wealth and luxury.",
-      "A life of convenience and simplicity.",
-      "The kind of life we want for ourselves and for society overall.",
-      "A life free of all technology and internet use."
+      "Visual-Orientedness",
+      "Consistency",
+      "Minimalism",
+      "Clarity"
     ],
-    "correct": 2,
-    "explanation": "Online ethics is defined as the analysis of the role that the internet plays in what philosophers call the development of a good life- the kind of life that we want for ourselves, for society overall, the kinds of people we want to be."
+    "correct": 1,
+    "explanation": "Consistency advises that slides should be uniform, and fonts and colors should be consistent with every slide."
   },
   {
     "id": 38,
-    "question": "What is the purpose of using Multifactor Authentication (MFA)?",
+    "question": "The guide **Contrast** in presentation making primarily focuses on ensuring:",
     "options": [
-      "To simplify the login process.",
-      "To create a single password for multiple accounts.",
-      "To control computer access by requiring several authentication mechanisms.",
-      "To track user activity online."
+      "The use of animations",
+      "The readability of the presentation",
+      "The number of slides is low",
+      "The images are relevant"
     ],
-    "correct": 2,
-    "explanation": "MFA is a process by which computer access is controlled by requiring several authentication mechanisms."
+    "correct": 1,
+    "explanation": "Contrast states that contrasting colors must be used for text and background to make the presentation readable."
   },
   {
     "id": 39,
-    "question": "What is a key aspect of online etiquette regarding communication tone?",
+    "question": "What feature enables a user to apply a predesigned slide, removing the user the task of designing the presentation, allowing them to focus on content?",
     "options": [
-      "Using all capital letters to show enthusiasm.",
-      "Being courteous and avoiding foul language.",
-      "Including sarcasm to make your point.",
-      "Using as many exclamation points as possible."
+      "Animations",
+      "Transitions",
+      "Slide Master",
+      "Header & Footer"
     ],
-    "correct": 1,
-    "explanation": "The reviewer's tips for online etiquette include: 'Always be courteous' and 'Do not use foul language and incite anger by writing in uppercase and overusing the exclamation mark'."
+    "correct": 2,
+    "explanation": "Slide Master is the most user-friendly feature that enables a user to apply a predesigned slide, allowing the user to focus on the contents."
   },
   {
     "id": 40,
-    "question": "Who invented the telegraph in the UK in 1837?",
+    "question": "Which type of animation shows how the object or text will appear on the slide?",
     "options": [
-      "Alexander Graham Bell",
-      "Samuel Morse",
-      "William Cooke and Sir Charles Wheatstone",
-      "Marconi"
+      "Exit",
+      "Entrance",
+      "Emphasis",
+      "Motion Path"
     ],
-    "correct": 2,
-    "explanation": "The reviewer states that the telegraph was invented by William Cooke and Sir Charles Wheatstone in the UK."
+    "correct": 1,
+    "explanation": "Entrance animation shows how the object or text will appear on the slide."
   },
   {
     "id": 41,
-    "question": "What is the primary function of a worm?",
+    "question": "Which type of animation allows an object or text to move from one point to another in the slide?",
     "options": [
-      "To steal data without the user's knowledge.",
-      "To encrypt files and demand a ransom.",
-      "To self-replicate and spread to other computers.",
-      "To track user keystrokes."
+      "Exit",
+      "Emphasis",
+      "Entrance",
+      "Motion Path"
     ],
-    "correct": 2,
-    "explanation": "A worm is a type of malware that self-replicates and spreads to other computers."
+    "correct": 3,
+    "explanation": "Motion Path shows how an object or text will move from one point to another in the slide."
   },
   {
     "id": 42,
-    "question": "The Pascaline, created by Blaise Pascal, is notable for being what?",
+    "question": "What timing group option allows the presenter to move to the next slide when the mouse is clicked, overriding the set time from the 'After' option?",
     "options": [
-      "The first multipurpose computer.",
-      "The first mechanical calculator.",
-      "A device for converting sound to electricity.",
-      "The first electronic computer."
+      "Duration",
+      "Delay",
+      "On Mouse Click",
+      "With Previous"
     ],
-    "correct": 1,
-    "explanation": "The Pascaline is specifically identified as the 'First Mechanical Calculator'."
+    "correct": 2,
+    "explanation": "The 'On Mouse Click' option allows the presenter to move to the next slide when the mouse is clicked, even before the end of the time set in the After option."
   },
   {
     "id": 43,
-    "question": "What is the main danger of phishing scams?",
+    "question": "What is the term for setting the length of time a transition effect will animate?",
     "options": [
-      "They can slow down your computer's performance.",
-      "They can steal your private and illicit information.",
-      "They can display many pop-up advertisements.",
-      "They can turn your computer into a zombie bot."
+      "Delay",
+      "Duration",
+      "Timing",
+      "After"
     ],
     "correct": 1,
-    "explanation": "Phishing scams are created by cybercriminals who intend to ask for private and elicit information."
+    "explanation": "Duration sets the length of time the transition effect will animate."
   },
   {
     "id": 44,
-    "question": "What is the core principle behind the Analytical Engine?",
+    "question": "Which type of timing makes an object or text appear together with the previous object or text?",
     "options": [
-      "It was designed as a single-circuit device.",
-      "It was a mechanical calculator.",
-      "It was a multipurpose computer.",
-      "It was the first general-purpose electronic computer."
+      "On Click",
+      "With Previous",
+      "After Previous",
+      "Delay"
     ],
-    "correct": 2,
-    "explanation": "The Analytical Engine is described as a 'Multipurpose computer'."
+    "correct": 1,
+    "explanation": "The 'With Previous' timing option means the object or text will appear together with the previous object or text."
   },
   {
     "id": 45,
-    "question": "Which of the following best describes online etiquette?",
+    "question": "Transitions are used to set effects when:",
     "options": [
-      "A set of rules for making money online.",
-      "Acceptable conduct that adheres to polite and respectful behaviors.",
-      "The study of ethical problems in the digital age.",
-      "A legal document for using the internet."
+      "Objects appear on a slide",
+      "Transitioning to other slides",
+      "An object moves across the slide",
+      "Focusing attention on an object"
     ],
     "correct": 1,
-    "explanation": "Online etiquette is defined as 'Acceptable conduct that adheres to polite behaviors and respectful manners'."
+    "explanation": "Transitions allow the user to set effects when transitioning to other slides."
   },
   {
     "id": 46,
-    "question": "What is the function of a firewall?",
+    "question": "What principle of graphics and layout refers to evenly arranged elements throughout the screen?",
     "options": [
-      "To give you unlimited internet access.",
-      "To track unauthorized logins.",
-      "To prevent unauthorized access to a network.",
-      "To block all incoming emails."
+      "Emphasis",
+      "Proximity",
+      "Balance",
+      "Alignment"
     ],
     "correct": 2,
-    "explanation": "Firewalls are security tools that prevent unauthorized access to a network."
+    "explanation": "Balance refers to evenly arranged elements throughout the screen."
   },
   {
     "id": 47,
-    "question": "The invention of the transistor at Bell Labs occurred during which period?",
+    "question": "What principle involves giving more weight or focus to some elements on the screen to focus attention on a certain part?",
     "options": [
-      "Pre-Mechanical Period",
-      "Mechanical Period",
-      "Electromechanical Period",
-      "Electronic Period"
+      "Balance",
+      "Emphasis",
+      "Proportion",
+      "Variety"
     ],
-    "correct": 3,
-    "explanation": "The transistor was invented during the Electronic Period (1940 up to present)."
+    "correct": 1,
+    "explanation": "Emphasis involves giving more weight or focus to some elements on the screen."
   },
   {
     "id": 48,
-    "question": "What is the main difference between a worm and a virus?",
+    "question": "Which principle suggests that closely related elements should be placed together so they will be perceived as one unit of design?",
     "options": [
-      "A worm needs a host to spread, while a virus can self-replicate.",
-      "A virus needs a host to spread, while a worm can self-replicate.",
-      "A virus is a type of spyware, while a worm is not.",
-      "A worm is a malicious program, while a virus is not."
+      "Alignment",
+      "Pattern, Repetition, and Rhythm",
+      "Proximity and Unity",
+      "Proportion"
     ],
-    "correct": 1,
-    "explanation": "The reviewer states that a virus requires a host to spread, while a worm self-replicates and spreads on its own."
+    "correct": 2,
+    "explanation": "Proximity and Unity suggests that closely related elements should be placed together so that they will be perceived as one unit of design."
   },
   {
     "id": 49,
-    "question": "What should you NOT do when using online humor?",
+    "question": "What type of graphics is used to represent information, statistical data, or knowledge in a graphical manner, usually done in a creative way?",
     "options": [
-      "Use appropriate humor.",
-      "Avoid sarcasm.",
-      "Use as much sarcasm as possible.",
-      "Make sure your humor is not offensive."
+      "Clip Art",
+      "Infographics",
+      "Smart Art",
+      "Charts"
     ],
-    "correct": 2,
-    "explanation": "The reviewer states: 'Use appropriate humor and avoid sarcasm'."
+    "correct": 1,
+    "explanation": "Infographics, also known as Information graphics, are used to represent information, statistical data, or knowledge in a graphical manner, usually done in a creative way."
   },
   {
     "id": 50,
-    "question": "Which of the following is a key aspect of email security?",
+    "question": "One of the reasons to use Infographics is to present information in a way that is compact and easy to:",
     "options": [
-      "Using a single password for all email accounts.",
-      "Establishing a multilayered and comprehensive security system.",
-      "Turning off all spam filters.",
-      "Sharing your email password with a trusted friend."
+      "Animate",
+      "Visualize",
+      "Customize",
+      "Comprehend"
     ],
-    "correct": 1,
-    "explanation": "Email security is described as establishing a multilayered and comprehensive security system."
+    "correct": 3,
+    "explanation": "A reason to use Infographics is to present in a way that is compact and easy to comprehend."
   },
   {
     "id": 51,
-    "question": "What is the purpose of the ENIAC?",
+    "question": "It is an element of Infographics that refers to the use of Time frames, statistics, and references.",
     "options": [
-      "To serve as the first multipurpose computer.",
-      "To be the first general-purpose electronic digital computer.",
-      "To be the first mechanical calculator.",
-      "To be the first device to use electricity to transmit information."
+      "Visual Elements",
+      "Context Elements",
+      "Content Elements",
+      "Knowledge Elements"
     ],
-    "correct": 1,
-    "explanation": "The ENIAC is identified as the 'first general purpose electronic digital computer'."
+    "correct": 2,
+    "explanation": "Content Elements refer to the use of Time frames, statistics, and references in Infographics."
   },
   {
     "id": 52,
-    "question": "What is the primary characteristic of the Electronic Period in ICT history?",
+    "question": "It is an element of Infographics that refers to the use of color coding and graphics",
     "options": [
-      "The development of the first mechanical calculators.",
-      "The use of words and pictograms for communication.",
-      "The invention of the internet and mobile phones.",
-      "The use of electricity to transmit information over wires."
+      "Visual Elements",
+      "Context Elements",
+      "Content Elements",
+      "Knowledge Elements"
     ],
-    "correct": 2,
-    "explanation": "The Electronic Period is defined by the invention of the internet and mobile phones, among other telecommunications networks."
+    "correct": 0,
+    "explanation": "Visual Elements refer to the use of color coding and graphics in Infographics."
   },
   {
     "id": 53,
-    "question": "What is the main characteristic of a worm?",
+    "question": "It is a type of Infographics that use arrows to direct the viewer's attention to another aspect of the infographics.",
     "options": [
-      "It requires a host file to spread.",
-      "It can self-replicate and spread to other computers.",
-      "It is a scam that steals personal information.",
-      "It is a program that displays unwanted advertisements."
+      "Chronological",
+      "Cause and Effect",
+      "Quantitative",
+      "Directional"
     ],
-    "correct": 1,
-    "explanation": "A worm is a type of malware that self-replicates and spreads to other computers without needing to attach to a host file."
+    "correct": 3,
+    "explanation": "Directional Infographics use arrows to direct the viewer's attention to another aspect of the infographics."
   },
   {
     "id": 54,
-    "question": "What is the first line of defense among networks?",
+    "question": "What is number 1 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "Antivirus software.",
-      "A firewall.",
-      "A strong password.",
-      "A secure browser."
+      "Quick Access Toolbar",
+      "Ribbon",
+      "Title Bar",
+      "Status Bar"
     ],
-    "correct": 1,
-    "explanation": "Firewalls are described as the 'first line of defense among networks'."
+    "correct": 0,
+    "explanation": "Number 1 shows the Quick Access Toolbar."
   },
   {
     "id": 55,
-    "question": "What is a key principle of online ethics?",
+    "question": "What is number 2 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "Sharing all of your personal information online.",
-      "Keeping your online activities a secret from everyone.",
-      "Analyzing the internet's role in the development of a good life.",
-      "Only using the internet for entertainment purposes."
+      "Quick Access Toolbar",
+      "Ribbon",
+      "Title Bar",
+      "Status Bar"
     ],
     "correct": 2,
-    "explanation": "Online ethics involves the analysis of the role that the internet plays in what philosophers call the development of a good life."
+    "explanation": "Number 2 shows the Title Bar."
   },
   {
     "id": 56,
-    "question": "What type of malware is a Trojan horse?",
+    "question": "What is number 3 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "A program that spreads through a network.",
-      "A program that displays pop-up ads.",
-      "A program that appears to be a legitimate file but is malicious.",
-      "A program that encrypts files for ransom."
+      "Quick Access Toolbar",
+      "Name Box",
+      "Formula Bar",
+      "Ribbon"
     ],
-    "correct": 2,
-    "explanation": "A Trojan horse is a type of malware that is disguised as a legitimate file or application."
+    "correct": 3,
+    "explanation": "Number 3 shows the Ribbon."
   },
   {
     "id": 57,
-    "question": "What is the purpose of the Pascaline?",
+    "question": "What is number 4 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "To transmit signals over a long distance.",
-      "To perform calculations as the first mechanical calculator.",
-      "To create multipurpose computers.",
-      "To convert sound into electricity."
+      "Quick Access Toolbar",
+      "Name Box",
+      "Formula Bar",
+      "Ribbon"
     ],
-    "correct": 1,
-    "explanation": "The Pascaline is identified as the 'First Mechanical Calculator'."
+    "correct": 2,
+    "explanation": "Number 4 shows the Formula Bar."
   },
   {
     "id": 58,
-    "question": "What is the primary function of a telephone, as invented by Alexander Graham Bell?",
+    "question": "What is number 5 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "To send electrical waves through space.",
-      "To transmit information over electrical media.",
-      "To convert sound into electricity and transmit it through copper wire.",
-      "To serve as a multipurpose computer."
+      "Quick Access Toolbar",
+      "Name Box",
+      "Formula Bar",
+      "Ribbon"
     ],
-    "correct": 2,
-    "explanation": "The telephone converts sound into electricity and enables the telephone network to transmit it through copper wire."
+    "correct": 1,
+    "explanation": "Number 5 shows the Name Box."
   },
   {
     "id": 59,
-    "question": "Which of the following is an example of an internet security strategy?",
+    "question": "What is number 6 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "Disabling your browser's security settings.",
-      "Using a browser that is not regularly updated.",
-      "Employing a multilayered and comprehensive email security.",
-      "Downloading files from unknown sources."
+      "Column Header",
+      "Row Header",
+      "Worksheet Tab",
+      "Cells"
     ],
-    "correct": 2,
-    "explanation": "The reviewer states that a multilayered and comprehensive email security is a key internet security strategy."
+    "correct": 0,
+    "explanation": "Number 6 shows the Column Header."
   },
   {
     "id": 60,
-    "question": "In the context of online etiquette, what does 'think before you act' mean?",
+    "question": "What is number 7 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "Always ask for permission before posting.",
-      "Consider the potential impact of your words and actions online before you do them.",
-      "Do not post anything online without consulting a friend first.",
-      "Avoid all online interactions to prevent mistakes."
+      "Column Header",
+      "Row Header",
+      "Worksheet Tab",
+      "Cells"
     ],
     "correct": 1,
-    "explanation": "The reviewer concludes the section on online etiquette with the phrase 'Always think before you act!' which implies considering the impact of your actions."
+    "explanation": "Number 7 shows the Row Header."
   },
   {
     "id": 61,
-    "question": "Which of the following is NOT a type of malware mentioned in the reviewer?",
+    "question": "What is number 8 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "Worm",
-      "Trojan Horse",
-      "Phishing",
-      "Adware"
+      "Columns",
+      "Rows",
+      "Formula Bar",
+      "Cells"
     ],
-    "correct": 2,
-    "explanation": "Phishing is a type of scam, not a type of malware, although it is a security threat."
+    "correct": 3,
+    "explanation": "Number 8 shows the Cells."
   },
   {
     "id": 62,
-    "question": "What is the main characteristic of the Mechanical Period?",
+    "question": "What is number 9 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "The use of paper for writing.",
-      "The invention of the telegraph.",
-      "The use of mechanical devices like the Abacus and Pascaline.",
-      "The invention of the internet."
-    ],
-    "correct": 2,
-    "explanation": "The Mechanical Period is noted for the development of mechanical devices such as the Abacus and Pascaline."
-  },
-  {
-    "id": 63,
-    "question": "What is the primary function of a worm?",
-    "options": [
-      "To steal personal data.",
-      "To self-replicate and spread to other computers.",
-      "To display unwanted ads.",
-      "To lock files for ransom."
-    ],
-    "correct": 1,
-    "explanation": "A worm is a type of malware that self-replicates and spreads to other computers."
-  },
-  {
-    "id": 64,
-    "question": "Which of the following best describes online ethics?",
-    "options": [
-      "A guide for creating strong passwords.",
-      "A set of laws for internet use.",
-      "The analysis of the internet's role in the development of a good life.",
-      "A collection of polite online behaviors."
-    ],
-    "correct": 2,
-    "explanation": "Online ethics is defined as the analysis of the internet's role in the development of a good life for people and society."
-  },
-  {
-    "id": 65,
-    "question": "What does a Trojan horse do?",
-    "options": [
-      "It is a program that appears to be legitimate but contains a virus.",
-      "It is a program that spreads to other computers by attaching to a host program.",
-      "It is a program that displays unwanted ads.",
-      "It is a program that can self-replicate and spread to other computers."
+      "Workbook Views",
+      "Zoom Control",
+      "Worksheet Tab",
+      "Status Bar"
     ],
     "correct": 0,
-    "explanation": "A Trojan horse is a type of malware that is disguised as a legitimate file or application to trick a user into installing it."
+    "explanation": "Number 9 shows the Workbook Views."
   },
   {
-    "id": 66,
-    "question": "The invention of the radio is attributed to whom?",
+    "id": 62,
+    "question": "What is number 10 in the image below?",
+    "image": "images/etech/Etech 1.png",
     "options": [
-      "Marconi",
-      "Blaise Pascal",
-      "Charles Babbage",
-      "Samuel Morse"
-    ],
-    "correct": 0,
-    "explanation": "The reviewer states that Marconi invented the radio in 1894."
-  },
-  {
-    "id": 67,
-    "question": "What is the main purpose of email security?",
-    "options": [
-      "To ensure that all emails are delivered instantly.",
-      "To protect from threats associated with email use.",
-      "To allow the user to send and receive large files.",
-      "To prevent unauthorized access to a network."
+      "Workbook Views",
+      "Zoom Control",
+      "Worksheet Tab",
+      "Status Bar"
     ],
     "correct": 1,
-    "explanation": "The reviewer states that a multilayered and comprehensive email security will significantly increase protection from threats associated with email use."
+    "explanation": "Number 10 shows the Zoom Control."
   }
+
+
 ];
 
 // General Mathematics Quiz Data - 35 Questions
